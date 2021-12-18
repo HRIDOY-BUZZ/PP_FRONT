@@ -491,12 +491,14 @@ trait InteractsWithInput
     /**
      * Dump the request items and end the script.
      *
-     * @param  mixed  $keys
+     * @param  array|mixed  $keys
      * @return void
      */
     public function dd(...$keys)
     {
-        $this->dump(...$keys);
+        $keys = is_array($keys) ? $keys : func_get_args();
+
+        call_user_func_array([$this, 'dump'], $keys);
 
         exit(1);
     }
@@ -504,7 +506,7 @@ trait InteractsWithInput
     /**
      * Dump the items.
      *
-     * @param  mixed  $keys
+     * @param  array  $keys
      * @return $this
      */
     public function dump($keys = [])

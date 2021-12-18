@@ -74,15 +74,6 @@ class Builder
     protected $onDelete;
 
     /**
-     * The properties that should be returned from query builder.
-     *
-     * @var string[]
-     */
-    protected $propertyPassthru = [
-        'from',
-    ];
-
-    /**
      * The methods that should be returned from query builder.
      *
      * @var string[]
@@ -1607,10 +1598,6 @@ class Builder
     {
         if ($key === 'orWhere') {
             return new HigherOrderBuilderProxy($this, $key);
-        }
-
-        if (in_array($key, $this->propertyPassthru)) {
-            return $this->toBase()->{$key};
         }
 
         throw new Exception("Property [{$key}] does not exist on the Eloquent builder instance.");
