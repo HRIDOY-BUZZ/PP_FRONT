@@ -18,8 +18,8 @@ class AuthRouteMethods
             $this->group(['namespace' => $namespace], function() use($options) {
                 // Login Routes...
                 if ($options['login'] ?? true) {
-                    $this->get('ppadmin', 'Auth\LoginController@showLoginForm')->name('login');
-                    $this->post('ppadmin', 'Auth\LoginController@login');
+                    $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
+                    $this->post('login', 'Auth\LoginController@login');
                 }
 
                 // Logout Routes...
