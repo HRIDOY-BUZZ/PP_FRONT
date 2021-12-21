@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="page-wrapper">
-        @include('components.header')
+        @include('components.header1')
 
-        <main>
+        <main class="container">
             @yield('content')
         </main>
 
