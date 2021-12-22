@@ -7,7 +7,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link categories dropdown-toggle" href="#" data-bs-toggle="dropdown"> Categories  </a>
+                <a class="nav-link categories dropdown-toggle" href="#" data-bs-toggle="dropdown"> Category  </a>
                   <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
                   <li><a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>

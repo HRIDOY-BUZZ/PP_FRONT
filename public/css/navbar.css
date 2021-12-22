@@ -2,6 +2,13 @@
     font-size: 12px;
     line-height: 1.5;
     white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown-toggle::after {
+    border-right: 0em solid transparent;
+    border-bottom: 0;
+    border-left: 0em solid transparent;
 }
 
 
@@ -65,7 +72,7 @@
     margin: 0;
     margin-top: 0px;
     padding: 0;
-    width: 70%;
+    width: 77%;
     margin-left: 20px;
 }
 
@@ -77,23 +84,21 @@
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 #custom-search-input button {
     border: 0;
-    background: none;
-    /** belows styles are working good */
-    padding: 5px 5px;
-    margin-top: 2px;
+    background: #f3f4f5;
+    padding: 4px 7px;
+    margin-top: 1px;
     position: relative;
     left: -28px;
-    /* IE7-8 doesn't have border-radius, so don't indent the padding */
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
-    color: #D9230F;
+    border-radius: 1px 10px 10px 1px;
+    color: #959595;
 }
 
 .search-query:focus+button {
