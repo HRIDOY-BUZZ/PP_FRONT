@@ -1,0 +1,95 @@
+/* ============ desktop view ============ */
+
+@media all and (min-width: 992px) {
+    .dropdown-menu li {
+        position: relative;
+    }
+    .dropdown-menu .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+    .dropdown-menu .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+}
+
+
+/* ============ desktop view .end// ============ */
+
+
+/* ============ small devices ============ */
+
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+}
+
+
+/* ============ small devices .end// ============ */
+
+
+/* ============ Right Menu Start ===============*/
+
+.right-menu>li>a {
+    color: brown !important;
+    font-size: 20px;
+}
+
+
+/* ============ Right Menu End ===============*/
+
+#custom-search-input {
+    margin: 0;
+    margin-top: 0px;
+    padding: 0;
+    width: 70%;
+    margin-left: 20px;
+}
+
+#custom-search-input .search-query {
+    padding-right: 4px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 10px;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #D9230F;
+}
+
+.search-query:focus+button {
+    z-index: 3;
+}
+
+.input-group .btn {
+    position: relative;
+    z-index: 30;
+}
