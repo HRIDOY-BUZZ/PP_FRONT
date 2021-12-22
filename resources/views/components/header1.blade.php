@@ -1,11 +1,13 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-        <div class="container container-fluid">
-          <a class="navbar-brand" href="#" style="color:brown; font-weight:bold; font-size:25px">PricePond</a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="">
+            <img alt="tokopedia-logo" src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg">
+          </a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Categories  </a>
+                <a class="nav-link categories dropdown-toggle" href="#" data-bs-toggle="dropdown"> Categories  </a>
                   <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
                   <li><a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>

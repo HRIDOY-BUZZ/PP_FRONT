@@ -1,3 +1,10 @@
+.categories {
+    font-size: 12px;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+
 /* ============ desktop view ============ */
 
 @media all and (min-width: 992px) {
@@ -19,6 +26,10 @@
     }
     .dropdown-menu>li:hover>.submenu {
         display: block;
+    }
+    .container-fluid {
+        padding-right: var(--bs-gutter-x, 3rem);
+        padding-left: var(--bs-gutter-x, 3rem);
     }
 }
 
@@ -61,8 +72,8 @@
 #custom-search-input .search-query {
     padding-right: 4px;
     padding-left: 20px;
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 4px;
+    padding-top: 4px;
     margin-bottom: 0;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -73,7 +84,7 @@
     border: 0;
     background: none;
     /** belows styles are working good */
-    padding: 2px 5px;
+    padding: 5px 5px;
     margin-top: 2px;
     position: relative;
     left: -28px;
