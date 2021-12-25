@@ -5,37 +5,32 @@
           <a href="/mobile-apps/" target="_blank"
               rel="noopener noreferrer" class="css-7k41it">
               <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Download the Tokopedia App</font>
+                  <font style="vertical-align: inherit;"><i class="fas fa-mobile-alt"></i> &nbsp Download the Tokopedia App</font>
               </font>
           </a>
         </div>
         <div class="topnav-right float-end">
-          <a href="/about/" target="_blank" rel="noopener noreferrer"
-              class="" data-testid="btnHeaderAbout">
+          <a href="" target="_blank">
               <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">About Tokopedia</font>
               </font>
           </a>
-          <a href="/mitra/" target="_blank" rel="noopener noreferrer" class=""
-                data-testid="btnHeaderMitra">
+          <a href="" target="_blank">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Tokopedia Partners</font>
                 </font>
           </a>
-          <a href="https://seller.tokopedia.com/edu/mulai-berjualan/" target="_blank" rel="noopener noreferrer"
-            class="" data-testid="btnHeaderSellerEdu">
+          <a href="" target="_blank">
               <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Start Selling </font>
               </font>
           </a>
-          <a href="/promo/" class="" target="_blank" rel="noopener noreferrer"
-            data-testid="btnHeaderPromo">
+          <a href="" class="" target="_blank">
               <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Promo</font>
               </font>
           </a>
-          <a href="/help/" target="_blank" rel="noopener noreferrer" class=""
-            data-testid="btnHeaderHelp">
+          <a href="" target="_blank">
               <font style="vertical-align: inherit;">
                   <font style="vertical-align: inherit;">Tokopedia Care</font>
               </font>
@@ -100,7 +95,7 @@
                         <a class="nav-link circled-item" href="#"><i class="fas fa-user-plus"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link circled-item" href="#"><i class="fas fa-handshake"></i></a>
+                        <a class="nav-link circled-item" href="#"><i class="fas fa-gifts"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link circled-item" href="#"><i class="fas fa-calendar-alt"></i></a>
