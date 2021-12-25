@@ -15,6 +15,11 @@ nav {
     top: 30px;
 }
 
+.navbar-expand-lg {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 
 /* ============ desktop view ============ */
 
@@ -120,7 +125,7 @@ nav {
 }
 
 
-/* =================== TOP NAV ======================*/
+/* =================== TOP NAV START ======================*/
 
 .topnav {
     width: 100%;
@@ -156,4 +161,38 @@ nav {
     margin: 0px;
     justify-content: space-around;
     width: 40%;
+}
+
+
+/* =================== TOP NAV END ======================*/
+
+
+/* =================== BOTTOM NAV START ======================*/
+
+.nav-bottom {
+    margin-left: 30%;
+}
+
+.top-cats {
+    display: flex;
+    margin: 0px;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.top-cats a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    color: rgba(49, 53, 59, 0.68);
+    font-size: 12px;
+    line-height: 8px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: color 200ms ease 0s;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
 }

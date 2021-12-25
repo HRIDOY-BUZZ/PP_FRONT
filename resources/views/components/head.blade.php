@@ -9,5 +9,3 @@
 <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-<script>eval(mod_pagespeed_Fssu3$oWSr);</script>
-<script>eval(mod_pagespeed_3T5$J2XZxi);</script>

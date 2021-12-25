@@ -1,40 +1,40 @@
 <header>
     <div class="topnav">
         <div class="topnav-left">
-          <i class=""></i>
-          <a href="/mobile-apps/" target="_blank"
-              rel="noopener noreferrer" class="css-7k41it">
-              <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;"><i class="fas fa-mobile-alt"></i> &nbsp Download the Tokopedia App</font>
-              </font>
-          </a>
+            <i class=""></i>
+            <a href="/mobile-apps/" target="_blank" rel="noopener noreferrer" class="css-7k41it">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;"><i class="fas fa-mobile-alt"></i> &nbsp Download the Tokopedia
+                        App</font>
+                </font>
+            </a>
         </div>
         <div class="topnav-right float-end">
-          <a href="" target="_blank">
-              <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">About Tokopedia</font>
-              </font>
-          </a>
-          <a href="" target="_blank">
+            <a href="" target="_blank">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">About Tokopedia</font>
+                </font>
+            </a>
+            <a href="" target="_blank">
                 <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Tokopedia Partners</font>
                 </font>
-          </a>
-          <a href="" target="_blank">
-              <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Start Selling </font>
-              </font>
-          </a>
-          <a href="" class="" target="_blank">
-              <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Promo</font>
-              </font>
-          </a>
-          <a href="" target="_blank">
-              <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Tokopedia Care</font>
-              </font>
-          </a>
+            </a>
+            <a href="" target="_blank">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Start Selling </font>
+                </font>
+            </a>
+            <a href="" class="" target="_blank">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Promo</font>
+                </font>
+            </a>
+            <a href="" target="_blank">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">Tokopedia Care</font>
+                </font>
+            </a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
@@ -42,7 +42,7 @@
             <a class="navbar-brand" href="#" style="">
                 <img alt="tokopedia-logo"
                     src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg">
-                    {{-- src="{{ asset('images/logo.png') }}" width="150"> --}}
+                {{-- src="{{ asset('images/logo.png') }}" width="150"> --}}
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -104,5 +104,15 @@
                 </ul>
             </div>
         </div>
+          <div class="nav-bottom">
+            <div class="top-cats">
+              <a href="#">Laptops</a>
+              <a href="#">Smart Phones</a>
+              <a href="#">Washing Machines</a>
+              <a href="#">Refrigerators</a>
+              <a href="#">Printers</a>
+              <a href="#">Monitors</a>
+            </div>
+          </div>
     </nav>
 </header>
