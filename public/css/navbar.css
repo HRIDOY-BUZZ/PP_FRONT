@@ -11,6 +11,10 @@
     border-left: 0em solid transparent;
 }
 
+nav {
+    top: 30px;
+}
+
 
 /* ============ desktop view ============ */
 
@@ -108,4 +112,43 @@
 .input-group .btn {
     position: relative;
     z-index: 30;
+}
+
+
+/* =================== TOP NAV ======================*/
+
+.topnav {
+    width: 100%;
+    display: flex;
+    height: 32px;
+    z-index: 3;
+    background-color: rgb(243, 244, 245);
+    border-bottom: 1px solid rgb(243, 243, 243);
+    padding: 0px 32px;
+    position: fixed;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    left: 0px;
+    right: 0px;
+}
+
+.topnav a {
+    color: rgba(49, 53, 59, 0.68);
+    font-size: 12px;
+    line-height: 31px;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: color 200ms ease 0s;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+}
+
+.topnav-right {
+    display: flex;
+    margin: 0px;
+    justify-content: space-around;
+    width: 40%;
 }

@@ -5,6 +5,6 @@ PricePond | Home
 
 @section('content')
 <section>
-    <h1>Home Page</h1>
+    <h1 style="margin-top: 50px">Home Page</h1>
 </section>
 @endsection
