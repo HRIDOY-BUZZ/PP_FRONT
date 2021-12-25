@@ -42,6 +42,7 @@
             <a class="navbar-brand" href="#" style="">
                 <img alt="tokopedia-logo"
                     src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg">
+                    {{-- src="{{ asset('images/logo.png') }}" width="150"> --}}
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">

@@ -65,7 +65,8 @@ nav {
 /* ============ Right Menu Start ===============*/
 
 .right-menu>li>a {
-    color: brown !important;
+    /* color: #ed1036 !important; */
+    color: rgb(0 172 28) !important;
     font-size: 20px;
 }
 
@@ -112,6 +113,10 @@ nav {
 .input-group .btn {
     position: relative;
     z-index: 30;
+}
+
+.pp-logo {
+    width: 30%;
 }
 
 
