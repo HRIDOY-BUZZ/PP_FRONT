@@ -76,8 +76,8 @@ nav {
 /* ============ Right Menu Start ===============*/
 
 .right-menu>li>a {
-    /* color: #ed1036 !important; */
-    color: rgb(0 172 28) !important;
+    color: #ed1036 !important;
+    /* color: rgb(0 172 28) !important; */
     font-size: 20px;
 }
 

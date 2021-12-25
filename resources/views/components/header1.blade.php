@@ -4,20 +4,19 @@
             <i class=""></i>
             <a href="/mobile-apps/" target="_blank" rel="noopener noreferrer" class="css-7k41it">
                 <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;"><i class="fas fa-mobile-alt"></i> &nbsp Download the Tokopedia
-                        App</font>
+                    <font style="vertical-align: inherit;"><i class="fas fa-mobile-alt"></i> &nbsp Download the PricePond App</font>
                 </font>
             </a>
         </div>
         <div class="topnav-right float-end">
             <a href="" target="_blank">
                 <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">About Tokopedia</font>
+                    <font style="vertical-align: inherit;">About PricePond</font>
                 </font>
             </a>
             <a href="" target="_blank">
                 <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Tokopedia Partners</font>
+                    <font style="vertical-align: inherit;">PricePond Partners</font>
                 </font>
             </a>
             <a href="" target="_blank">
@@ -32,7 +31,7 @@
             </a>
             <a href="" target="_blank">
                 <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Tokopedia Care</font>
+                    <font style="vertical-align: inherit;">PricePond Care</font>
                 </font>
             </a>
         </div>
@@ -41,8 +40,8 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="">
                 <img alt="tokopedia-logo"
-                    src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg">
-                {{-- src="{{ asset('images/logo.png') }}" width="150"> --}}
+                    {{-- src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"> --}}
+                src="{{ asset('images/logo2.png') }}" width="150">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">

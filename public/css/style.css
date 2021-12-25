@@ -12,3 +12,50 @@ html {
     height: 100%;
     color: rgba(0, 0, 0, .54);
 }
+
+
+/* ========================= Banner Slider Start ============================ */
+
+.carousel-item {
+    height: 100px;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: black;
+    border-radius: 50%;
+    background-size: 100% 60%;
+    transform: translateX(0px);
+    transition: transform 1s;
+}
+
+.carousel:hover .carousel-control-next-icon {
+    transform: translateX(85px);
+}
+
+.carousel:hover .carousel-control-prev-icon {
+    transform: translateX(-85px);
+}
+
+.carousel-indicators {
+    float: left !important;
+    width: 10%;
+    margin-left: 0;
+}
+
+.carousel-indicators button {
+    border-radius: 50% !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+
+/* ========================= Banner Slider End ============================ */

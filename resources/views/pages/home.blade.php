@@ -4,7 +4,7 @@ PricePond | Home
 @endsection
 
 @section('content')
-<section>
-    <h1 style="margin-top: 50px">Home Page</h1>
+<section id="banner-sec" style="margin-top: 50px">
+    @include('chunks.banner')
 </section>
 @endsection
