@@ -39,7 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="">
-                <img alt="tokopedia-logo"
+                <img alt="pp-logo"
                     {{-- src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"> --}}
                 src="{{ asset('images/logo2.png') }}" width="150">
             </a>

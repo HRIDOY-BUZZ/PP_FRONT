@@ -6,7 +6,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Slick Slider CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+{{-- Custom CSS --}}
 <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+<link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/form-style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
