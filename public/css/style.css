@@ -41,12 +41,31 @@ html {
     transition: transform 1s;
 }
 
-.carousel:hover .carousel-control-next-icon {
-    transform: translateX(85px);
+@media all and (min-width: 992px) {
+    .carousel:hover .carousel-control-next-icon {
+        transform: translateX(70px);
+    }
+    .carousel:hover .carousel-control-prev-icon {
+        transform: translateX(-70px);
+    }
 }
 
-.carousel:hover .carousel-control-prev-icon {
-    transform: translateX(-85px);
+@media all and (min-width: 1280px) {
+    .carousel:hover .carousel-control-next-icon {
+        transform: translateX(85px);
+    }
+    .carousel:hover .carousel-control-prev-icon {
+        transform: translateX(-85px);
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .carousel:hover .carousel-control-next-icon {
+        transform: translateX(97px);
+    }
+    .carousel:hover .carousel-control-prev-icon {
+        transform: translateX(-97px);
+    }
 }
 
 .carousel-indicators {
@@ -70,96 +89,46 @@ html {
 
 /* Slider */
 
-.slick-slide {
-    margin: 0px 20px;
-}
-
-.logo-carousel {
-    overflow: inherit;
-    border-top: 1px solid #353535;
-    border-bottom: 1px solid #353535;
-}
-
-.slick-slide img {
-    width: 100%;
-}
-
-.slick-track::before,
-.slick-track::after {
-    display: table;
-    content: '';
-}
-
-.slick-track::after {
-    clear: both;
-}
-
-.slick-track {
-    padding: 1rem 0;
-}
-
-.slick-loading .slick-track {
-    visibility: hidden;
-}
-
-.slick-slide.slick-loading img {
-    display: none;
-}
-
-.slick-slide.dragging img {
-    pointer-events: none;
-}
-
-.slick-loading .slick-slide {
-    visibility: hidden;
-}
-
-.slick-arrow {
-    position: absolute;
-    top: 50%;
-    background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
-    color: #fff;
-    filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
-    border: none;
-    width: 2rem;
-    height: 1.5rem;
-    text-indent: -10000px;
-    margin-top: -16px;
-    z-index: 99;
-}
-
-.slick-arrow.slick-next {
-    right: -40px;
-    transform: rotate(180deg);
-}
-
-.slick-arrow.slick-prev {
-    left: -40px;
-}
-
-
-/* Media Queries */
-
-@media (max-width: 768px) {
-    .slick-arrow {
-        width: 1rem;
-        height: 1rem;
-    }
-}
-
-body {
-    background-color: #010101;
-}
-
-.row {
+.ov-h {
     overflow: hidden;
 }
 
+.container .slider {
+    animation: slidein 30s linear infinite;
+    white-space: nowrap;
+}
 
-/* JsFiddle Example only/don't use */
+.container .slider .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 0;
+}
 
-.logo-carousel {
-    margin-top: 32px;
+.container .slider .logos .fab {
+    width: calc(100% / 5);
+    animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+.logos svg {
+    margin: 0px 50px;
+}
+
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 

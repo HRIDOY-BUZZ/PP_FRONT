@@ -1,30 +1,21 @@
-<div class="row">
-    <div class="container">
-        <section class="logo-carousel slider" data-arrows="true">
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png">
+<div class="container ov-h h-100">
+    <div class="row align-items-center h-100">
+        <div class="container rounded">
+            {{-- <h1 class="text-center">Featured Brands:</h1> --}}
+            <div class="slider">
+                <div class="logos">
+                    <i class="fab fa-js fa-4x"></i>
+                    <i class="fab fa-linkedin-in fa-4x"></i>
+                    <i class="fab fa-dribbble fa-4x"></i>
+                    <i class="fab fa-medium-m fa-4x"></i>
+                    <i class="fab fa-github fa-4x"></i>
+                    <i class="fab fa-js fa-4x"></i>
+                    <i class="fab fa-linkedin-in fa-4x"></i>
+                    <i class="fab fa-dribbble fa-4x"></i>
+                    <i class="fab fa-medium-m fa-4x"></i>
+                    <i class="fab fa-github fa-4x"></i>
+                </div>
             </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png">
-            </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png">
-            </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png">
-            </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image5.png">
-            </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image6.png">
-            </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image7.png">
-            </div>
-            <div class="slide">
-                <img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image8.png">
-            </div>
-        </section>
+        </div>
     </div>
 </div>
