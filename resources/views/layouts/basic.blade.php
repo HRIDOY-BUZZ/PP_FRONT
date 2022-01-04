@@ -12,7 +12,7 @@
     <div class="page-wrapper">
         @include('components.header1')
 
-        <main class="container">
+        <main class="main">
             @yield('content')
         </main>
 
