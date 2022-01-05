@@ -1,16 +1,19 @@
 .pp-logo {
     width: 150px !important;
+    height: auto;
 }
 
 @media all and (max-width: 991px) {
     .pp-logo {
         width: 120px !important;
+        height: auto;
     }
 }
 
 @media all and (max-width: 540px) {
     .pp-logo {
         width: 100px !important;
+        height: auto;
     }
 }
 
