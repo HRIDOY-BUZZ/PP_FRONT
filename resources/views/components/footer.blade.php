@@ -41,7 +41,7 @@
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6>
-                        <img alt="pp-logo" src="{{ asset('images/logo2.png') }}" width="200">
+                        <img alt="pp-logo" class="foot-logo" src="{{ asset('images/logo.png') }}">
                     </h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
                     <p style="text-align: justify">

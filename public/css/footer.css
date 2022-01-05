@@ -8,6 +8,25 @@ footer {
     padding: 1rem !important;
 }
 
+.foot-logo {
+    width: 200px;
+    height: auto;
+}
+
+@media all and (max-width: 991px) {
+    .foot-logo {
+        width: 170px !important;
+        height: auto;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .foot-logo {
+        width: 120px !important;
+        height: auto;
+    }
+}
+
 .footer-links h6 {
     color: rgba(49, 53, 59, 0.68) !important;
     font-size: 0.9rem;
