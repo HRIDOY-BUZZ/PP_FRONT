@@ -1,3 +1,19 @@
+.pp-logo {
+    width: 150px !important;
+}
+
+@media all and (max-width: 991px) {
+    .pp-logo {
+        width: 120px !important;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .pp-logo {
+        width: 100px !important;
+    }
+}
+
 .categories {
     font-size: 12px;
     line-height: 1.5;

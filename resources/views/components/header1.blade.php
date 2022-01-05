@@ -39,9 +39,7 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="">
-                <img alt="pp-logo"
-                    {{-- src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"> --}}
-                src="{{ asset('images/logo2.png') }}" width="150">
+                <img alt="pp-logo" class="pp-logo" src="{{ asset('images/logo.png') }}">
             </a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
