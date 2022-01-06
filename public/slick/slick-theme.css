@@ -82,11 +82,11 @@
 }
 
 .slick-prev:before {
-    content: '←';
+    content: 'P';
 }
 
 [dir='rtl'] .slick-prev:before {
-    content: '→';
+    content: 'N';
 }
 
 .slick-next {
@@ -99,11 +99,11 @@
 }
 
 .slick-next:before {
-    content: '→';
+    content: 'N';
 }
 
 [dir='rtl'] .slick-next:before {
-    content: '←';
+    content: 'P';
 }
 
 
