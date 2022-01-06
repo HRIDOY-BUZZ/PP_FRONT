@@ -29,8 +29,8 @@
         background-size: cover;
     }
     
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
+    .banner .carousel-control-next-icon,
+    .banner .carousel-control-prev-icon {
         width: 3rem;
         height: 3rem;
         background-color: black;
@@ -41,10 +41,10 @@
     }
     
     @media all and (max-width: 991px) {
-        .carousel-control-next-icon {
+        .banner .carousel-control-next-icon {
             display: none;
         }
-        .carousel-control-prev-icon {
+        .banner .carousel-control-prev-icon {
             display: none;
         }
         .carousel-item {
@@ -53,28 +53,28 @@
     }
     
     @media all and (min-width: 992px) {
-        .carousel:hover .carousel-control-next-icon {
+        .banner:hover .carousel-control-next-icon {
             transform: translateX(70px);
         }
-        .carousel:hover .carousel-control-prev-icon {
+        .banner:hover .carousel-control-prev-icon {
             transform: translateX(-70px);
         }
     }
     
     @media all and (min-width: 1280px) {
-        .carousel:hover .carousel-control-next-icon {
+        .banner:hover .carousel-control-next-icon {
             transform: translateX(85px);
         }
-        .carousel:hover .carousel-control-prev-icon {
+        .banner:hover .carousel-control-prev-icon {
             transform: translateX(-85px);
         }
     }
     
     @media all and (min-width: 1400px) {
-        .carousel:hover .carousel-control-next-icon {
+        .banner:hover .carousel-control-next-icon {
             transform: translateX(97px);
         }
-        .carousel:hover .carousel-control-prev-icon {
+        .banner:hover .carousel-control-prev-icon {
             transform: translateX(-97px);
         }
     }
