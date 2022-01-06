@@ -1,7 +1,6 @@
 <div class="container ov-h h-100">
     <div class="row align-items-center h-100">
         <div class="container rounded">
-            {{-- <h1 class="text-center">Featured Brands:</h1> --}}
             <div class="slider">
                 <div class="logos">
                     <i class="fab fa-js fa-4x"></i>

@@ -5,6 +5,10 @@
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+{{-- SLICK CSS --}}
+<link rel="stylesheet" href="{{ asset('slick/slick.css') }}">
+<link rel="stylesheet" href="{{ asset('slick/slick-theme.css') }}">
+
 {{-- Google Fonts --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
