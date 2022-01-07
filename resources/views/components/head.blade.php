@@ -3,7 +3,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 {{-- FONTAWESOME --}}
-<link rel="stylesheet" href="{{ asset('fontawesome/all.min.css') }}">
+<link rel="stylesheet" href="{{ asset('fontawesome/source/all.min.css') }}">
 
 {{-- SLICK CSS --}}
 <link rel="stylesheet" href="{{ asset('slick/slick.css') }}">
