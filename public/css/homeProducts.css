@@ -69,5 +69,61 @@
 
 /* ============= PRODUCTS START ============= */
 
+.single-product {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-family: work sans, Arial, sans-serif;
+}
+
+.single-product:hover {
+    border: 1px solid silver;
+    color: black;
+}
+
+.shop-name p {
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.product-hr {
+    color: grey;
+}
+
+.product-title p {
+    color: #06C;
+    margin: 0;
+    font-weight: 400;
+    padding: 0 0 5px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+.stars {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.active-star {
+    color: #fcb800;
+}
+
+.inactive-star {
+    color: #CCC;
+}
+
+.count {
+    color: grey;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.product-price p {
+    color: black;
+    font-size: 16px;
+}
+
 
 /* ============= PRODUCTS END ============= */
