@@ -1,9 +1,13 @@
 <div id="new-launches">
     <div class="tabs-header">
         <div class="container">
-            <h2>New Launches {{ date('Y') }}</h2>
-            <div class="tab-links">
-
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
+                    <h2>New Launches {{ date('Y') }}</h2>
+                </div>
+                <div class="col-md-2 col-xs-12 tab-view">
+                    <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -23,13 +27,13 @@
                         <div class="product-title">
                             <p class="">Samsung UHD TV 24 inch</p>
                         </div>
-                        <div class="stars">
+                        {{-- <div class="stars">
                             @for ($s=0;$s<4;$s++)
                                 <i class="fas fa-star active-star"></i>
                             @endfor
                             <i class="fas fa-star inactive-star"></i>
                             <span class="count">04</span>
-                        </div>
+                        </div> --}}
                         <div class="product-price">
                             <p class="price-amount"><span class="currency">$</span>599.60</p>
                         </div>
