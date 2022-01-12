@@ -1,48 +1,3 @@
-<div id="new-launches">
-    <div class="tabs-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-xs-12">
-                    <h2>New Launches {{ date('Y') }}</h2>
-                </div>
-                <div class="col-md-2 col-xs-12 tab-view">
-                    <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="products-body">
-        <section class="center slider">
-            @for ($i=1;$i<10;$i++)
-                <div class="single-product">
-                    <div class="product-image">
-                        <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
-                    </div>
-                    <div class="shop-name">
-                        <p>ROBERT'S STORE</p>
-                    </div>
-                    <hr class="product-hr">
-                    <div class="product-details">
-                        <div class="product-title">
-                            <p class="">Samsung UHD TV 24 inch</p>
-                        </div>
-                        {{-- <div class="stars">
-                            @for ($s=0;$s<4;$s++)
-                                <i class="fas fa-star active-star"></i>
-                            @endfor
-                            <i class="fas fa-star inactive-star"></i>
-                            <span class="count">04</span>
-                        </div> --}}
-                        <div class="product-price">
-                            <p class="price-amount"><span class="currency">$</span>599.60</p>
-                        </div>
-                    </div>
-                </div>
-            @endfor
-        </section>
-    </div>
-</div>
-
 <div id="hottest-deals">
     <div class="tabs-header">
         <div class="container">
@@ -139,51 +94,6 @@
             <div class="row">
                 <div class="col-md-10 col-xs-12">
                     <h2>Today's Top Shopping</h2>
-                </div>
-                <div class="col-md-2 col-xs-12 tab-view">
-                    <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="products-body">
-        <section class="center slider">
-            @for ($i=1;$i<10;$i++)
-                <div class="single-product">
-                    <div class="product-image">
-                        <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
-                    </div>
-                    <div class="shop-name">
-                        <p>ROBERT'S STORE</p>
-                    </div>
-                    <hr class="product-hr">
-                    <div class="product-details">
-                        <div class="product-title">
-                            <p class="">Samsung UHD TV 24 inch</p>
-                        </div>
-                        {{-- <div class="stars">
-                            @for ($s=0;$s<4;$s++)
-                                <i class="fas fa-star active-star"></i>
-                            @endfor
-                            <i class="fas fa-star inactive-star"></i>
-                            <span class="count">04</span>
-                        </div> --}}
-                        <div class="product-price">
-                            <p class="price-amount"><span class="currency">$</span>599.60</p>
-                        </div>
-                    </div>
-                </div>
-            @endfor
-        </section>
-    </div>
-</div>
-
-<div id="price-drops">
-    <div class="tabs-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-xs-12">
-                    <h2>Top Price Drops</h2>
                 </div>
                 <div class="col-md-2 col-xs-12 tab-view">
                     <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
@@ -440,6 +350,96 @@
                         </div> --}}
                         <div class="product-price">
                             <p class="price-amount"><span class="currency">$</span>398.99</p>
+                        </div>
+                    </div>
+                </div>
+            @endfor
+        </section>
+    </div>
+</div>
+
+<div id="top-refrigerators">
+    <div class="tabs-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
+                    <h2>Top Refrigerators</h2>
+                </div>
+                <div class="col-md-2 col-xs-12 tab-view">
+                    <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products-body">
+        <section class="center slider">
+            @for ($i=1;$i<10;$i++)
+                <div class="single-product">
+                    <div class="product-image">
+                        <img src="https://images.getprice.com.au/products/EuromaidESBS563S.jpg">
+                    </div>
+                    <div class="shop-name">
+                        <p>APPLIANCES ONLINE</p>
+                    </div>
+                    <hr class="product-hr">
+                    <div class="product-details">
+                        <div class="product-title">
+                            <p class="">Euromaid ESBS563S</p>
+                        </div>
+                        {{-- <div class="stars">
+                            @for ($s=0;$s<4;$s++)
+                                <i class="fas fa-star active-star"></i>
+                            @endfor
+                            <i class="fas fa-star inactive-star"></i>
+                            <span class="count">04</span>
+                        </div> --}}
+                        <div class="product-price">
+                            <p class="price-amount"><span class="currency">$</span>1474.00</p>
+                        </div>
+                    </div>
+                </div>
+            @endfor
+        </section>
+    </div>
+</div>
+
+<div id="top-washing-machines">
+    <div class="tabs-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
+                    <h2>Top Washing Machines</h2>
+                </div>
+                <div class="col-md-2 col-xs-12 tab-view">
+                    <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products-body">
+        <section class="center slider">
+            @for ($i=1;$i<10;$i++)
+                <div class="single-product">
+                    <div class="product-image">
+                        <img src="https://images.getprice.com.au/products/Bosch%20WAW28460AU.jpg">
+                    </div>
+                    <div class="shop-name">
+                        <p>APPLIANCES ONLINE</p>
+                    </div>
+                    <hr class="product-hr">
+                    <div class="product-details">
+                        <div class="product-title">
+                            <p class="">Bosch WAW28460AU</p>
+                        </div>
+                        {{-- <div class="stars">
+                            @for ($s=0;$s<4;$s++)
+                                <i class="fas fa-star active-star"></i>
+                            @endfor
+                            <i class="fas fa-star inactive-star"></i>
+                            <span class="count">04</span>
+                        </div> --}}
+                        <div class="product-price">
+                            <p class="price-amount"><span class="currency">$</span>1299.00</p>
                         </div>
                     </div>
                 </div>
