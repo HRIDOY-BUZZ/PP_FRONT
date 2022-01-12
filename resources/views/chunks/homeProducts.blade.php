@@ -313,12 +313,12 @@
     </div>
 </div>
 
-<div id="top-monitors">
+<div id="monitors">
     <div class="tabs-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-xs-12">
-                    <h2>Top Monitors</h2>
+                    <h2>Monitors</h2>
                 </div>
                 <div class="col-md-2 col-xs-12 tab-view">
                     <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
@@ -358,12 +358,12 @@
     </div>
 </div>
 
-<div id="top-refrigerators">
+<div id="refrigerators">
     <div class="tabs-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-xs-12">
-                    <h2>Top Refrigerators</h2>
+                    <h2>Refrigerators</h2>
                 </div>
                 <div class="col-md-2 col-xs-12 tab-view">
                     <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
@@ -403,12 +403,12 @@
     </div>
 </div>
 
-<div id="top-washing-machines">
+<div id="washing-machines">
     <div class="tabs-header">
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-xs-12">
-                    <h2>Top Washing Machines</h2>
+                    <h2>Washing Machines</h2>
                 </div>
                 <div class="col-md-2 col-xs-12 tab-view">
                     <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
