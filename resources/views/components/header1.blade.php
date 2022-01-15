@@ -44,7 +44,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link categories dropdown-toggle" href="#" data-bs-toggle="dropdown"> Category </a>
+                        <a class="nav-link categories dropdown-toggle d-flex" href="#" data-bs-toggle="dropdown">
+                            <p class="cat-title">Shop by<br>category</p>
+                            <p class="cat-chev"><i class="far fa-chevron-down"></i></p>
+                            
+                        </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
                             <li><a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
@@ -85,7 +89,7 @@
                         </span>
                     </div>
                 </div>
-                <ul class="nav navbar-nav right-menu ms-auto">
+                {{-- <ul class="nav navbar-nav right-menu ms-auto">
                     <li class="nav-item">
                         <a class="nav-link circled-item" href="#"><i class="fas fa-user"></i></a>
                     </li>
@@ -98,7 +102,19 @@
                     <li class="nav-item">
                         <a class="nav-link circled-item" href="#"><i class="fas fa-calendar-alt"></i></a>
                     </li>
-                </ul>
+                </ul> --}}
+                <div class="nav navbar-nav right-menu">
+                    <div class="nav-buttons">
+                            <div class="row ps-2">
+                                <div class="col-6 pe-1">
+                                    <button class="btn btn-nav nav-login w-100">Login</button>
+                                </div>
+                                <div class="col-6 ps-1 pe-0">
+                                    <button class="btn btn-nav nav-reg w-100">Register</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
           <div class="nav-bottom">

@@ -1,3 +1,7 @@
+nav {
+    top: 30px;
+}
+
 .pp-logo {
     width: 150px !important;
     height: auto;
@@ -25,19 +29,22 @@
 }
 
 .categories:hover {
-    color: #4FD15A !important;
+    color: #ED3A43 !important;
     background: #c9c9c927;
     box-shadow: 0 0 10px 0 #c9c9c927;
+}
+
+.cat-chev {
+    padding-top: .5rem;
+    padding-left: 0.5rem;
+    padding-right: 0;
+    font-size: 15px;
 }
 
 .dropdown-toggle::after {
     border-right: 0em solid transparent;
     border-bottom: 0;
     border-left: 0em solid transparent;
-}
-
-nav {
-    top: 30px;
 }
 
 .navbar-expand-lg {
@@ -94,10 +101,46 @@ nav {
 
 /* ============ Right Menu Start ===============*/
 
-.right-menu>li>a {
-    color: #ed1036 !important;
-    /* color: rgb(0 172 28) !important; */
+
+/* .right-menu>li>a {
+    color: #ED3A43 !important;
     font-size: 20px;
+} */
+
+.nav-buttons button {
+    font-size: 13px;
+}
+
+.nav-buttons .btn-nav {
+    font-weight: bold;
+    border: 1px solid #ED3A43;
+    border-radius: 7px;
+    line-height: 1.2;
+}
+
+.nav-login {
+    background-color: white;
+    color: #ED3A43;
+}
+
+.nav-reg {
+    background-color: #ED3A43;
+    color: white;
+}
+
+.nav-icon a {
+    color: #ED3A43 !important;
+    font-size: 20px;
+    padding-top: 0 !important;
+}
+
+.v-line {
+    border-right: 1px solid silver;
+    height: 30px;
+}
+
+.right-menu {
+    margin: 0 auto;
 }
 
 
@@ -107,7 +150,7 @@ nav {
     margin: 0;
     margin-top: 0px;
     padding: 0;
-    width: 77%;
+    width: 80%;
     margin-left: 20px;
 }
 
