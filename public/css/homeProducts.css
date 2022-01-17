@@ -52,12 +52,20 @@
 /* ============= INNER SECTION SLICK ============= */
 
 .slider {
-    width: 97%;
+    width: 96%;
     margin: 30px auto;
 }
 
 .slick-slide {
     margin: 0px 2px;
+}
+
+.stores .slick-slide {
+    margin: 7px 7px;
+}
+
+.stores .slick-list {
+    overflow-x: hidden;
 }
 
 .slick-slide img {
@@ -87,6 +95,15 @@
 
 
 /* ============= PRODUCTS START ============= */
+
+.store-div {
+    box-shadow: 0px 3px 10px silver;
+    border-radius: 15px;
+}
+
+.store-div .single-product {
+    border-radius: 15px;
+}
 
 .single-product {
     text-decoration: none;

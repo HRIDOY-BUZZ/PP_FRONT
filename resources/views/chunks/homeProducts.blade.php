@@ -447,3 +447,39 @@
         </section>
     </div>
 </div>
+
+<div id="stores">
+    <div class="tabs-header">
+        <div class="container">
+            <div class="text-center">
+                <h2>Top Viewed Stores</h2>
+            </div>
+        </div>
+    </div>
+    <div class="products-body">
+        <section class="slider stores">
+            @for ($i=1;$i<12;$i++)
+                <div class="store-div">
+                    <div class="single-product">
+                        <div class="product-image">
+                            <img src="{{ asset('images/stores/nike.jpg') }}">
+                        </div>
+                        <div class="shop-name">
+                            <p>NIKE INTERNATIONAL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-div">
+                    <div class="single-product">
+                        <div class="product-image">
+                            <img src="{{ asset('images/stores/puma.jpg') }}">
+                        </div>
+                        <div class="shop-name">
+                            <p>PUMA INTERNATIONAL</p>
+                        </div>
+                    </div>
+                </div>
+            @endfor
+        </section>
+    </div>
+</div>
