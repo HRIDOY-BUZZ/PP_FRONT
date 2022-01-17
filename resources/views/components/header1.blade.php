@@ -89,20 +89,6 @@
                         </span>
                     </div>
                 </div>
-                {{-- <ul class="nav navbar-nav right-menu ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link circled-item" href="#"><i class="fas fa-user"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link circled-item" href="#"><i class="fas fa-user-plus"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link circled-item" href="#"><i class="fas fa-gifts"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link circled-item" href="#"><i class="fas fa-calendar-alt"></i></a>
-                    </li>
-                </ul> --}}
                 <div class="nav navbar-nav right-menu">
                     <div class="nav-buttons">
                             <div class="row ps-2">
@@ -117,15 +103,15 @@
                 </div>
             </div>
         </div>
-          <div class="nav-bottom">
-            <div class="top-cats">
-              <a href="#">Laptops</a>
-              <a href="#">Smart Phones</a>
-              <a href="#">Washing Machines</a>
-              <a href="#">Refrigerators</a>
-              <a href="#">Printers</a>
-              <a href="#">Monitors</a>
+            <div class="nav-bottom">
+                <div class="top-cats">
+                    <a href="#">Laptops</a>
+                    <a href="#">Smart Phones</a>
+                    <a href="#">Washing Machines</a>
+                    <a href="#">Refrigerators</a>
+                    <a href="#">Printers</a>
+                    <a href="#">Monitors</a>
+                </div>
             </div>
-          </div>
     </nav>
 </header>
