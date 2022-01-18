@@ -143,6 +143,21 @@ nav {
     margin: 0 auto;
 }
 
+@media all and (max-width: 1200px) {
+    .nav-buttons button {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .nav-buttons button {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 10px;
+        line-height: 1.0;
+    }
+}
+
 
 /* ============ Right Menu End ===============*/
 
@@ -197,6 +212,34 @@ nav {
     width: 30%;
 }
 
+.search-div {
+    display: flex !important;
+    flex-basis: auto;
+    width: 75%;
+}
+
+@media all and (max-width: 768px) {
+    .search-div {
+        display: flex !important;
+        flex-basis: auto;
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .search-div {
+        display: flex !important;
+        flex-basis: auto;
+        width: 90%;
+    }
+    .nav-buttons button {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 15px;
+        line-height: 1.0;
+    }
+}
+
 
 /* =================== TOP NAV START ======================*/
 
@@ -233,6 +276,21 @@ nav {
     margin: 0px;
     justify-content: space-around;
     width: 40%;
+}
+
+@media all and (max-width: 1200px) {
+    .topnav-right {
+        width: 60%;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .topnav-left {
+        display: none;
+    }
+    .topnav-right {
+        width: 100%;
+    }
 }
 
 

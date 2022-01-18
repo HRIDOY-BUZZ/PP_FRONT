@@ -43,43 +43,10 @@
             <a class="navbar-brand" href="#" style="">
                 <img alt="pp-logo" class="pp-logo" src="{{ asset('images/logo.png') }}">
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link categories dropdown-toggle d-flex" href="#" data-bs-toggle="dropdown">
+                        {{-- <a class="nav-link categories dropdown-toggle d-flex" href="#" data-bs-toggle="dropdown">
                             <p class="cat-title my-2">Categories <i class="far fa-chevron-down"></i></p>
-                            {{-- <p class="cat-chev"><i class="far fa-chevron-down"></i></p> --}}
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
-                            <li><a class="dropdown-item" href="#"> Dropdown item 2 &raquo; </a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Submenu item 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Submenu item 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Submenu item 3</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#"> Dropdown item 3 &raquo; </a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
-                                    <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#"> Dropdown item 4 &raquo;</a>
-                                <ul class="submenu dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Another submenu 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Another submenu 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Another submenu 3</a></li>
-                                    <li><a class="dropdown-item" href="#">Another submenu 4</a></li>
-                                </ul>
-                            </li>
-                            <li><a class="dropdown-item" href="#"> Dropdown item 5 </a></li>
-                            <li><a class="dropdown-item" href="#"> Dropdown item 6 </a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        </a> --}}
+            <div class="search-div">
                 <div id="custom-search-input">
                     <div class="input-group col-md-12">
                         <input type="text" class="  search-query form-control" placeholder="Search Items Here . . ." />
