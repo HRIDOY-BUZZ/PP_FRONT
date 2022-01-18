@@ -461,7 +461,7 @@
         </div>
         <div class="products-body">
             <section class="slider stores">
-                @for ($i=1;$i<12;$i++)
+                @for ($i=1;$i<6;$i++)
                     <div class="store-div">
                         <div class="single-product">
                             <div class="product-image">

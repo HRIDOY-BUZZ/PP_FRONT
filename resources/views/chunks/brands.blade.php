@@ -2,7 +2,7 @@
     <div id="brands">
         <div class="products-body">
             <section class="slider brands">
-                @for ($i=1;$i<12;$i++)
+                @for ($i=1;$i<6;$i++)
                     <div class="brand-div">
                         <div class="single-product">
                             <div class="product-image">
