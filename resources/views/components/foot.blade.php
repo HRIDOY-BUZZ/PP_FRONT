@@ -9,5 +9,6 @@
 
 {{-- Custom JS Files --}}
 <script src="{{ asset('js/navbar.js') }}"></script>
+<script src="{{ asset('js/carousel.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('js/secondary.js') }}"></script>
