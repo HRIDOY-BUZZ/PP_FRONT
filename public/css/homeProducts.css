@@ -96,14 +96,15 @@
 
 /* ============= PRODUCTS START ============= */
 
-.store-div {
+
+/* .store-div {
     box-shadow: 0px 3px 10px silver;
     border-radius: 15px;
 }
 
 .store-div .single-product {
     border-radius: 15px;
-}
+} */
 
 .single-product {
     text-decoration: none;
