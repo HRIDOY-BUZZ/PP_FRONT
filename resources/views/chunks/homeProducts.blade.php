@@ -450,7 +450,7 @@
     </div>
 </section>
 
-{{-- <section class="container">
+<section class="container">
     <div id="stores">
         <div class="tabs-header">
             <div class="container">
@@ -486,4 +486,4 @@
             </section>
         </div>
     </div>
-</section> --}}
+</section>
