@@ -1,16 +1,16 @@
 <section class="container">
     <div id="brands">
         <div class="products-body">
-            <section class="slider stores">
+            <section class="slider brands">
                 @for ($i=1;$i<12;$i++)
-                    <div class="store-div">
+                    <div class="brand-div">
                         <div class="single-product">
                             <div class="product-image">
                                 <img src="{{ asset('images/stores/nike.jpg') }}">
                             </div>
                         </div>
                     </div>
-                    <div class="store-div">
+                    <div class="brand-div">
                         <div class="single-product">
                             <div class="product-image">
                                 <img src="{{ asset('images/stores/puma.jpg') }}">
