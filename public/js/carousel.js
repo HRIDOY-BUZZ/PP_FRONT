@@ -83,6 +83,7 @@ $(".brands").slick({
     infinite: true,
     centerMode: false,
     lazyLoad: 'ondemand',
+    fade: false,
     slidesToShow: 8,
     slidesToScroll: 1,
     variableWidth: false,
