@@ -22,17 +22,17 @@
                 </a>
                 <a href="" target="_blank">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Start Selling </font>
+                        <font style="vertical-align: inherit;">Current Events</font>
                     </font>
                 </a>
                 <a href="" class="" target="_blank">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">Promo</font>
+                        <font style="vertical-align: inherit;">Best Deals</font>
                     </font>
                 </a>
                 <a href="" target="_blank">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;">PricePond Care</font>
+                        <font style="vertical-align: inherit;">Contact Us</font>
                     </font>
                 </a>
             </div>

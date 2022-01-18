@@ -207,7 +207,7 @@ nav {
     z-index: 3;
     background-color: rgb(243, 244, 245);
     border-bottom: 1px solid rgb(243, 243, 243);
-    position: fixed;
+    position: absolute;
     -webkit-box-pack: justify;
     justify-content: space-between;
     left: 0px;
