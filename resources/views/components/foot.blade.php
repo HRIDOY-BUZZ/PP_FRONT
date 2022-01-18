@@ -5,7 +5,7 @@
 <script src="{{ asset('fontawesome/source/all.min.js') }}"></script>
 
 {{-- SLICK JS --}}
-<script src="{{ asset('slick/slick.js') }}"></script>
+<script src="{{ asset('slick/slick.min.js') }}"></script>
 
 {{-- Custom JS Files --}}
 <script src="{{ asset('js/navbar.js') }}"></script>
