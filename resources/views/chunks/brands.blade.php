@@ -1,5 +1,5 @@
 <section class="container">
-    <div id="brands">
+    {{-- <div id="brands">
         <div class="products-body">
             <section class="slider brands">
                 @for ($i=1;$i<6;$i++)
@@ -20,5 +20,5 @@
                 @endfor
             </section>
         </div>
-    </div>
+    </div> --}}
 </section>

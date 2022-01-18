@@ -78,45 +78,45 @@ $(".stores").slick({
     nextArrow: ''
 });
 
-$(".brands").slick({
-    dots: false,
-    infinite: true,
-    centerMode: false,
-    // lazyLoad: 'ondemand',
-    fade: false,
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    variableWidth: false,
-    autoplay: true,
-    autoplaySpeed: 0,
-    speed: 5000, //Transision speed
-    cssEase: 'linear',
-    responsive: [{
-        breakpoint: 1368,
-        settings: {
-            slidesToShow: 7,
-        }
-    }, {
-        breakpoint: 1200,
-        settings: {
-            slidesToShow: 5,
-        }
-    }, {
-        breakpoint: 992,
-        settings: {
-            slidesToShow: 4,
-        }
-    }, {
-        breakpoint: 540,
-        settings: {
-            slidesToShow: 3,
-        }
-    }, {
-        breakpoint: 360,
-        settings: {
-            slidesToShow: 2,
-        }
-    }],
-    prevArrow: '',
-    nextArrow: ''
-});
+// $(".brands").slick({
+//     dots: false,
+//     infinite: true,
+//     centerMode: false,
+//     // lazyLoad: 'ondemand',
+//     fade: false,
+//     slidesToShow: 8,
+//     slidesToScroll: 1,
+//     variableWidth: false,
+//     autoplay: true,
+//     autoplaySpeed: 0,
+//     speed: 5000, //Transision speed
+//     cssEase: 'linear',
+//     responsive: [{
+//         breakpoint: 1368,
+//         settings: {
+//             slidesToShow: 7,
+//         }
+//     }, {
+//         breakpoint: 1200,
+//         settings: {
+//             slidesToShow: 5,
+//         }
+//     }, {
+//         breakpoint: 992,
+//         settings: {
+//             slidesToShow: 4,
+//         }
+//     }, {
+//         breakpoint: 540,
+//         settings: {
+//             slidesToShow: 3,
+//         }
+//     }, {
+//         breakpoint: 360,
+//         settings: {
+//             slidesToShow: 2,
+//         }
+//     }],
+//     prevArrow: '',
+//     nextArrow: ''
+// });
