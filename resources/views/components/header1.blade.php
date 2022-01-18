@@ -1,43 +1,45 @@
 <header>
     <div class="topnav">
-        <div class="topnav-left">
-            <i class=""></i>
-            <a href="/mobile-apps/" target="_blank" rel="noopener noreferrer" class="css-7k41it">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;"><i class="fas fa-mobile-alt"></i> &nbsp Download the PricePond App</font>
-                </font>
-            </a>
-        </div>
-        <div class="topnav-right float-end">
-            <a href="" target="_blank">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">About PricePond</font>
-                </font>
-            </a>
-            <a href="" target="_blank">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">PricePond Partners</font>
-                </font>
-            </a>
-            <a href="" target="_blank">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Start Selling </font>
-                </font>
-            </a>
-            <a href="" class="" target="_blank">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Promo</font>
-                </font>
-            </a>
-            <a href="" target="_blank">
-                <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">PricePond Care</font>
-                </font>
-            </a>
+        <div class="container pe-0">
+            <div class="topnav-left float-start">
+                <i class=""></i>
+                <a href="/mobile-apps/" target="_blank" rel="noopener noreferrer" class="css-7k41it">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Australia's Best Online Shopping &amp; Price Comparison Site</font>
+                    </font>
+                </a>
+            </div>
+            <div class="topnav-right float-end">
+                <a href="" target="_blank">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">About PricePond</font>
+                    </font>
+                </a>
+                <a href="" target="_blank">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">PricePond Partners</font>
+                    </font>
+                </a>
+                <a href="" target="_blank">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Start Selling </font>
+                    </font>
+                </a>
+                <a href="" class="" target="_blank">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Promo</font>
+                    </font>
+                </a>
+                <a href="" target="_blank">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">PricePond Care</font>
+                    </font>
+                </a>
+            </div>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#" style="">
                 <img alt="pp-logo" class="pp-logo" src="{{ asset('images/logo.png') }}">
             </a>
@@ -45,9 +47,8 @@
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link categories dropdown-toggle d-flex" href="#" data-bs-toggle="dropdown">
-                            <p class="cat-title">Shop by<br>category</p>
-                            <p class="cat-chev"><i class="far fa-chevron-down"></i></p>
-                            
+                            <p class="cat-title my-2">Categories <i class="far fa-chevron-down"></i></p>
+                            {{-- <p class="cat-chev"><i class="far fa-chevron-down"></i></p> --}}
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#"> Dropdown item 1 </a></li>
@@ -103,15 +104,15 @@
                 </div>
             </div>
         </div>
-            <div class="nav-bottom">
-                <div class="top-cats">
-                    <a href="#">Laptops</a>
-                    <a href="#">Smart Phones</a>
-                    <a href="#">Washing Machines</a>
-                    <a href="#">Refrigerators</a>
-                    <a href="#">Printers</a>
-                    <a href="#">Monitors</a>
-                </div>
+        <div class="nav-bottom container">
+            <div class="top-cats mx-auto">
+                <a href="#">Laptops</a>
+                <a href="#">Smart Phones</a>
+                <a href="#">Washing Machines</a>
+                <a href="#">Refrigerators</a>
+                <a href="#">Printers</a>
+                <a href="#">Monitors</a>
             </div>
+        </div>
     </nav>
 </header>

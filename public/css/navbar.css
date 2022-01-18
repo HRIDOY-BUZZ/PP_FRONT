@@ -207,7 +207,6 @@ nav {
     z-index: 3;
     background-color: rgb(243, 244, 245);
     border-bottom: 1px solid rgb(243, 243, 243);
-    padding: 0px 32px;
     position: fixed;
     -webkit-box-pack: justify;
     justify-content: space-between;
@@ -242,15 +241,11 @@ nav {
 
 /* =================== BOTTOM NAV START ======================*/
 
-.nav-bottom {
-    margin-left: 30%;
-}
-
 .top-cats {
     display: flex;
     margin: 0px;
     justify-content: space-around;
-    width: 50%;
+    /* width: 50%; */
 }
 
 .top-cats a {
