@@ -2,7 +2,7 @@ $(".center").slick({
     dots: false,
     infinite: true,
     centerMode: false,
-    lazyLoad: 'ondemand',
+    lazyLoad: 'progressive',
     slidesToShow: 6,
     slidesToScroll: 1,
     variableWidth: false,
