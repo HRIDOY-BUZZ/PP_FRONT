@@ -16,16 +16,20 @@
             <section class="center slider">
                 @for ($i=1;$i<10;$i++)
                     <div class="single-product">
-                        <div class="product-image">
-                            <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
-                        </div>
+                        <a href="">
+                            <div class="product-image">
+                                <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
+                            </div>
+                        </a>
                         <div class="shop-name">
                             <p>ROBERT'S STORE</p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
                             <div class="product-title">
-                                <p class="">Samsung UHD TV 24 inch</p>
+                                <a href="">
+                                    <p class="">Samsung UHD TV 24 inch</p>
+                                </a>
                             </div>
                             {{-- <div class="stars">
                                 @for ($s=0;$s<4;$s++)
@@ -61,16 +65,20 @@
             <section class="center slider">
                 @for ($i=1;$i<10;$i++)
                     <div class="single-product">
-                        <div class="product-image">
-                            <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
-                        </div>
+                        <a href="">
+                            <div class="product-image">
+                                <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
+                            </div>
+                        </a>
                         <div class="shop-name">
                             <p>ROBERT'S STORE</p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
                             <div class="product-title">
-                                <p class="">Samsung UHD TV 24 inch</p>
+                                <a href="">
+                                    <p class="">Samsung UHD TV 24 inch</p>
+                                </a>
                             </div>
                             {{-- <div class="stars">
                                 @for ($s=0;$s<4;$s++)

@@ -138,6 +138,14 @@
     line-height: 1.3;
 }
 
+.product-title a {
+    text-decoration: none;
+}
+
+.product-title a:hover {
+    text-decoration: underline;
+}
+
 .stars {
     font-size: 12px;
     line-height: 1.6;

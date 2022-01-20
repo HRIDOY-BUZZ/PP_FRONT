@@ -293,6 +293,12 @@ nav {
     }
 }
 
+@media all and (max-width: 480px) {
+    .topnav a {
+        font-size: 10px;
+    }
+}
+
 
 /* =================== TOP NAV END ======================*/
 
@@ -303,7 +309,12 @@ nav {
     display: flex;
     margin: 0px;
     justify-content: space-around;
-    /* width: 50%; */
+}
+
+@media all and (max-width: 500px) {
+    .top-cats {
+        display: none;
+    }
 }
 
 .top-cats a {
