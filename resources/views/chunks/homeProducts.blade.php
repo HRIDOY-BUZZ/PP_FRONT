@@ -1,3 +1,11 @@
+{{-- @if (isset($data))
+    @foreach ($data as $d)
+        {{ dd($d) }}
+    @endforeach
+@endif --}}
+@php
+    $root = "https://www.pricepond.com.au/prod_img/";
+@endphp
 <section class="container">
     <div id="hottest-deals">
         <div class="tabs-header">
@@ -14,21 +22,25 @@
         </div>
         <div class="products-body">
             <section class="center slider">
-                @for ($i=1;$i<10;$i++)
+                @foreach ($data1 as $d)
                     <div class="single-product">
-                        <a href="">
+                        <a href="{{ $d->URL }}">
                             <div class="product-image">
-                                <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
+                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
+                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                @else
+                                    <img src="{{ $d->ImageURL }}">
+                                @endif
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p>ROBERT'S STORE</p>
+                            <p>{{ substr($d->shop_name,0,24) }}</p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
                             <div class="product-title">
-                                <a href="">
-                                    <p class="">Samsung UHD TV 24 inch</p>
+                                <a href="{{ $d->URL }}">
+                                    <p class="">{{ $d->Name }}</p>
                                 </a>
                             </div>
                             {{-- <div class="stars">
@@ -39,11 +51,11 @@
                                 <span class="count">04</span>
                             </div> --}}
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>599.60</p>
+                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                             </div>
                         </div>
                     </div>
-                @endfor
+                @endforeach
             </section>
         </div>
     </div>
@@ -63,21 +75,25 @@
         </div>
         <div class="products-body">
             <section class="center slider">
-                @for ($i=1;$i<10;$i++)
+                @foreach ($data2 as $d)
                     <div class="single-product">
-                        <a href="">
+                        <a href="{{ $d->URL }}">
                             <div class="product-image">
-                                <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
+                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
+                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                @else
+                                    <img src="{{ $d->ImageURL }}">
+                                @endif
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p>ROBERT'S STORE</p>
+                            <p>{{ substr($d->shop_name,0,22) }}</p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
                             <div class="product-title">
-                                <a href="">
-                                    <p class="">Samsung UHD TV 24 inch</p>
+                                <a href="{{ $d->URL }}">
+                                    <p class="">{{ $d->Name }}</p>
                                 </a>
                             </div>
                             {{-- <div class="stars">
@@ -88,11 +104,11 @@
                                 <span class="count">04</span>
                             </div> --}}
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>599.60</p>
+                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                             </div>
                         </div>
                     </div>
-                @endfor
+                @endforeach
             </section>
         </div>
     </div>
@@ -112,18 +128,26 @@
         </div>
         <div class="products-body">
             <section class="center slider">
-                @for ($i=1;$i<10;$i++)
+                @foreach ($data3 as $d)
                     <div class="single-product">
-                        <div class="product-image">
-                            <img src="https://demo2.drfuri.com/martfury12/wp-content/uploads/sites/53/2013/06/18a-300x300.jpg">
-                        </div>
+                        <a href="{{ $d->URL }}">
+                            <div class="product-image">
+                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
+                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                @else
+                                    <img src="{{ $d->ImageURL }}">
+                                @endif
+                            </div>
+                        </a>
                         <div class="shop-name">
-                            <p>ROBERT'S STORE</p>
+                            <p>{{ substr($d->shop_name,0,22) }}</p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
                             <div class="product-title">
-                                <p class="">Samsung UHD TV 24 inch</p>
+                                <a href="{{ $d->URL }}">
+                                    <p class="">{{ $d->Name }}</p>
+                                </a>
                             </div>
                             {{-- <div class="stars">
                                 @for ($s=0;$s<4;$s++)
@@ -133,11 +157,11 @@
                                 <span class="count">04</span>
                             </div> --}}
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>599.60</p>
+                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                             </div>
                         </div>
                     </div>
-                @endfor
+                @endforeach
             </section>
         </div>
     </div>
@@ -472,7 +496,7 @@
                 @for ($i=1;$i<6;$i++)
                     <div class="store-div">
                         <div class="single-product">
-                            <div class="product-image">
+                            <div class="store-image">
                                 <img src="{{ asset('images/stores/nike.jpg') }}">
                             </div>
                             <div class="shop-name">
@@ -482,7 +506,7 @@
                     </div>
                     <div class="store-div">
                         <div class="single-product">
-                            <div class="product-image">
+                            <div class="store-image">
                                 <img src="{{ asset('images/stores/puma.jpg') }}">
                             </div>
                             <div class="shop-name">

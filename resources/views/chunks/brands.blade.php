@@ -5,14 +5,14 @@
                 @for ($i=1;$i<6;$i++)
                     <div class="brand-div">
                         <div class="single-product">
-                            <div class="product-image">
+                            <div class="brand-image">
                                 <img src="{{ asset('images/stores/nike.jpg') }}">
                             </div>
                         </div>
                     </div>
                     <div class="brand-div">
                         <div class="single-product">
-                            <div class="product-image">
+                            <div class="brand-image">
                                 <img src="{{ asset('images/stores/puma.jpg') }}">
                             </div>
                         </div>
