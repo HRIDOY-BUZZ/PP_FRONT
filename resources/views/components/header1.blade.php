@@ -40,7 +40,7 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand" href="#" style="">
+            <a class="navbar-brand" href="{{ route('home') }}" style="">
                 <img alt="pp-logo" class="pp-logo" src="{{ asset('images/logo.png') }}">
             </a>
                         {{-- <a class="nav-link categories dropdown-toggle d-flex" href="#" data-bs-toggle="dropdown">

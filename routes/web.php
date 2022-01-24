@@ -16,6 +16,4 @@ Route::get('/optimize', function () {
     Artisan::call('optimize:clear');
 });
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('home');
