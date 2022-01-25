@@ -165,7 +165,28 @@
             </section>
         </div>
     </div>
-    
+</section>
+    <div id="multi-grid" style="background-image: url('https://electro.madrasthemes.com/wp-content/uploads/2017/02/HomeV3ProductBackground.jpg')">
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12 col-6">
+                    <div class="grid-left-img mx-auto">
+                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2021/03/da-banner-3-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12 col-6">
+                    <div class="tabs-header" style="background-color: #ed3a43">
+                        <div class="container">
+                            <div class="text-center">
+                                <h2>Great Deals</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<section class="container">
     <div id="top-laptops">
         <div class="tabs-header">
             <div class="container">
