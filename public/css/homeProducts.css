@@ -90,6 +90,21 @@
     opacity: 1;
 }
 
+.slick-dots li button::before {
+    font-size: 20px;
+    line-height: 1px;
+    color: #ED3A43;
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 1;
+    color: #ED3A43;
+}
+
+.slick-dots {
+    bottom: -40px;
+}
+
 
 /* ============= INNER SECTION SLICK END ============= */
 
@@ -193,6 +208,17 @@
     height: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+.multi-grid-product {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+.multi-grid-product img {
+    width: 100%;
+    height: auto;
 }
 
 

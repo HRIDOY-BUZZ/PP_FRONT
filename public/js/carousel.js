@@ -120,3 +120,21 @@ $(".brands").slick({
     prevArrow: '',
     nextArrow: ''
 });
+
+$(".multi-grid").slick({
+    dots: true,
+    draggable: true,
+    infinite: false,
+    centerMode: false,
+    lazyLoad: 'progressive',
+    fade: false,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    variableWidth: false,
+    autoplay: false,
+    rows: 2,
+    slidesToShow: 2,
+
+    prevArrow: '',
+    nextArrow: ''
+});

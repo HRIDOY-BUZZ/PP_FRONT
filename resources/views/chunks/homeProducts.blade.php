@@ -169,18 +169,47 @@
     <div id="multi-grid" style="background-image: url('https://electro.madrasthemes.com/wp-content/uploads/2017/02/HomeV3ProductBackground.jpg')">
         <div class="container my-5 py-5">
             <div class="row">
-                <div class="col-lg-6 col-xs-12 col-6">
+                <div class="col-lg-5 col-xs-12 col-5">
                     <div class="grid-left-img mx-auto">
                         <img src="https://electro.madrasthemes.com/wp-content/uploads/2021/03/da-banner-3-1.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6 col-xs-12 col-6">
+                <div class="col-lg-7 col-xs-12 col-7">
                     <div class="tabs-header" style="background-color: #ed3a43">
                         <div class="container">
                             <div class="text-center">
-                                <h2>Great Deals</h2>
+                                <h2 class="text-white">Great Deals</h2>
                             </div>
                         </div>
+                    </div>
+                    <div class="tabs-body">
+                        <section class="row mt-3 mx-0 slider multi-grid">
+                            @for ($i=1;$i<13;$i++)
+                                <div class="col-6 px-0">
+                                    <div class="multi-grid-product">
+                                        <div class="row mx-1">
+                                            <div class="col-6">
+                                                <img src="https://images.getprice.com.au/products/MacBook%20Air%2013%20inch.jpg" alt="">
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="product-details">
+                                                    <div class="shop-name">
+                                                        <p>TECHRADAR</p>
+                                                    </div>
+                                                    <div class="product-title">
+                                                        <p class="">Apple MacBook Air 2017 13 inch</p>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <p class="price-amount"><span class="currency">$</span>1692.00</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endfor
+                        </section>
                     </div>
                 </div>
             </div>
