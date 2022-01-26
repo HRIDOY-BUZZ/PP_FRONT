@@ -11,11 +11,11 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-9">
                         <h2>Today's Hottest Deals</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
-                        <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
+                    <div class="col-3 tab-view">
+                        <a href="#" class="float-end"><button class="btn btn-view">View All</button></a>
                     </div>
                 </div>
             </div>
@@ -64,11 +64,11 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-9">
                         <h2>Featured Products</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
-                        <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
+                    <div class="col-3 tab-view">
+                        <a href="#" class="float-end"><button class="btn btn-view">View All</button></a>
                     </div>
                 </div>
             </div>
@@ -117,11 +117,11 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-9">
                         <h2>Today's Top Shopping</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
-                        <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
+                    <div class="col-3 tab-view">
+                        <a href="#" class="float-end"><button class="btn btn-view">View All</button></a>
                     </div>
                 </div>
             </div>
@@ -166,15 +166,16 @@
         </div>
     </div>
 </section>
+
     <div id="multi-grid" style="background-image: url('https://electro.madrasthemes.com/wp-content/uploads/2017/02/HomeV3ProductBackground.jpg')">
         <div class="container my-5 py-5">
             <div class="row">
-                <div class="col-lg-5 col-xs-12 col-5">
+                <div class="col-lg-5 col-xs-12">
                     <div class="grid-left-img mx-auto">
                         <img src="https://electro.madrasthemes.com/wp-content/uploads/2021/03/da-banner-3-1.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-7 col-xs-12 col-7">
+                <div class="col-lg-7 col-xs-12">
                     <div class="tabs-header" style="background-color: #ed3a43">
                         <div class="container">
                             <div class="text-center">
@@ -183,9 +184,9 @@
                         </div>
                     </div>
                     <div class="tabs-body">
-                        <section class="row mt-3 mx-0 slider multi-grid">
+                        <section class="mt-3 mx-0 slider multi-grid">
                             @for ($i=1;$i<13;$i++)
-                                <div class="col-6 px-0">
+                                <div class="px-0">
                                     <div class="multi-grid-product">
                                         <div class="row mx-1">
                                             <div class="col-6">
@@ -215,15 +216,16 @@
             </div>
         </div>
     </div>
-<section class="container">
+
+<!-- <section class="container">
     <div id="top-laptops">
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Top Laptops</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -265,10 +267,10 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Top Smartphones</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -310,10 +312,10 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Top Printers</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -355,10 +357,10 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Top Televisions</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -400,10 +402,10 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Monitors</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -445,10 +447,10 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Refrigerators</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -490,10 +492,10 @@
         <div class="tabs-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-xs-12">
+                    <div class="col-10">
                         <h2>Washing Machines</h2>
                     </div>
-                    <div class="col-md-2 col-xs-12 tab-view">
+                    <div class="col-2 tab-view">
                         <a href="#" class="float-end"><button class="btn btn-view px-3 py-2">View All</button></a>
                     </div>
                 </div>
@@ -530,7 +532,7 @@
             </section>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="container">
     <div id="stores">

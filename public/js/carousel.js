@@ -128,13 +128,17 @@ $(".multi-grid").slick({
     centerMode: false,
     lazyLoad: 'progressive',
     fade: false,
-    slidesToShow: 4,
     slidesToScroll: 2,
     variableWidth: false,
     autoplay: false,
     rows: 2,
     slidesToShow: 2,
-
+    responsive: [{
+        breakpoint: 640,
+        settings: {
+            slidesToShow: 1,
+        }
+    }],
     prevArrow: '',
     nextArrow: ''
 });

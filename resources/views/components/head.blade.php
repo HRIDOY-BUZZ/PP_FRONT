@@ -6,8 +6,8 @@
 <link rel="stylesheet" href="{{ asset('fontawesome/source/all.min.css') }}">
 
 {{-- SLICK CSS --}}
-<link rel="stylesheet" href="https://www.xitsolution.com/slick/slick.css">
-<link rel="stylesheet" href="https://www.xitsolution.com/slick/slick-theme.css">
+<link rel="stylesheet" href="{{ asset('slick/slick.css') }}">
+<link rel="stylesheet" href="{{ asset('slick/slick-theme.css') }}">
 
 {{-- Google Fonts --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
