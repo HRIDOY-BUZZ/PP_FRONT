@@ -15,15 +15,13 @@ class BaseController extends Controller
                 )
             )
         );
-        $url1 = "https://www.pricepond.com.au/api/home.php?slice=1";
-        $url2 = "https://www.pricepond.com.au/api/home.php?slice=2";
-        $url3 = "https://www.pricepond.com.au/api/home.php?slice=3";
-        $json1 = file_get_contents($url1, false, $context);
-        $json2 = file_get_contents($url2, false, $context);
-        $json3 = file_get_contents($url3, false, $context);
-        $data1 = json_decode($json1);
-        $data2 = json_decode($json2);
-        $data3 = json_decode($json3);
+        $url = "https://www.pricepond.com.au/api/home.php?slice=1";
+        $json = file_get_contents($url, false, $context);
+        $data = json_decode($json);
+        
+        $data1 = array_slice($data, 0, 12);
+        $data2 = array_slice($data, 12, 12);
+        $data3 = array_slice($data, 24, 12);
         return view('pages.home', compact('data1', 'data2', 'data3'));
     }
 }
