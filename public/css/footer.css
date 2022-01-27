@@ -46,6 +46,12 @@ footer {
     text-decoration: none;
 }
 
+@media all and (max-width: 768px) {
+    .footer-links a {
+        display: block !important;
+    }
+}
+
 .footer-links p {
     color: rgba(49, 53, 59, 0.68) !important;
     font-size: 12px;
