@@ -103,6 +103,12 @@
         margin-left: 0;
     }
     
+    @media all and (max-width: 768px) {
+        .carousel-indicators {
+            margin-left: 20px;
+        }
+    }
+    
     .carousel-indicators button {
         border-radius: 50% !important;
         width: 9px !important;
