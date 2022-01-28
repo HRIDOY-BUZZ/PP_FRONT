@@ -171,9 +171,53 @@
         <div class="container my-5 py-5">
             <div class="row">
                 <div class="col-lg-5 col-xs-12">
-                    <div class="grid-left-img mx-auto">
-                        <img src="https://electro.madrasthemes.com/wp-content/uploads/2021/03/da-banner-3-1.png" alt="">
-                    </div>
+                    <section class="slider multi-grid-big">
+                        @foreach ($data4 as $d)
+                            <div class="multi-grid-left single-product">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-6 col-6">
+                                        <a href="{{ $d->URL }}">
+                                            <div class="product-image">
+                                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
+                                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                                @else
+                                                    <img src="{{ $d->ImageURL }}">
+                                                @endif
+                                            </div>
+                                        </a>
+                                        <div class="shop-name">
+                                            <p>
+                                                @if(strlen($d->shop_name)>20)
+                                                    {{ substr($d->shop_name,0,20)."..." }}
+                                                @else
+                                                    {{ $d->shop_name }}
+                                                @endif
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-6 col-6">
+                                        <div class="product-details">
+                                            <div class="product-title">
+                                                <a href="{{ $d->URL }}">
+                                                    <p class="">
+                                                        @if(strlen($d->Name)>35)
+                                                            {{ substr($d->Name,0,35)."..." }}
+                                                        @else
+                                                            {{ $d->Name }}
+                                                        @endif
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="product-price">
+                                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- <hr class="product-hr"> --}}
+                            </div>
+                        @endforeach
+                    </section>
                 </div>
                 <div class="col-lg-7 col-xs-12">
                     <div class="tabs-header" style="background-color: #ed3a43">
@@ -185,31 +229,42 @@
                     </div>
                     <div class="tabs-body">
                         <section class="mt-3 mx-0 slider multi-grid">
-                            @for ($i=1;$i<13;$i++)
+                            @foreach ($data4 as $d)
                                 <div class="px-0">
                                     <div class="multi-grid-product">
                                         <div class="row mx-1">
                                             <div class="col-6">
-                                                <img src="https://images.getprice.com.au/products/MacBook%20Air%2013%20inch.jpg" alt="">
+                                                <img src="{{ $root.$d->Shop."/".$d->Image }}" alt="{{ $d->Name }}">
                                             </div>
                                             <div class="col-6">
                                                 <div class="product-details">
                                                     <div class="shop-name">
-                                                        <p>TECHRADAR</p>
+                                                        <p>
+                                                            @if(strlen($d->shop_name)>20)
+                                                                {{ substr($d->shop_name,0,20)."..." }}
+                                                            @else
+                                                                {{ $d->shop_name }}
+                                                            @endif
+                                                        </p>
                                                     </div>
                                                     <div class="product-title">
-                                                        <p class="">Apple MacBook Air 2017 13 inch</p>
+                                                        <p class="">
+                                                            @if(strlen($d->Name)>35)
+                                                                {{ substr($d->Name,0,35)."..." }}
+                                                            @else
+                                                                {{ $d->Name }}
+                                                            @endif
+                                                        </p>
                                                     </div>
                                                     <div class="product-price">
-                                                        <p class="price-amount"><span class="currency">$</span>1692.00</p>
+                                                        <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            @endfor
+                            @endforeach
                         </section>
                     </div>
                 </div>

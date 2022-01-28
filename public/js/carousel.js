@@ -137,8 +137,25 @@ $(".multi-grid").slick({
         breakpoint: 640,
         settings: {
             slidesToShow: 1,
+            slidesToScroll: 1,
         }
     }],
+    prevArrow: '',
+    nextArrow: ''
+});
+$(".multi-grid-big").slick({
+    dots: false,
+    draggable: true,
+    infinite: true,
+    centerMode: false,
+    autoplaySpeed: 5000,
+    lazyLoad: 'progressive',
+    fade: false,
+    slidesToScroll: 1,
+    variableWidth: false,
+    autoplay: true,
+    rows: 1,
+    slidesToShow: 1,
     prevArrow: '',
     nextArrow: ''
 });
