@@ -6,7 +6,7 @@
 @php
     $root = "https://www.pricepond.com.au/prod_img/";
 @endphp
-<section class="container">
+<section class="container px-0">
     <div id="hottest-deals">
         <div class="tabs-header">
             <div class="container">
@@ -167,24 +167,15 @@
     </div>
 </section>
 
-    <div id="multi-grid" style="background: #efefef">
-        <div class="container my-5 py-5">
+    <div id="multi-grid">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-xs-12">
-                    <section class="slider multi-grid-big mt-0">
+                <div class="col-lg-4 col-xs-12 my-5">
+                    <section class="slider multi-grid-big mt-0 py-4">
                         @foreach ($data4 as $d)
                             <div class="multi-grid-left single-product">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-6 col-6">
-                                        <a href="{{ $d->URL }}">
-                                            <div class="product-image">
-                                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
-                                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
-                                                @else
-                                                    <img src="{{ $d->ImageURL }}">
-                                                @endif
-                                            </div>
-                                        </a>
                                         <div class="shop-name">
                                             <p>
                                                 @if(strlen($d->shop_name)>20)
@@ -194,12 +185,21 @@
                                                 @endif
                                             </p>
                                         </div>
+                                        <a href="{{ $d->URL }}">
+                                            <div class="product-image">
+                                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
+                                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                                @else
+                                                    <img src="{{ $d->ImageURL }}">
+                                                @endif
+                                            </div>
+                                        </a>
                                     </div>
                                     <div class="col-lg-12 col-md-6 col-6">
-                                        <div class="product-details">
+                                        <div class="product-details mt-5">
                                             <div class="product-title">
                                                 <a href="{{ $d->URL }}">
-                                                    <p class="">
+                                                    <p class="mgbp-name">
                                                         @if(strlen($d->Name)>35)
                                                             {{ substr($d->Name,0,35)."..." }}
                                                         @else
@@ -209,7 +209,7 @@
                                                 </a>
                                             </div>
                                             <div class="product-price">
-                                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                                <p class="price-amount mb-0"><span class="currency">$</span>{{ $d->Price }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@
                         @endforeach
                     </section>
                 </div>
-                <div class="col-lg-7 col-xs-12">
+                <div class="col-lg-8 col-xs-12 my-5 py-5"  style="background: #efefef">
                     <div class="tabs-header" style="background-color: #ed3a43">
                         <div class="container">
                             <div class="text-center">
@@ -233,10 +233,10 @@
                                 <div class="px-0">
                                     <div class="multi-grid-product">
                                         <div class="row mx-1">
-                                            <div class="col-6">
+                                            <div class="col-5">
                                                 <img src="{{ $root.$d->Shop."/".$d->Image }}" alt="{{ $d->Name }}">
                                             </div>
-                                            <div class="col-6">
+                                            <div class="col-7">
                                                 <div class="product-details">
                                                     <div class="shop-name">
                                                         <p>
@@ -589,7 +589,7 @@
     </div>
 </section> -->
 
-<section class="container">
+<section class="container px-0">
     <div id="stores">
         <div class="tabs-header">
             <div class="container">
