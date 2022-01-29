@@ -167,11 +167,11 @@
     </div>
 </section>
 
-    <div id="multi-grid" style="background-image: url('https://electro.madrasthemes.com/wp-content/uploads/2017/02/HomeV3ProductBackground.jpg')">
+    <div id="multi-grid" style="background: #efefef">
         <div class="container my-5 py-5">
             <div class="row">
                 <div class="col-lg-5 col-xs-12">
-                    <section class="slider multi-grid-big">
+                    <section class="slider multi-grid-big mt-0">
                         @foreach ($data4 as $d)
                             <div class="multi-grid-left single-product">
                                 <div class="row">
