@@ -25,8 +25,17 @@ class BaseController extends Controller
             $data1 = array_slice($data, 0, 12);
             $data2 = array_slice($data, 12, 12);
             $data3 = array_slice($data, 24, 12);
-            $data4 = array_slice($data, 36, 12);
         }
-        return view('pages.home', compact('data1', 'data2', 'data3', 'data4'));
+
+        $url = "https://www.pricepond.com.au/api/home.php?slice=slider";
+        $json = file_get_contents($url, false, $context);
+        $data4 = json_decode($json);
+
+        $url = "https://www.pricepond.com.au/api/home.php?slice=stores";
+        $json = file_get_contents($url, false, $context);
+        $stores = json_decode($json);
+
+
+        return view('pages.home', compact('data1', 'data2', 'data3', 'data4', 'stores'));
     }
 }

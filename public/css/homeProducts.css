@@ -215,6 +215,11 @@
 .store-div .single-product {
     box-shadow: 0 0 8px 0 #ccc;
     border-radius: 20px;
+    height: 130px;
+}
+
+.store-image img {
+    max-height: 100px;
 }
 
 
@@ -232,6 +237,13 @@
     width: 85%;
     margin-left: 0;
     height: 100%;
+}
+
+@media all and (max-width: 991px) {
+    .multi-grid-big {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .multi-grid-left {
@@ -256,6 +268,13 @@
 .multi-grid-left .product-image img {
     height: 225px;
     max-width: 300px;
+}
+
+@media all and (max-width: 768px) {
+    .multi-grid-left .product-image img {
+        height: 150px;
+        max-width: 300px;
+    }
 }
 
 .multi-grid-left .shop-name p {

@@ -1,10 +1,6 @@
-{{-- @if (isset($data))
-    @foreach ($data as $d)
-        {{ dd($d) }}
-    @endforeach
-@endif --}}
 @php
     $root = "https://www.pricepond.com.au/prod_img/";
+    $root2 = "https://www.pricepond.com.au/merchant_image/";
 @endphp
 <section class="container px-0">
     <div id="hottest-deals">
@@ -185,12 +181,12 @@
                                                 @endif
                                             </p>
                                         </div>
-                                        <a href="{{ $d->URL }}">
+                                        <a href="">
                                             <div class="product-image">
-                                                @if (isset($d->Image) && $d->Image != null && $d->Image!="")
-                                                    <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                                @if (isset($d->Image) && $d->Image != NULL && $d->Image!="")
+                                                    <img src="{{ $root.$d->Shop."/".$d->Image }}" alt="{{ $d->Name }}">
                                                 @else
-                                                    <img src="{{ $d->ImageURL }}">
+                                                    <img src="{{ $d->ImageURL }}" alt="{{ $d->Name }}">
                                                 @endif
                                             </div>
                                         </a>
@@ -198,7 +194,7 @@
                                     <div class="col-lg-12 col-md-6 col-6">
                                         <div class="product-details mt-5">
                                             <div class="product-title">
-                                                <a href="{{ $d->URL }}">
+                                                <a href="">
                                                     <p class="mgbp-name">
                                                         @if(strlen($d->Name)>35)
                                                             {{ substr($d->Name,0,35)."..." }}
@@ -234,7 +230,11 @@
                                     <div class="multi-grid-product">
                                         <div class="row mx-1">
                                             <div class="col-5">
-                                                <img src="{{ $root.$d->Shop."/".$d->Image }}" alt="{{ $d->Name }}">
+                                                @if (isset($d->Image) && $d->Image != NULL && $d->Image!="")
+                                                    <img src="{{ $root.$d->Shop."/".$d->Image }}" alt="{{ $d->Name }}">
+                                                @else
+                                                    <img src="{{ $d->ImageURL }}" alt="{{ $d->Name }}">
+                                                @endif
                                             </div>
                                             <div class="col-7">
                                                 <div class="product-details">
@@ -600,28 +600,18 @@
         </div>
         <div class="products-body">
             <section class="slider stores">
-                @for ($i=1;$i<6;$i++)
+                @foreach ($stores as $d)
                     <div class="store-div">
                         <div class="single-product">
                             <div class="store-image">
-                                <img src="{{ asset('images/stores/nike.jpg') }}">
+                                <img src="{{ $root2.$d->Image }}">
                             </div>
                             <div class="shop-name">
-                                <p>NIKE INTERNATIONAL</p>
+                                <p>{{ $d->shop_name }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="store-div">
-                        <div class="single-product">
-                            <div class="store-image">
-                                <img src="{{ asset('images/stores/puma.jpg') }}">
-                            </div>
-                            <div class="shop-name">
-                                <p>PUMA INTERNATIONAL</p>
-                            </div>
-                        </div>
-                    </div>
-                @endfor
+                @endforeach
             </section>
         </div>
     </div>
