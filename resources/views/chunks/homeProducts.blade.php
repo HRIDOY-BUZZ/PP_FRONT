@@ -602,14 +602,22 @@
             <section class="slider stores">
                 @foreach ($stores as $d)
                     <div class="store-div">
-                        <div class="single-product">
-                            <div class="store-image">
-                                <img src="{{ $root2.$d->Image }}">
+                        <a href="
+                            @if(strpos($d->shop_url, "http") !== false)
+                                {{ $d->shop_url }}
+                            @else
+                                {{ "https://".$d->shop_url }}
+                            @endif
+                        " target="_blank">
+                            <div class="single-product">
+                                <div class="store-image">
+                                    <img src="{{ $root2.$d->Image }}">
+                                </div>
+                                <div class="shop-name">
+                                    <p>{{ $d->shop_name }}</p>
+                                </div>
                             </div>
-                            <div class="shop-name">
-                                <p>{{ $d->shop_name }}</p>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 @endforeach
             </section>

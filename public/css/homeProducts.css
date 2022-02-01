@@ -222,6 +222,10 @@
     max-height: 100px;
 }
 
+.store-div a {
+    text-decoration: none;
+}
+
 
 /* ============= PRODUCTS END ============= */
 
