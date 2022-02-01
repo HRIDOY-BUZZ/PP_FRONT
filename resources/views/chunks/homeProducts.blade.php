@@ -219,10 +219,10 @@
                     </section>
                 </div>
                 <div class="col-lg-8 col-xs-12 my-5 py-5"  style="background: #efefef">
-                    <div class="tabs-header" style="background-color: #ed3a43">
-                        <div class="container">
-                            <div class="text-center">
-                                <h2 class="text-white">Great Deals</h2>
+                    <div class="container">
+                        <div class="tabs-header" style="">
+                            <div class="tab-head-text">
+                                <h2 class="px-2">Great Deals</h2>
                             </div>
                         </div>
                     </div>
