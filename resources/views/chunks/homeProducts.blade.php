@@ -204,8 +204,11 @@
                                                     </p>
                                                 </a>
                                             </div>
-                                            <div class="product-price">
-                                                <p class="price-amount mb-0"><span class="currency">$</span>{{ $d->Price }}</p>
+                                            <div class="product-price d-flex flex-wrap">
+                                                <p class="price-amount mb-0 pb-0"><span class="currency">$</span>{{ $d->latest_price }}</p>
+                                                @if ($d->Price != $d->latest_price)
+                                                    <p class="price-old mb-0 pb-0"><del><span class="currency">$</span>{{ $d->Price }}</del></p>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -256,8 +259,11 @@
                                                             @endif
                                                         </p>
                                                     </div>
-                                                    <div class="product-price">
-                                                        <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                                    <div class="product-price d-flex flex-wrap">
+                                                        <p class="price-amount"><span class="currency">$</span>{{ $d->latest_price }}</p>
+                                                        @if ($d->Price != $d->latest_price)
+                                                            <p class="price-old"><del><span class="currency">$</span>{{ $d->Price }}</del></p>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
