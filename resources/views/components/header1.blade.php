@@ -48,14 +48,18 @@
                         </a> --}}
             <div class="search-div">
                 <div id="custom-search-input">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="  search-query form-control" placeholder="Search Items Here . . ." />
-                        <span class="input-group-btn">
-                            <button class="btn btn-danger" type="button">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
+                    <form action="{{ route('search') }}" method="GET">
+                        <div class="input-group col-md-12">
+                            <input type="text" name="q" class="search-query form-control" 
+                            placeholder="Search Items Here . . ." 
+                            value = "@if(isset($query) && $query!=NULL) {{ $query }} @endif">
+                            <span class="input-group-btn">
+                                <button class="btn btn-danger" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
                 <div class="nav navbar-nav right-menu">
                     <div class="nav-buttons">
