@@ -6,6 +6,8 @@ PricePond | Search
 @section('content')
 
 <section class="mt-5">
-    <h1>{{ $query }}</h1>
+    <div class="container">
+        <h1>{{ $query }}</h1>
+    </div>
 </section>
 @endsection

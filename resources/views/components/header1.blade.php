@@ -52,7 +52,7 @@
                         <div class="input-group col-md-12">
                             <input type="text" name="q" class="search-query form-control" 
                             placeholder="Search Items Here . . ." 
-                            value = "@if(isset($query) && $query!=NULL) {{ $query }} @endif">
+                            value = "@if(isset($query) && $query!=NULL) {{ $query }} @endif" required>
                             <span class="input-group-btn">
                                 <button class="btn btn-danger" type="submit">
                                     <i class="fas fa-search"></i>
