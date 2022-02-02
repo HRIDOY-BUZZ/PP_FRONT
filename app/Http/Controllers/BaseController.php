@@ -35,7 +35,12 @@ class BaseController extends Controller
         $json = file_get_contents($url, false, $context);
         $stores = json_decode($json);
 
-
         return view('pages.home', compact('data1', 'data2', 'data3', 'data4', 'stores'));
+    }
+
+    public function search(Request $req)
+    {
+        $query = $req['q'];
+        return view('pages.search', ['query' => $query]);
     }
 }

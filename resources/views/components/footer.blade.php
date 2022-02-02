@@ -45,7 +45,7 @@
                     <a href="{{ route('home') }}">
                         <img alt="pp-logo" class="foot-logo" src="{{ asset('images/logo.png') }}">
                     </a>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 200px; background-color: #7c4dff; height: 2px"/>
                     <p style="text-align: justify">
                         Best Australian Online Shopping Sites PricePond makes
                         comparison shopping easy with Deal Alerts & Coupons. 
@@ -58,7 +58,7 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 col-sm-6 col-6 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold">Useful Links</h6>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 83px; background-color: #7c4dff; height: 2px"/>
                     <p>
                         <a href="#!" class="text-dark">Home</a>
                     </p>
@@ -78,7 +78,7 @@
                 <div class="col-md-3 col-lg-2 col-xl-2 col-sm-6 col-6 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold">Legal</h6>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 40px; background-color: #7c4dff; height: 2px"/>
                     <p>
                         <a href="#!" class="text-dark">Privacy Policy</a>
                     </p>
@@ -98,7 +98,7 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 ms-auto mb-md-0 mb-4">
                 <!-- Links -->
                     <h6 class="text-uppercase fw-bold">Contact</h6>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 58px; background-color: #7c4dff; height: 2px"/>
                     <p><i class="fas fa-home mr-3"></i> Macquarie Fields, NSW 2564, Australia</p>
                     <p><i class="fas fa-envelope mr-3"></i> info@pricepond.com.au</p>
                     <p><i class="fas fa-phone mr-3"></i> 02 8091 2748</p>

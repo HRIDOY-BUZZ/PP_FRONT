@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/optimize', function () {
+    Artisan::call('optimize');
+});
+Route::get('/optimize', function () {
     Artisan::call('optimize:clear');
 });
 
 Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('home');
+Route::get('/search', [App\Http\Controllers\BaseController::class, 'search'])->name('search');
