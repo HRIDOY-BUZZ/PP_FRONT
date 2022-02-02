@@ -218,7 +218,7 @@
                         @endforeach
                     </section>
                 </div>
-                <div class="col-lg-8 col-xs-12 my-5 py-5"  style="background: #efefef">
+                <div class="col-lg-8 col-xs-12 my-5 py-5"  style="background: #efefef; border-radius: 15px">
                     <div class="container">
                         <div class="tabs-header" style="">
                             <div class="tab-head-text">
