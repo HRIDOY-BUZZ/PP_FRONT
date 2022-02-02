@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container px-0">
     <div id="brands">
         <div class="products-body">
             <section class="slider brands">

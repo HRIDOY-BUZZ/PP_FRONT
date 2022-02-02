@@ -174,11 +174,11 @@
                                     <div class="col-lg-12 col-md-6 col-6">
                                         <div class="shop-name">
                                             <p>
-                                                @if(strlen($d->shop_name)>20)
-                                                    {{ substr($d->shop_name,0,20)."..." }}
-                                                @else
+                                                {{-- @if(strlen($d->shop_name)>26) --}}
+                                                    {{-- {{ substr($d->shop_name,0,26)."..." }} --}}
+                                                {{-- @else --}}
                                                     {{ $d->shop_name }}
-                                                @endif
+                                                {{-- @endif --}}
                                             </p>
                                         </div>
                                         <a href="">
@@ -196,8 +196,8 @@
                                             <div class="product-title">
                                                 <a href="">
                                                     <p class="mgbp-name">
-                                                        @if(strlen($d->Name)>35)
-                                                            {{ substr($d->Name,0,35)."..." }}
+                                                        @if(strlen($d->Name)>40)
+                                                            {{ substr($d->Name,0,40)."..." }}
                                                         @else
                                                             {{ $d->Name }}
                                                         @endif
