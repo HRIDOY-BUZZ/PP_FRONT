@@ -2,7 +2,7 @@
     $root = "https://www.pricepond.com.au/prod_img/";
     $root2 = "https://www.pricepond.com.au/merchant_image/";
 @endphp
-<section class="container px-0">
+<section id="homePageProducts" class="container px-0">
     <div id="hottest-deals">
         <div class="tabs-header">
             <div class="container">
@@ -595,7 +595,7 @@
     </div>
 </section> -->
 
-<section class="container px-0">
+<section id="homePageStores" class="container px-0">
     <div id="stores">
         <div class="tabs-header">
             <div class="container">
