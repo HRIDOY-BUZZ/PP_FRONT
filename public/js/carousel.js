@@ -41,7 +41,7 @@ $(".stores").slick({
     infinite: true,
     centerMode: false,
     lazyLoad: 'progressive',
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 1,
     variableWidth: false,
     autoplay: true,
@@ -51,17 +51,17 @@ $(".stores").slick({
     responsive: [{
         breakpoint: 1368,
         settings: {
-            slidesToShow: 6,
+            slidesToShow: 5,
         }
     }, {
         breakpoint: 1200,
         settings: {
-            slidesToShow: 5,
+            slidesToShow: 4,
         }
     }, {
         breakpoint: 992,
         settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
         }
     }, {
         breakpoint: 540,

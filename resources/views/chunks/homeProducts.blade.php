@@ -615,12 +615,22 @@
                                 {{ "https://".$d->shop_url }}
                             @endif
                         " target="_blank">
-                            <div class="single-product">
+                            {{-- <div class="single-product">
                                 <div class="store-image">
                                     <img src="{{ $root2.$d->Image }}">
                                 </div>
                                 <div class="shop-name">
                                     <p>{{ $d->shop_name }}</p>
+                                </div>
+                            </div> --}}
+                            <div class="card">
+                                <div class="card-img-top">
+                                    <span>
+                                        <img src="{{ $root2.$d->Image }}" alt="{{ $d->shop_name }}">
+                                    </span>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $d->shop_name }}</h5>
                                 </div>
                             </div>
                         </a>
