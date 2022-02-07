@@ -5,10 +5,6 @@
 {{-- FONTAWESOME --}}
 <link rel="stylesheet" href="{{ asset('fontawesome/source/all.min.css') }}">
 
-{{-- SLICK CSS --}}
-<link rel="stylesheet" href="{{ asset('slick/slick.css') }}">
-<link rel="stylesheet" href="{{ asset('slick/slick-theme.css') }}">
-
 {{-- Google Fonts --}}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,5 +16,6 @@
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('css/form-style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/homeProducts.css') }}">
 <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+
+@yield('extra-head')

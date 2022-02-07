@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
     @include('components.head')
-    @yield('extra-head')
 </head>
 <body>
     <div class="page-wrapper">
@@ -15,9 +14,9 @@
         <main class="main">
             @yield('content')
         </main>
-
-        @include('components.footer')
-        @include('components.foot')
     </div>
+
+    @include('components.footer')
+    @include('components.foot')
 </body>
 </html>

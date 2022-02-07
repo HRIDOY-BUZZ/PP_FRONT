@@ -4,11 +4,9 @@
 {{-- FONTAWESOME --}}
 {{-- <script src="https://www.xitsolution.com/fontawesome/source/all.min.js"></script> --}}
 
-{{-- SLICK JS --}}
-<script src="{{ asset('slick/slick.min.js') }}"></script>
-
 {{-- Custom JS Files --}}
 <script src="{{ asset('js/navbar.js') }}"></script>
-<script src="{{ asset('js/carousel.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 <script src="{{ asset('js/secondary.js') }}"></script>
+
+@yield('extra-foot')
