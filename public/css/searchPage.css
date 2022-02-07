@@ -1,0 +1,55 @@
+/* Chrome */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* Search Sidebar */
+
+.search-sidebar .form-control {
+    border-radius: 10px;
+}
+
+.search-sidebar .form-control label {
+    line-height: 2;
+    color: #757575;
+}
+
+.relevance-sort .form-select {
+    color: #757575;
+}
+
+.search-sidebar .btn-light {
+    width: 100% !important;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #757575;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 992px) {
+    .search-sidebar .search-radio {
+        display: none;
+    }
+}
+
+.sidebar-cats a {
+    display: block;
+    color: #757575;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.sidebar-cats a:hover {
+    text-decoration: underline;
+}
