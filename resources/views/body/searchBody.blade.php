@@ -6,7 +6,7 @@
                     <form action="" method="GET" class="form-control my-3">
                         <input type="text" name="q" value="{{ $query }}" hidden>
                         <label for="price" class="fw-bold">Price Range:</label>
-                        <div class="search-radio ms-2">
+                        {{-- <div class="search-radio ms-2">
                             <input type="radio" name="price" id="price1" value="90">
                             <label for="price1">Up to $90</label><br>
                             <input type="radio" name="price" id="price2" value="400">
@@ -17,18 +17,20 @@
                             <label for="price4">$900 to $1,500</label><br>
                             <input type="radio" name="price" id="price5" value="1500+">
                             <label for="price5">Over $1,500</label><br>
-                        </div>
+                        </div> --}}
                         <div class="row">
-                            <div class="col-6">
-                                <input type="number" name="max" id="min" min="1" class="form-control" placeholder="$ Min">
+                            <div class="col-lg-6 col-md-4 col-4">
+                                <input type="number" name="min" id="min" min="1" class="form-control" placeholder="$ Min">
                             </div>
-                            <div class="col-6">
+                            <div class="col-lg-6 col-md-4 col-4">
                                 <input type="number" name="max" id="max" min="1" class="form-control" placeholder="$ Max">
                             </div>
+                            <div class="col-lg-12 col-md-4 col-4">
+                                <button type="submit" class="btn btn-light form-control">Search</button>
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-light">Search</button>
                     </form>
-                    <form action="" class="form-control my-3">
+                    <form action="" class="form-control my-3 d-lg-block d-none">
                         <label for="" class="fw-bold">Categories</label>
                         <div class="sidebar-cats ms-2">
                             <a href="">Notebooks</a>
@@ -58,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <h1>{{ $query }}</h1>
+            <h6>Showing search result for query: <b>{{ $query }}</b></h6>
         </div>
     </div>
 </div>

@@ -40,7 +40,10 @@ class BaseController extends Controller
 
     public function search(Request $req)
     {
-        $query = $req['q'];
-        return view('pages.search', ['query' => $query]);
+        $query = trim($req['q']);
+        $min = trim($req['min']);
+        $max = trim($req['max']);
+        // echo $min;
+        return view('pages.search', ['query' => $query, 'min' => $min, 'max' => $max]);
     }
 }
