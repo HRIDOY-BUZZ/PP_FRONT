@@ -19,10 +19,10 @@
                             <label for="price5">Over $1,500</label><br>
                         </div> --}}
                         <div class="row">
-                            <div class="col-lg-6 col-md-4 col-4">
+                            <div class="col-lg-6 col-md-4 col-4 pe-1">
                                 <input type="number" name="min" id="min" min="1" class="form-control" placeholder="$ Min">
                             </div>
-                            <div class="col-lg-6 col-md-4 col-4">
+                            <div class="col-lg-6 col-md-4 col-4 ps-1">
                                 <input type="number" name="max" id="max" min="1" class="form-control" placeholder="$ Max">
                             </div>
                             <div class="col-lg-12 col-md-4 col-4">
