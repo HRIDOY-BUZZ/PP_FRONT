@@ -25,7 +25,7 @@
                             <div class="col-lg-6 col-md-4 col-4 ps-1">
                                 <input type="number" name="max" id="max" min="1" class="form-control" placeholder="$ Max">
                             </div>
-                            <div class="col-lg-12 col-md-4 col-4">
+                            <div class="col-lg-12 col-md-4 col-4 py-2">
                                 <button type="submit" class="btn btn-light form-control">Search</button>
                             </div>
                         </div>
