@@ -20,10 +20,10 @@
                         </div> --}}
                         <div class="row">
                             <div class="col-lg-6 col-md-4 col-4 pe-1">
-                                <input type="number" name="min" id="min" min="1" class="form-control" placeholder="$ Min">
+                                <input type="number" name="min" id="min" min="0" class="form-control" placeholder="$ Min" value="{{ $min }}">
                             </div>
                             <div class="col-lg-6 col-md-4 col-4 ps-1">
-                                <input type="number" name="max" id="max" min="1" class="form-control" placeholder="$ Max">
+                                <input type="number" name="max" id="max" min="1" class="form-control" placeholder="$ Max" value="{{ $max }}">
                             </div>
                             <div class="col-lg-12 col-md-4 col-4 py-2">
                                 <button type="submit" class="btn btn-light form-control">Search</button>
@@ -52,15 +52,16 @@
                         <form name="relevance" class="form-control" action="" method="GET">
                             <input type="text" name="q" value="{{ $query }}" hidden>
                             <select name="relevance" id="relevance" class="form-select" onchange="submitform()">
-                                <option value="BestMatch">Best Match</option>
-                                <option value="Low2High">Price: Low to High</option>
-                                <option value="High2Low">Price: High to Low</option>
+                                <option value="b" @if($rel == 'b') {{ "selected" }} @endif>Best Match</option>
+                                <option value="lh" @if($rel == 'lh') {{ "selected" }} @endif>Price: Low to High</option>
+                                <option value="hl" @if($rel == 'hl') {{ "selected" }} @endif>Price: High to Low</option>
                             </select>
                         </form>
                     </div>
                 </div>
             </div>
             <h6>Showing search result for query: <b>{{ $query }}</b></h6>
+            <p>{{ print_r($data) }}</p>
         </div>
     </div>
 </div>

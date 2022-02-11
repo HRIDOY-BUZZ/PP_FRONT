@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class BaseController extends Controller
 {
-    public function home()
+    public function api_header()
     {
         $context = stream_context_create(
             array(
@@ -15,6 +15,12 @@ class BaseController extends Controller
                 )
             )
         );
+        return $context;
+    }
+
+    public function home()
+    {
+        $context = BaseController::api_header();
         $url = "https://www.pricepond.com.au/api/home.php?slice=mix";
         $json = file_get_contents($url, false, $context);
         $data = array(); $data1 = array(); $data2 = array(); $data3 = array(); $data4 = array(); $deal = array();
@@ -40,10 +46,19 @@ class BaseController extends Controller
 
     public function search(Request $req)
     {
+        $context = BaseController::api_header();
         $query = trim($req['q']);
         $min = trim($req['min']);
         $max = trim($req['max']);
-        // echo $min;
-        return view('pages.search', ['query' => $query, 'min' => $min, 'max' => $max]);
+        $rel = $req['relevance'];
+        
+        $url = "https://www.pricepond.com.au/api/search.php?q=".$query."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
+        echo $url."<br>";
+        $json = file_get_contents($url, false, $context);
+        // echo $json;
+        $data = json_decode($json);
+
+
+        return view('pages.search', ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel, 'data' => $data]);
     }
 }
