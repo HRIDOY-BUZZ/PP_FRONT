@@ -61,7 +61,12 @@
                 </div>
             </div>
             <h6>Showing search result for query: <b>{{ $query }}</b></h6>
-            <p>{{ print_r($data) }}</p>
+            <p>
+                @foreach ($data as $d)
+                    {{ print_r($d) }}
+                    <br><br><br>
+                @endforeach
+            </p>
         </div>
     </div>
 </div>
