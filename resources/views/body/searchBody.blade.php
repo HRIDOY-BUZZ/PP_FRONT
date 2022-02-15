@@ -1,3 +1,4 @@
+
 <div class="container">
     <div class="row">
         <div class="col-lg-2">
@@ -60,13 +61,9 @@
                     </div>
                 </div>
             </div>
-            <h6>Showing search result for query: <b>{{ $query }}</b></h6>
-            <p>
-                @foreach ($data as $d)
-                    {{ print_r($d) }}
-                    <br><br><br>
-                @endforeach
-            </p>
+            <div>
+                @include('chunks.searchResults')
+            </div>
         </div>
     </div>
 </div>

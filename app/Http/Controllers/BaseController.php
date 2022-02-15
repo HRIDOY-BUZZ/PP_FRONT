@@ -61,10 +61,7 @@ class BaseController extends Controller
         $json = file_get_contents($url, false, $context);
         // echo $json;
         $data = json_decode($json);
-
         // $data = Paginator::make($data, count($data), 5);
-
-
         return view('pages.search', ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel, 'data' => $data]);
     }
 }
