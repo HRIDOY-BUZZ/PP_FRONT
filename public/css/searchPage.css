@@ -56,3 +56,62 @@ input[type=number] {
 .sidebar-cats a:hover {
     text-decoration: underline;
 }
+
+
+/* ===================== PRODUCTS VIEW STARTS ===================== */
+
+.single-product {
+    height: 100%;
+}
+
+.product-head {
+    height: 250px;
+    width: fit-content;
+}
+
+.product-image {
+    height: 180px;
+    width: 100%;
+}
+
+.product-image img {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: clip;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.product-title a {
+    text-decoration: none;
+}
+
+.product-title p {
+    color: #111;
+    font-weight: 500;
+}
+
+.product-details {
+    padding-top: 0 !important;
+}
+
+.product-details p {
+    margin-bottom: 0.2rem;
+}
+
+.shop-name p {
+    color: #1967d2;
+}
+
+.product-price {
+    color: #111;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+/* ===================== PRODUCTS VIEW ENDS ===================== */

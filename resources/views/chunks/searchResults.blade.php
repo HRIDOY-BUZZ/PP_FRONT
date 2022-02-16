@@ -7,9 +7,9 @@
     <p>
         <div class="row">
             @foreach ($data as $d)
-                <div class="col-lg-3">
+                <div class="col-lg-3 py-3">
                     <div class="card single-product">
-                        <div class="container">
+                        <div class="product-head">
                             <a href="{{ $d->URL }}">
                                 <div class="product-image card-img-top">
                                     @if (isset($d->Image) && $d->Image != null && $d->Image!="")
@@ -19,19 +19,21 @@
                                     @endif
                                 </div>
                             </a>
-                            <div class="shop-name">
-                                <p>{{ substr($d->shop_name,0,22) }}</p>
+                            <div class="container product-title pb-3">
+                                <a href="{{ $d->URL }}">
+                                    <p class="">{{ substr($d->Name,0,42) }}</p>
+                                </a>
                             </div>
                         </div>
                         <hr class="product-hr">
                         <div class="card-body product-details">
-                            <div class="product-title">
-                                <a href="{{ $d->URL }}">
-                                    <p class="">{{ $d->Name }}</p>
-                                </a>
-                            </div>
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                <p class="price-amount">
+                                    {{ $d->Price }}
+                                    <span class="currency"> AUD </span></p>
+                            </div>
+                            <div class="shop-name">
+                                <p>{{ substr($d->shop_name,0,22) }}</p>
                             </div>
                         </div>
                     </div>
