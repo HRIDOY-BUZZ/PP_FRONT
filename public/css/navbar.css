@@ -25,17 +25,17 @@ nav {
     font-size: 12px;
     line-height: 1.5;
     white-space: nowrap;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .categories:hover {
-    color: #ED3A43 !important;
+    color: #ed3a43 !important;
     background: #c9c9c927;
     box-shadow: 0 0 10px 0 #c9c9c927;
 }
 
 .cat-chev {
-    padding-top: .5rem;
+    padding-top: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0;
     font-size: 15px;
@@ -51,7 +51,6 @@ nav {
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
 
 /* ============ desktop view ============ */
 
@@ -69,10 +68,10 @@ nav {
         right: 100%;
         left: auto;
     }
-    .dropdown-menu>li:hover {
-        background-color: #f1f1f1
+    .dropdown-menu > li:hover {
+        background-color: #f1f1f1;
     }
-    .dropdown-menu>li:hover>.submenu {
+    .dropdown-menu > li:hover > .submenu {
         display: block;
     }
     .container-fluid {
@@ -81,9 +80,7 @@ nav {
     }
 }
 
-
 /* ============ desktop view .end// ============ */
-
 
 /* ============ small devices ============ */
 
@@ -91,16 +88,13 @@ nav {
     .dropdown-menu .dropdown-menu {
         margin-left: 0.7rem;
         margin-right: 0.7rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
-
 /* ============ small devices .end// ============ */
 
-
 /* ============ Right Menu Start ===============*/
-
 
 /* .right-menu>li>a {
     color: #ED3A43 !important;
@@ -113,23 +107,23 @@ nav {
 
 .nav-buttons .btn-nav {
     font-weight: bold;
-    border: 1px solid #ED3A43;
+    border: 1px solid #ed3a43;
     border-radius: 7px;
     line-height: 1.2;
 }
 
 .nav-login {
     background-color: white;
-    color: #ED3A43;
+    color: #ed3a43;
 }
 
 .nav-reg {
-    background-color: #ED3A43;
+    background-color: #ed3a43;
     color: white;
 }
 
 .nav-icon a {
-    color: #ED3A43 !important;
+    color: #ed3a43 !important;
     font-size: 20px;
     padding-top: 0 !important;
 }
@@ -154,10 +148,9 @@ nav {
         font-size: 10px;
         padding-left: 5px;
         padding-right: 10px;
-        line-height: 1.0;
+        line-height: 1;
     }
 }
-
 
 /* ============ Right Menu End ===============*/
 
@@ -199,7 +192,7 @@ nav {
     background: rgba(49, 53, 59, 0.12) !important;
 }
 
-.search-query:focus+button {
+.search-query:focus + button {
     z-index: 3;
 }
 
@@ -212,15 +205,27 @@ nav {
     width: 30%;
 }
 
+.search-div-1 {
+    display: flex !important;
+    flex-direction: column;
+    flex-basis: auto;
+    width: 75%;
+}
 .search-div {
     display: flex !important;
     flex-basis: auto;
-    width: 75%;
+    width: 100%;
 }
 
 @media all and (max-width: 768px) {
     .search-div {
         display: flex !important;
+        flex-basis: auto;
+        width: 100%;
+    }
+    .search-div-1 {
+        display: flex !important;
+        flex-direction: column;
         flex-basis: auto;
         width: 70%;
     }
@@ -230,16 +235,21 @@ nav {
     .search-div {
         display: flex !important;
         flex-basis: auto;
+        width: 100%;
+    }
+    .search-div-1 {
+        display: flex !important;
+        flex-direction: column;
+        flex-basis: auto;
         width: 90%;
     }
     .nav-buttons button {
         font-size: 10px;
         padding-left: 5px;
         padding-right: 15px;
-        line-height: 1.0;
+        line-height: 1;
     }
 }
-
 
 /* =================== TOP NAV START ======================*/
 
@@ -299,9 +309,7 @@ nav {
     }
 }
 
-
 /* =================== TOP NAV END ======================*/
-
 
 /* =================== BOTTOM NAV START ======================*/
 
@@ -332,4 +340,86 @@ nav {
     transition: color 200ms ease 0s;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
+}
+
+/* ----------------------------------------------- */
+/* mega menu dropdown css        
+Change height amount you need   */
+/* ----------------------------------------------- */
+/* nav categories css */
+.dropdown-menu {
+    border: 0;
+}
+.dropdown:hover .dropdown-menu-1,
+.drop-first {
+    display: block;
+}
+.dropdown-2:hover .dropdown-menu-2 {
+    display: block;
+}
+
+.dropdown-menu-1 {
+    position: fixed !important;
+    width: 16%;
+    height: 250px;
+    /* overflow-y: scroll; */
+    left: 0% !important;
+    top: 86px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* removing scrollbar but keeping Functionality */
+/* .dropdown-menu-1::-webkit-scrollbar {
+    display: none;
+  } */
+.dropdown-2 {
+    padding: 0.25rem 0.5rem;
+}
+/* use media query to adjust */
+.dropdown-menu-2 {
+    position: fixed !important;
+    float: right;
+    width: 85%;
+    height: 250px;
+    left: 203px;
+    top: 85px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: bisque;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.no-click {
+    /* pointer-events: none; */
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    height: 50px;
+}
+@media screen and (max-width: 688px) {
+    .dropdown-menu-2 {
+        left: 129px;
+        top: 120px;
+        width: 68%;
+    }
+    .dropdown-menu-1 {
+        top: 120px;
+    }
+}
+@media screen and (min-width: 689px) and (max-width: 992px) {
+    .dropdown-menu-2 {
+        left: 129px;
+        top: 140px;
+    }
+    .dropdown-menu-1 {
+        top: 140px;
+    }
 }
