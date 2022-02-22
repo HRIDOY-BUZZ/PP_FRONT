@@ -4,12 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Collection;
+use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Factory;
 
 class BaseController extends Controller
 {
+    public function paginate($items, $perPage = 20, $page = null, $options = [])
+    {
+        $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+        $items = $items instanceof Collection ? $items : Collection::make($items);
+        return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    }
+
     public function api_header()
     {
         $context = stream_context_create(
@@ -60,8 +69,9 @@ class BaseController extends Controller
         // echo $url."<br>";
         $json = file_get_contents($url, false, $context);
         // echo $json;
-        $data = json_decode($json);
+        $array = json_decode($json);
+        $data = $this->paginate($array);
         // $data = Paginator::make($data, count($data), 5);
-        return view('pages.search', ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel, 'data' => $data]);
+        return view('pages.search', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
     }
 }

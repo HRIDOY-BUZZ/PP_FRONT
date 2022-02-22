@@ -40,6 +40,9 @@
                 </div>
             @endforeach
         </div>
-        
     </p>
+</div>
+
+<div class="d-flex justify-content-center mt-5">
+    {!! $data->links() !!}
 </div>
