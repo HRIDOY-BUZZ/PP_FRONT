@@ -225,6 +225,24 @@ nav {
     width: 100%;
 }
 
+@media all and (max-width: 1200px) {
+    .search-div-1 {
+        display: flex !important;
+        flex-direction: column;
+        flex-basis: auto;
+        width: 70%;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .search-div-1 {
+        display: flex !important;
+        flex-direction: column;
+        flex-basis: auto;
+        width: 65%;
+    }
+}
+
 @media all and (max-width: 768px) {
     .search-div {
         display: flex !important;
@@ -235,7 +253,7 @@ nav {
         display: flex !important;
         flex-direction: column;
         flex-basis: auto;
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -330,6 +348,7 @@ nav {
     justify-content: space-around;
     width: 70%;
     padding-top: 5px;
+    margin-left: 45px;
 }
 
 @media all and (max-width: 500px) {
@@ -353,6 +372,12 @@ nav {
     transition: color 200ms ease 0s;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
+}
+
+@media all and (max-width: 991px) {
+    .top-cats a {
+        font-size: 10px;
+    }
 }
 
 

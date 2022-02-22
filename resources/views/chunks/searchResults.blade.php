@@ -7,7 +7,7 @@
     <p>
         <div class="row">
             @foreach ($data as $d)
-                <div class="col-lg-3 py-3">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 py-3">
                     <div class="card single-product">
                         <div class="product-head">
                             <a href="{{ $d->URL }}">
