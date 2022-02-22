@@ -52,6 +52,7 @@ nav {
     justify-content: flex-start;
 }
 
+
 /* ============ desktop view ============ */
 
 @media all and (min-width: 992px) {
@@ -68,10 +69,10 @@ nav {
         right: 100%;
         left: auto;
     }
-    .dropdown-menu > li:hover {
+    .dropdown-menu>li:hover {
         background-color: #f1f1f1;
     }
-    .dropdown-menu > li:hover > .submenu {
+    .dropdown-menu>li:hover>.submenu {
         display: block;
     }
     .container-fluid {
@@ -80,7 +81,9 @@ nav {
     }
 }
 
+
 /* ============ desktop view .end// ============ */
+
 
 /* ============ small devices ============ */
 
@@ -92,9 +95,12 @@ nav {
     }
 }
 
+
 /* ============ small devices .end// ============ */
 
+
 /* ============ Right Menu Start ===============*/
+
 
 /* .right-menu>li>a {
     color: #ED3A43 !important;
@@ -152,6 +158,7 @@ nav {
     }
 }
 
+
 /* ============ Right Menu End ===============*/
 
 #custom-search-input {
@@ -192,7 +199,7 @@ nav {
     background: rgba(49, 53, 59, 0.12) !important;
 }
 
-.search-query:focus + button {
+.search-query:focus+button {
     z-index: 3;
 }
 
@@ -211,6 +218,7 @@ nav {
     flex-basis: auto;
     width: 75%;
 }
+
 .search-div {
     display: flex !important;
     flex-basis: auto;
@@ -250,6 +258,7 @@ nav {
         line-height: 1;
     }
 }
+
 
 /* =================== TOP NAV START ======================*/
 
@@ -309,7 +318,9 @@ nav {
     }
 }
 
+
 /* =================== TOP NAV END ======================*/
+
 
 /* =================== BOTTOM NAV START ======================*/
 
@@ -317,6 +328,8 @@ nav {
     display: flex;
     margin: 0px;
     justify-content: space-around;
+    width: 70%;
+    padding-top: 5px;
 }
 
 @media all and (max-width: 500px) {
@@ -342,18 +355,28 @@ nav {
     text-decoration: none;
 }
 
+
 /* ----------------------------------------------- */
+
+
 /* mega menu dropdown css        
 Change height amount you need   */
+
+
 /* ----------------------------------------------- */
+
+
 /* nav categories css */
+
 .dropdown-menu {
     border: 0;
 }
+
 .dropdown:hover .dropdown-menu-1,
 .drop-first {
     display: block;
 }
+
 .dropdown-2:hover .dropdown-menu-2 {
     display: block;
 }
@@ -364,35 +387,45 @@ Change height amount you need   */
     height: 250px;
     /* overflow-y: scroll; */
     left: 0% !important;
-    top: 86px;
+    top: 100px;
     overflow-y: scroll;
     overflow-x: hidden;
-    -ms-overflow-style: none; /* IE and Edge */
+    -ms-overflow-style: none;
+    /* IE and Edge */
     scrollbar-width: none;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
+
 /* removing scrollbar but keeping Functionality */
+
+
 /* .dropdown-menu-1::-webkit-scrollbar {
     display: none;
   } */
+
 .dropdown-2 {
     padding: 0.25rem 0.5rem;
 }
+
+
 /* use media query to adjust */
+
 .dropdown-menu-2 {
     position: fixed !important;
     float: right;
-    width: 85%;
+    width: 86.8vw;
     height: 250px;
     left: 203px;
-    top: 85px;
+    top: 100px;
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: bisque;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
+
 .no-click {
     /* pointer-events: none; */
     background: none;
@@ -404,6 +437,7 @@ Change height amount you need   */
     outline: inherit;
     height: 50px;
 }
+
 @media screen and (max-width: 688px) {
     .dropdown-menu-2 {
         left: 129px;
@@ -414,6 +448,7 @@ Change height amount you need   */
         top: 120px;
     }
 }
+
 @media screen and (min-width: 689px) and (max-width: 992px) {
     .dropdown-menu-2 {
         left: 129px;
