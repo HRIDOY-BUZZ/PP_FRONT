@@ -44,5 +44,5 @@
 </div>
 
 <div class="d-flex justify-content-center mt-5">
-    {!! $data->links() !!}
+    {!! $data->appends(Request::except('page'))->links() !!}
 </div>
