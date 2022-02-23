@@ -13,7 +13,11 @@
                             <a href="{{ $d->URL }}">
                                 <div class="product-image card-img-top">
                                     @if (isset($d->Image) && $d->Image != null && $d->Image!="")
-                                        <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                        @if($d->Image == "NO")
+                                            <img src="{{ $root."no-image.jpg" }}">
+                                        @else
+                                            <img src="{{ $root.$d->Shop."/".$d->Image }}">
+                                        @endif
                                     @else
                                         <img src="{{ $d->ImageURL }}">
                                     @endif
