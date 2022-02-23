@@ -63,7 +63,7 @@ class BaseController extends Controller
     public function search(Request $req)
     {
         $context = BaseController::api_header();
-        $query = trim($req['q']);
+        $query = urlencode(trim($req['q']));
         $min = trim($req['min']);
         $max = trim($req['max']);
         $rel = $req['relevance'];
