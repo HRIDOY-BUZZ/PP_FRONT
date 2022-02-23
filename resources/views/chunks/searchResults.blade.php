@@ -23,9 +23,28 @@
                                     @endif
                                 </div>
                             </a>
-                            <div class="container product-title pb-3">
+                            <div class="container product-title py-2">
                                 <a href="{{ $d->URL }}">
-                                    <p class="">{{ substr($d->Name,0,42) }}</p>
+                                    <p class="">
+                                        @if(strlen($d->Name)>40)
+                                            {{ substr($d->Name,0,40)."..." }}
+                                        @else
+                                            {{ $d->Name }}
+                                        @endif
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="container product-desc pb-2">
+                                <a href="{{ $d->URL }}">
+                                    <p style="text-align:justify">
+                                        @if(strlen($d->Description)>100)
+                                            {{ substr($d->Description,0,100)."..." }}
+                                        @elseif (strlen($d->Description)<1)
+                                            {{ substr($d->Name,0,100) }}
+                                        @else
+                                            {{ $d->Description }}
+                                        @endif
+                                    </p>
                                 </a>
                             </div>
                         </div>

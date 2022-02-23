@@ -65,7 +65,7 @@ input[type=number] {
 }
 
 .product-head {
-    height: 250px;
+    height: 350px;
     width: fit-content;
 }
 
@@ -86,13 +86,18 @@ input[type=number] {
     margin-top: 1rem;
 }
 
-.product-title a {
+.product-title a,
+.product-desc a {
     text-decoration: none;
 }
 
 .product-title p {
     color: #111;
     font-weight: 500;
+}
+
+.product-desc p {
+    color: #777;
 }
 
 .product-details {
