@@ -408,6 +408,7 @@
 .multi-grid-product img {
     width: auto;
     height: 100px;
+    max-width: 100%;
 }
 
 @media all and (max-width: 419px) {
