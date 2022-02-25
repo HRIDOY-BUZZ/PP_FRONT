@@ -23,9 +23,9 @@
                                     @endif
                                 </div>
                             </a>
-                            <div class="container product-title py-2">
+                            <div class="container product-title pt-2">
                                 <a href="{{ $d->URL }}">
-                                    <p class="">
+                                    <p class="mb-2">
                                         @if(strlen($d->Name)>40)
                                             {{ substr($d->Name,0,40)."..." }}
                                         @else
@@ -40,9 +40,9 @@
                                         @if(strlen($d->Description)>100)
                                             {{ substr($d->Description,0,100)."..." }}
                                         @elseif (strlen($d->Description)<1)
-                                            {{ substr($d->Name,0,100) }}
+                                            {{ substr($d->Name,0,100)."..." }}
                                         @else
-                                            {{ $d->Description }}
+                                            {{ $d->Description."..." }}
                                         @endif
                                     </p>
                                 </a>
