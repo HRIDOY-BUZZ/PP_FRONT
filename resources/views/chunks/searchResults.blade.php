@@ -2,7 +2,7 @@
     $root = "https://www.pricepond.com.au/prod_img/";
 @endphp
 
-<div class="container">
+<div class="container px-0">
     <h6>Showing search result for query: <b>{{ $query }}</b></h6>
     <p>
         <div class="row">
