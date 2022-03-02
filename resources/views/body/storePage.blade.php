@@ -1,24 +1,15 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-12">
+            {{ $store }}
+        </div>
         <div class="col-lg-2">
             <div >
                 <div class="search-sidebar">
                     <form action="" method="GET" class="form-control my-3">
-                        <input type="text" name="q" value="{{ $query }}" hidden>
+                        <input type="text" name="q" value="{{ $store }}" hidden>
                         <label for="price" class="fw-bold">Price Range:</label>
-                        {{-- <div class="search-radio ms-2">
-                            <input type="radio" name="price" id="price1" value="90">
-                            <label for="price1">Up to $90</label><br>
-                            <input type="radio" name="price" id="price2" value="400">
-                            <label for="price2">$90 to $400</label><br>
-                            <input type="radio" name="price" id="price3" value="900">
-                            <label for="price3">$400 to $900</label><br>
-                            <input type="radio" name="price" id="price4" value="1500">
-                            <label for="price4">$900 to $1,500</label><br>
-                            <input type="radio" name="price" id="price5" value="1500+">
-                            <label for="price5">Over $1,500</label><br>
-                        </div> --}}
                         <div class="row">
                             <div class="col-lg-6 col-md-4 col-4 pe-1">
                                 <input type="number" name="min" id="min" min="0" class="form-control" placeholder="$ Min" value="{{ $min }}">
@@ -51,7 +42,7 @@
                 <div class="col-lg-2">
                     <div class="relevance-sort">
                         <form name="relevance" class="form-control" action="" method="GET">
-                            <input type="text" name="q" value="{{ $query }}" hidden>
+                            <input type="text" name="q" value="{{ $store }}" hidden>
                             <select name="relevance" id="relevance" class="form-select" onchange="submitform()">
                                 <option value="b" @if($rel == 'b') {{ "selected" }} @endif>Best Match</option>
                                 <option value="lh" @if($rel == 'lh') {{ "selected" }} @endif>Price: Low to High</option>

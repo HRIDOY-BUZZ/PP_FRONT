@@ -79,7 +79,7 @@ class BaseController extends Controller
         return view('pages.search', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
     }
 
-    public function store(Request $req)
+    public function store(Request $req, $store)
     {
         $context = BaseController::api_header();
         $query = trim($req['q']);
@@ -95,6 +95,6 @@ class BaseController extends Controller
         $array = json_decode($json);
         $data = $this->paginate($array);
         // $data = Paginator::make($data, count($data), 5);
-        return view('pages.store', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
+        return view('pages.search', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
     }
 }
