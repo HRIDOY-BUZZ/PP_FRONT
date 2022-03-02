@@ -21,3 +21,4 @@ Route::get('/optimize', function () {
 
 Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('home');
 Route::get('/search', [App\Http\Controllers\BaseController::class, 'search'])->name('search');
+Route::get('/store/{store}', [App\Http\Controllers\BaseController::class, 'store'])->name('store');

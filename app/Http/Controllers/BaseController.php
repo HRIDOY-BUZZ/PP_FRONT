@@ -78,4 +78,23 @@ class BaseController extends Controller
         // $data = Paginator::make($data, count($data), 5);
         return view('pages.search', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
     }
+
+    public function store(Request $req)
+    {
+        $context = BaseController::api_header();
+        $query = trim($req['q']);
+        $uquery = urlencode($query);
+        $min = trim($req['min']);
+        $max = trim($req['max']);
+        $rel = $req['relevance'];
+        
+        $url = "https://www.pricepond.com.au/api/search.php?q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
+        // echo $url."<br>";
+        $json = file_get_contents($url, false, $context);
+        // echo $json;
+        $array = json_decode($json);
+        $data = $this->paginate($array);
+        // $data = Paginator::make($data, count($data), 5);
+        return view('pages.store', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
+    }
 }
