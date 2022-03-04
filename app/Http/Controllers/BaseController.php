@@ -76,7 +76,16 @@ class BaseController extends Controller
         $array = json_decode($json);
         $data = $this->paginate($array);
         // $data = Paginator::make($data, count($data), 5);
-        return view('pages.search', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
+        return view(
+            'pages.search', 
+            compact('data'), 
+            [
+                'query' => $query, 
+                'min' => $min, 
+                'max' => $max, 
+                'rel' => $rel
+            ]
+        );
     }
 
     public function store(Request $req, $store)
@@ -94,7 +103,16 @@ class BaseController extends Controller
         // echo $json;
         $array = json_decode($json);
         $data = $this->paginate($array);
-        // $data = Paginator::make($data, count($data), 5);
-        return view('pages.search', compact('data'), ['query' => $query, 'min' => $min, 'max' => $max, 'rel' => $rel]);
+        return view(
+            'pages.search', 
+            compact('data'), 
+            [
+                'store' => $store, 
+                'query' => $query, 
+                'min' => $min, 
+                'max' => $max, 
+                'rel' => $rel
+            ]
+        );
     }
 }
