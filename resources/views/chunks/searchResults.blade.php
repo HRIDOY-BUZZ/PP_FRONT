@@ -3,7 +3,9 @@
 @endphp
 
 <div class="container px-0">
-    <h6>Showing search result for query: <b>{{ $query }}</b></h6>
+    @if($query != "")
+        <h6>Showing search result for query: <b>{{ $query }}</b></h6>
+    @endif
     <p>
         <div class="row">
             @foreach ($data as $d)

@@ -2,7 +2,11 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            {{ $store }}
+            <div class="store-banner py-3 mt-3 mb-4">
+                <div class="container">
+                    {{ "SHOP ID: ".$store }}
+                </div>
+            </div>
         </div>
         <div class="col-lg-2">
             <div >

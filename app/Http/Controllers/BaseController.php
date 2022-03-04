@@ -90,6 +90,7 @@ class BaseController extends Controller
 
     public function store(Request $req, $store)
     {
+        // echo $store;
         $context = BaseController::api_header();
         $query = trim($req['q']);
         $uquery = urlencode($query);
@@ -97,14 +98,14 @@ class BaseController extends Controller
         $max = trim($req['max']);
         $rel = $req['relevance'];
         
-        $url = "https://www.pricepond.com.au/api/search.php?q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
+        $url = "https://www.pricepond.com.au/api/store.php?store=".$store."&q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
         // echo $url."<br>";
         $json = file_get_contents($url, false, $context);
         // echo $json;
         $array = json_decode($json);
         $data = $this->paginate($array);
         return view(
-            'pages.search', 
+            'pages.store', 
             compact('data'), 
             [
                 'store' => $store, 

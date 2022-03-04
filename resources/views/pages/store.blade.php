@@ -5,6 +5,7 @@ PricePond | Search
 
 @section('extra-head')
 <link rel="stylesheet" href="{{ asset('css/searchPage.css') }}">
+<link rel="stylesheet" href="{{ asset('css/storePage.css') }}">
 @endsection
 
 @section('content')
