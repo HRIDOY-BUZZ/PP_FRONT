@@ -103,12 +103,14 @@ class BaseController extends Controller
         $json = file_get_contents($url, false, $context);
         // echo $json;
         $array = json_decode($json);
+        $count = sizeof($array);
         $data = $this->paginate($array);
         return view(
             'pages.store', 
             compact('data'), 
             [
-                'store' => $store, 
+                'store' => $store,
+                'count' => $count,
                 'query' => $query, 
                 'min' => $min, 
                 'max' => $max, 

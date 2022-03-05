@@ -6,7 +6,7 @@
     @if($query != "")
         <h6>Showing search result for query: <b>{{ $query }}</b></h6>
     @endif
-    <h6>Total {{ sizeof($data) }} Results:</h6>
+    {{-- <h6>Total {{ sizeof($data) }} Results:</h6> --}}
     <p>
         <div class="row">
             @foreach ($data as $d)

@@ -4,7 +4,8 @@
         <div class="col-12">
             <div class="store-banner py-3 mt-3 mb-4">
                 <div class="container">
-                    {{ "SHOP ID: ".$store }}
+                    {{ "SHOP ID: ".$store }}<br>
+                    {{ "TOTAL PRODUCTS: ".$count }}
                 </div>
             </div>
         </div>
