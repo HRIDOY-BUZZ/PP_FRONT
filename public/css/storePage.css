@@ -1,3 +1,9 @@
 .store-banner {
     background-color: #F7F7F7;
+    border-radius: 0.5rem;
+}
+
+.store-img img {
+    width: 100%;
+    height: auto;
 }

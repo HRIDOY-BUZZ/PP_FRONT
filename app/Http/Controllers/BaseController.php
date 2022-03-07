@@ -98,18 +98,22 @@ class BaseController extends Controller
         $max = trim($req['max']);
         $rel = $req['relevance'];
         
-        $url = "https://www.pricepond.com.au/api/store.php?store=".$store."&type=products&q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
+        $url1 = "https://www.pricepond.com.au/api/store.php?store=".$store."&type=info&&token=".md5(date("Ymd"));
+        // echo $url1."<br>";
+        $json1 = file_get_contents($url1, false, $context);
+        $shop = json_decode($json1);
+        $url2 = "https://www.pricepond.com.au/api/store.php?store=".$store."&type=products&q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
         // echo $url."<br>";
-        $json = file_get_contents($url, false, $context);
+        $json2 = file_get_contents($url2, false, $context);
         // echo $json;
-        $array = json_decode($json);
+        $array = json_decode($json2);
         $count = sizeof($array);
         $data = $this->paginate($array);
         return view(
             'pages.store', 
             compact('data'), 
             [
-                'store' => $store,
+                'shop' => $shop,
                 'count' => $count,
                 'query' => $query, 
                 'min' => $min, 
