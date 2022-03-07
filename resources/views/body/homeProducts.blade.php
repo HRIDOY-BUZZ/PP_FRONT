@@ -608,7 +608,7 @@
             <section class="slider stores">
                 @foreach ($stores as $d)
                     <div class="store-div">
-                        <a href="{{ route('store', [$d->shop_id]) }}" target="_blank">
+                        <a href="{{ route('store', [$d->shop_id]) }}">
                             {{-- <div class="single-product">
                                 <div class="store-image">
                                     <img src="{{ $root2.$d->Image }}">

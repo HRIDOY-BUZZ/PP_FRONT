@@ -98,7 +98,7 @@ class BaseController extends Controller
         $max = trim($req['max']);
         $rel = $req['relevance'];
         
-        $url = "https://www.pricepond.com.au/api/store.php?store=".$store."&q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
+        $url = "https://www.pricepond.com.au/api/store.php?store=".$store."&type=products&q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
         // echo $url."<br>";
         $json = file_get_contents($url, false, $context);
         // echo $json;
