@@ -15,7 +15,7 @@
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                             <h2 class="text-dark">{{ $shop->shop_name }}</h2>
                             <p><b>Shop ID: </b>{{ $shop->shop_id }}</p>
-                            <p><b>Shop Location: </b>{{ $shop->shop_state }}</p>
+                            <p><b>Shop Location: </b>{{ $shop->shop_street }}</p>
                             <p><b>Total Products: </b>{{ $count }}</p>
                             <p><a href="{{ $shop->shop_url }}" target="_blank">
                                     <b>
@@ -26,7 +26,7 @@
                             </p>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
-                            <p style="text-align: justify"><b>Shop Details: </b>{{ $shop->introductiontext }}</p>
+                            <p style="text-align: justify"><b>ABOUT: </b>{{ $shop->introductiontext }}</p>
                         </div>
                     </div>
                 </div>

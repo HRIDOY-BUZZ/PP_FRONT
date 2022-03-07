@@ -183,6 +183,11 @@
     text-transform: uppercase;
 }
 
+.shop-name a {
+    text-decoration: none;
+    color: black;
+}
+
 .product-hr {
     color: grey;
 }

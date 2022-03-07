@@ -115,6 +115,11 @@ input[type=number] {
     color: #ED3A43;
 }
 
+.shop-name a {
+    text-decoration: none;
+    color: #ED3A43;
+}
+
 .product-price {
     color: #111;
     font-weight: bold;

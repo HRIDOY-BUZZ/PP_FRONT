@@ -58,7 +58,7 @@
                                     <span class="currency"> AUD </span></p>
                             </div>
                             <div class="shop-name">
-                                <p>{{ substr($d->shop_name,0,22) }}</p>
+                                <p><a href="{{ route('store', [$d->Shop]) }}">{{ substr($d->shop_name,0,30) }}</a></p>
                             </div>
                         </div>
                     </div>

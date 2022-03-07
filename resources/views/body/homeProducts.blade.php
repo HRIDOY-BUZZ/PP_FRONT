@@ -30,7 +30,7 @@
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p>{{ substr($d->shop_name,0,24) }}</p>
+                            <p><a href="{{ route('store', [$d->Shop]) }}">{{ substr($d->shop_name,0,24) }}</a></p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
@@ -39,13 +39,6 @@
                                     <p class="">{{ $d->Name }}</p>
                                 </a>
                             </div>
-                            {{-- <div class="stars">
-                                @for ($s=0;$s<4;$s++)
-                                    <i class="fas fa-star active-star"></i>
-                                @endfor
-                                <i class="fas fa-star inactive-star"></i>
-                                <span class="count">04</span>
-                            </div> --}}
                             <div class="product-price">
                                 <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                             </div>
@@ -83,7 +76,7 @@
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p>{{ substr($d->shop_name,0,22) }}</p>
+                            <p><a href="{{ route('store', [$d->Shop]) }}">{{ substr($d->shop_name,0,22) }}</a></p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
@@ -92,13 +85,6 @@
                                     <p class="">{{ $d->Name }}</p>
                                 </a>
                             </div>
-                            {{-- <div class="stars">
-                                @for ($s=0;$s<4;$s++)
-                                    <i class="fas fa-star active-star"></i>
-                                @endfor
-                                <i class="fas fa-star inactive-star"></i>
-                                <span class="count">04</span>
-                            </div> --}}
                             <div class="product-price">
                                 <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                             </div>
@@ -136,7 +122,7 @@
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p>{{ substr($d->shop_name,0,22) }}</p>
+                            <p><a href="{{ route('store', [$d->Shop]) }}">{{ substr($d->shop_name,0,22) }}</a></p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
@@ -145,13 +131,6 @@
                                     <p class="">{{ $d->Name }}</p>
                                 </a>
                             </div>
-                            {{-- <div class="stars">
-                                @for ($s=0;$s<4;$s++)
-                                    <i class="fas fa-star active-star"></i>
-                                @endfor
-                                <i class="fas fa-star inactive-star"></i>
-                                <span class="count">04</span>
-                            </div> --}}
                             <div class="product-price">
                                 <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
                             </div>
@@ -174,11 +153,7 @@
                                     <div class="col-lg-12 col-md-6 col-6">
                                         <div class="shop-name">
                                             <p>
-                                                {{-- @if(strlen($d->shop_name)>26) --}}
-                                                    {{-- {{ substr($d->shop_name,0,26)."..." }} --}}
-                                                {{-- @else --}}
-                                                    {{ $d->shop_name }}
-                                                {{-- @endif --}}
+                                                <a href="{{ route('store', [$d->Shop]) }}">{{ $d->shop_name }}</a>
                                             </p>
                                         </div>
                                         <a href="">
@@ -244,9 +219,9 @@
                                                     <div class="shop-name">
                                                         <p>
                                                             @if(strlen($d->shop_name)>20)
-                                                                {{ substr($d->shop_name,0,20)."..." }}
+                                                                <a href="{{ route('store', [$d->Shop]) }}">{{ substr($d->shop_name,0,20)."..." }}</a>
                                                             @else
-                                                                {{ $d->shop_name }}
+                                                                <a href="{{ route('store', [$d->Shop]) }}">{{ $d->shop_name }}</a>
                                                             @endif
                                                         </p>
                                                     </div>
