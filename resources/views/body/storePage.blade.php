@@ -12,7 +12,7 @@
                                 <img src="{{ $img_root.$shop->Image }}" alt="">
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+                        <div class="col-xl-3 col-lg-3 col-md-8 col-sm-6 col-6">
                             <h2 class="text-dark">{{ $shop->shop_name }}</h2>
                             <p><b>Shop ID: </b>{{ $shop->shop_id }}</p>
                             <p><b>Shop Location: </b>{{ $shop->shop_street }}</p>
@@ -25,7 +25,7 @@
                                 </a>
                             </p>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <p style="text-align: justify">
                                 @if(strlen($shop->introductiontext)>0)
                                     <b>ABOUT: </b>{{ $shop->introductiontext }}
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2">
-                    <div class="relevance-sort">
+                    <div class="relevance-sort mt-2">
                         <form name="relevance" class="form-control" action="" method="GET">
                             <input type="text" name="q" value="{{ $shop->shop_id }}" hidden>
                             <select name="relevance" id="relevance" class="form-select" onchange="submitform()">
