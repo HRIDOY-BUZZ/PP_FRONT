@@ -91,6 +91,7 @@ input[type=number] {
 .product-title a,
 .product-desc a {
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 .product-title p {
@@ -101,7 +102,7 @@ input[type=number] {
 .product-desc p {
     color: #777;
     font-size: 12px;
-    word-wrap: break-word;
+    word-wrap: inherit;
 }
 
 @media all and (max-width: 1368px) {

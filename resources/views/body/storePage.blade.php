@@ -26,7 +26,11 @@
                             </p>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
-                            <p style="text-align: justify"><b>ABOUT: </b>{{ $shop->introductiontext }}</p>
+                            <p style="text-align: justify">
+                                @if(strlen($shop->introductiontext)>0)
+                                    <b>ABOUT: </b>{{ $shop->introductiontext }}
+                                @endif
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -65,7 +69,24 @@
         <div class="col-lg-10">
             <div class="row">
                 <div class="col-lg-10">
-
+                    <div class="search-div-1 w-100">            
+                        <div class="search-div">
+                            <div id="custom-search-input" class="w-100 mt-3 ms-0">
+                                <form action="" method="GET">
+                                    <div class="input-group col-md-12">
+                                        <input type="text" name="q" class="search-query form-control" 
+                                        placeholder="Search Items of {{ $shop->shop_name }}. . ." 
+                                        value = "@if(isset($query) && $query!=NULL) {{ $query }} @endif" required>
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-danger" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-2">
                     <div class="relevance-sort">
