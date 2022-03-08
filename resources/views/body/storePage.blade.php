@@ -76,7 +76,7 @@
                                     <div class="input-group col-md-12">
                                         <input type="text" name="q" class="search-query form-control" 
                                         placeholder="Search Items of {{ $shop->shop_name }}. . ." 
-                                        value = "@if(isset($query) && $query!=NULL) {{ $query }} @endif" required>
+                                        value = "@if(isset($query) && $query!=NULL) {{ $query }} @endif">
                                         <span class="input-group-btn">
                                             <button class="btn btn-danger" type="submit">
                                                 <i class="fas fa-search"></i>
