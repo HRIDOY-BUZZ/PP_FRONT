@@ -343,12 +343,11 @@ nav {
 /* =================== BOTTOM NAV START ======================*/
 
 .top-cats {
-    display: flex;
     margin: 0px;
     justify-content: space-around;
     width: 70%;
     padding-top: 5px;
-    margin-left: 45px;
+    margin-left: 1rem;
 }
 
 @media all and (max-width: 500px) {
@@ -364,19 +363,18 @@ nav {
     color: rgba(49, 53, 59, 0.68);
     font-size: 12px;
     line-height: 8px;
-    display: flex;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    -webkit-box-align: center;
-    align-items: center;
-    transition: color 200ms ease 0s;
-    -webkit-font-smoothing: antialiased;
     text-decoration: none;
+}
+
+@media all and (max-width: 1200px) {
+    .top-cats a {
+        font-size: 10px;
+    }
 }
 
 @media all and (max-width: 991px) {
     .top-cats a {
-        font-size: 10px;
+        display: none;
     }
 }
 
