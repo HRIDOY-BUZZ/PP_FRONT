@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/optimize', function () {
     Artisan::call('optimize');
 });
-Route::get('/optimize', function () {
+Route::get('/optimize-clear', function () {
     Artisan::call('optimize:clear');
 });
 
