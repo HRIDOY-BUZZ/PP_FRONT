@@ -51,7 +51,7 @@
         <p>PRICEPOND.COM.AU and the third parties listed below may set and access any of the following cookies when you
             visit different parts of our site or third party publishers with whom we partner. The purpose for setting
             and accessing these cookies is listed next to the description of the cookie below.</p>
-        <table border="1">
+        <table class="table table-bordered">
             <tbody>
                 <tr>
                     <td width="79">
