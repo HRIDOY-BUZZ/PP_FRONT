@@ -60,10 +60,10 @@
                     <h6 class="text-uppercase fw-bold">Useful Links</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 83px; background-color: #7c4dff; height: 2px"/>
                     <p>
-                        <a href="#!" class="text-dark">Home</a>
+                        <a href="{{ route('home') }}" class="text-dark">Home</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-dark">About Pricepond</a>
+                        <a href="{{ route('about') }}" class="text-dark">About Pricepond</a>
                     </p>
                     <p>
                         <a href="#!" class="text-dark">FAQs</a>
@@ -80,7 +80,7 @@
                     <h6 class="text-uppercase fw-bold">Legal</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 40px; background-color: #7c4dff; height: 2px"/>
                     <p>
-                        <a href="#!" class="text-dark">Privacy Policy</a>
+                        <a href="{{ route('policy') }}" class="text-dark">Privacy Policy</a>
                     </p>
                     <p>
                         <a href="#!" class="text-dark">Terms and Conditions</a>

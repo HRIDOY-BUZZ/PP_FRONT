@@ -10,7 +10,7 @@
                 </a>
             </div>
             <div class="topnav-right float-end">
-                <a href="" target="_blank">
+                <a href="{{ route('about') }}" target="">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">About PricePond</font>
                     </font>

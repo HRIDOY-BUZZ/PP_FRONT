@@ -122,4 +122,13 @@ class BaseController extends Controller
             ]
         );
     }
+
+    public function about()
+    {
+        return view('pages.about');
+    }
+    public function policy()
+    {
+        return view('pages.policy');
+    }
 }
