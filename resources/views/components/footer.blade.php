@@ -86,7 +86,7 @@
                         <a href="{{ route('terms') }}" class="text-dark">Terms and Conditions</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-dark">Cookies</a>
+                        <a href="{{ route('cookies') }}" class="text-dark">Cookies</a>
                     </p>
                     <p>
                         <a href="#!" class="text-dark">Desclaimer</a>

@@ -140,4 +140,8 @@ class BaseController extends Controller
     {
         return view('pages.terms');
     }
+    public function cookies()
+    {
+        return view('pages.cookies');
+    }
 }
