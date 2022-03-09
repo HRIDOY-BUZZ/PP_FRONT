@@ -89,7 +89,7 @@
                         <a href="{{ route('cookies') }}" class="text-dark">Cookies</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-dark">Desclaimer</a>
+                        <a href="{{ route('desclaimer') }}" class="text-dark">Desclaimer</a>
                     </p>
                 </div>
                 <!-- Grid column -->

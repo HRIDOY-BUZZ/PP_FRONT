@@ -29,3 +29,4 @@ Route::get('/privacy-policy', [App\Http\Controllers\BaseController::class, 'poli
 Route::get('/faq', [App\Http\Controllers\BaseController::class, 'faq'])->name('faq');
 Route::get('/terms-and-conditions', [App\Http\Controllers\BaseController::class, 'terms'])->name('terms');
 Route::get('/cookies', [App\Http\Controllers\BaseController::class, 'cookies'])->name('cookies');
+Route::get('/desclaimer', [App\Http\Controllers\BaseController::class, 'desclaimer'])->name('desclaimer');

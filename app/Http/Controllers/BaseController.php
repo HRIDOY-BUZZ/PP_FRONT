@@ -144,4 +144,8 @@ class BaseController extends Controller
     {
         return view('pages.cookies');
     }
+    public function desclaimer()
+    {
+        return view('pages.desclaimer');
+    }
 }
