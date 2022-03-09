@@ -25,3 +25,4 @@ Route::get('/store/{store}', [App\Http\Controllers\BaseController::class, 'store
 Route::get('/about', [App\Http\Controllers\BaseController::class, 'about'])->name('about');
 Route::get('/privacy-policy', [App\Http\Controllers\BaseController::class, 'policy'])->name('policy');
 Route::get('/faq', [App\Http\Controllers\BaseController::class, 'faq'])->name('faq');
+Route::get('/terms-and-conditions', [App\Http\Controllers\BaseController::class, 'terms'])->name('terms');

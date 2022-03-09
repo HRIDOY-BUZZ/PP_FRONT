@@ -83,7 +83,7 @@
                         <a href="{{ route('policy') }}" class="text-dark">Privacy Policy</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-dark">Terms and Conditions</a>
+                        <a href="{{ route('terms') }}" class="text-dark">Terms and Conditions</a>
                     </p>
                     <p>
                         <a href="#!" class="text-dark">Cookies</a>

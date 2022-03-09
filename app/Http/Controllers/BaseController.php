@@ -123,6 +123,7 @@ class BaseController extends Controller
         );
     }
 
+    // STATIC PAGES
     public function about()
     {
         return view('pages.about');
@@ -134,5 +135,9 @@ class BaseController extends Controller
     public function faq()
     {
         return view('pages.faq');
+    }
+    public function terms()
+    {
+        return view('pages.terms');
     }
 }
