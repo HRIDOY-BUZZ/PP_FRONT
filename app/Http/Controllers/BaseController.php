@@ -131,4 +131,8 @@ class BaseController extends Controller
     {
         return view('pages.policy');
     }
+    public function faq()
+    {
+        return view('pages.faq');
+    }
 }

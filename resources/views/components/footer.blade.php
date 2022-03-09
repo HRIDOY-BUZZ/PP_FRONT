@@ -66,7 +66,7 @@
                         <a href="{{ route('about') }}" class="text-dark">About Pricepond</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-dark">FAQs</a>
+                        <a href="{{ route('faq') }}" class="text-dark">FAQs</a>
                     </p>
                     <p>
                         <a href="#!" class="text-dark">Contact Us</a>
