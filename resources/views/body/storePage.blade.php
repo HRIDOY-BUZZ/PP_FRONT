@@ -16,7 +16,7 @@
                             <h2 class="text-dark">{{ $shop->shop_name }}</h2>
                             <p><b>Shop ID: </b>{{ $shop->shop_id }}</p>
                             <p><b>Shop Location: </b>{{ $shop->shop_street }}</p>
-                            <p><b>Total Products: </b>{{ $count }}</p>
+                            <p><b>Total Products: </b>{{ $shop->total }}</p>
                             <p><a href="{{ $shop->shop_url }}" target="_blank">
                                     <b>
                                         Visit Shop 
@@ -28,7 +28,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <p style="text-align: justify">
                                 @if(strlen($shop->introductiontext)>0)
-                                    <b>ABOUT: </b>{{ $shop->introductiontext }}
+                                    <b>ABOUT: </b>{{ substr($shop->introductiontext,0,600) }}...<a href="{{ $shop->shop_url }}">Learn More</a>
                                 @endif
                             </p>
                         </div>
@@ -40,7 +40,7 @@
             <div >
                 <div class="search-sidebar">
                     <form action="" method="GET" class="form-control my-3">
-                        <input type="text" name="q" value="{{ $shop->shop_id }}" hidden>
+                        <input type="text" name="q" value="{{ $query }}" hidden>
                         <label for="price" class="fw-bold">Price Range:</label>
                         <div class="row">
                             <div class="col-lg-6 col-md-4 col-4 pe-1">
@@ -91,7 +91,7 @@
                 <div class="col-lg-2">
                     <div class="relevance-sort mt-2">
                         <form name="relevance" class="form-control" action="" method="GET">
-                            <input type="text" name="q" value="{{ $shop->shop_id }}" hidden>
+                            <input type="text" name="q" value="{{ $query }}" hidden>
                             <select name="relevance" id="relevance" class="form-select" onchange="submitform()">
                                 <option value="b" @if($rel == 'b') {{ "selected" }} @endif>Best Match</option>
                                 <option value="lh" @if($rel == 'lh') {{ "selected" }} @endif>Price: Low to High</option>

@@ -113,12 +113,12 @@ class BaseController extends Controller
             'pages.store', 
             compact('data'), 
             [
-                'shop' => $shop,
-                'count' => $count,
-                'query' => $query, 
-                'min' => $min, 
-                'max' => $max, 
-                'rel' => $rel
+                'shop'  =>  $shop,
+                'count' =>  $count,
+                'query' =>  $query, 
+                'min'   =>  $min, 
+                'max'   =>  $max, 
+                'rel'   =>  $rel
             ]
         );
     }
