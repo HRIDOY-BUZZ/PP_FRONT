@@ -20,14 +20,15 @@ Route::get('/optimize-clear', function () {
 });
 
 Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('home');
-Route::get('/search', [App\Http\Controllers\BaseController::class, 'search'])->name('search');
-Route::get('/store/{store}/{store_name}', [App\Http\Controllers\BaseController::class, 'store'])->name('store');
-Route::get('/product/{pid}/{pname}', [App\Http\Controllers\BaseController::class, 'product'])->name('product');
+
+Route::get('/search', [App\Http\Controllers\ProductController::class, 'search'])->name('search');
+Route::get('/store/{store}/{store_name}', [App\Http\Controllers\ProductController::class, 'store'])->name('store');
+Route::get('/product/{pid}/{pname}', [App\Http\Controllers\ProductController::class, 'product'])->name('product');
 
 // STATIC PAGES
-Route::get('/about', [App\Http\Controllers\BaseController::class, 'about'])->name('about');
-Route::get('/privacy-policy', [App\Http\Controllers\BaseController::class, 'policy'])->name('policy');
-Route::get('/faq', [App\Http\Controllers\BaseController::class, 'faq'])->name('faq');
-Route::get('/terms-and-conditions', [App\Http\Controllers\BaseController::class, 'terms'])->name('terms');
-Route::get('/cookies', [App\Http\Controllers\BaseController::class, 'cookies'])->name('cookies');
-Route::get('/desclaimer', [App\Http\Controllers\BaseController::class, 'desclaimer'])->name('desclaimer');
+Route::get('/about', [App\Http\Controllers\StaticController::class, 'about'])->name('about');
+Route::get('/privacy-policy', [App\Http\Controllers\StaticController::class, 'policy'])->name('policy');
+Route::get('/faq', [App\Http\Controllers\StaticController::class, 'faq'])->name('faq');
+Route::get('/terms-and-conditions', [App\Http\Controllers\StaticController::class, 'terms'])->name('terms');
+Route::get('/cookies', [App\Http\Controllers\StaticController::class, 'cookies'])->name('cookies');
+Route::get('/desclaimer', [App\Http\Controllers\StaticController::class, 'desclaimer'])->name('desclaimer');
