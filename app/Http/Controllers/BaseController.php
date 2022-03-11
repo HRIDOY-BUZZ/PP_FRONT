@@ -99,7 +99,7 @@ class BaseController extends Controller
         $rel = $req['relevance'];
         
         $url1 = "https://www.pricepond.com.au/api/store.php?store=".$store."&type=info&&token=".md5(date("Ymd"));
-        echo $url1."<br>";
+        // echo $url1."<br>";
         $json1 = file_get_contents($url1, false, $context);
         $shop = json_decode($json1);
         $url2 = "https://www.pricepond.com.au/api/store.php?store=".$store."&type=products&q=".$uquery."&relevance=".$rel."&min=".$min."&max=".$max."&token=".md5(date("Ymd"));
@@ -121,6 +121,11 @@ class BaseController extends Controller
                 'rel'   =>  $rel
             ]
         );
+    }
+
+    public function product(Request $req, $pid, $pname)
+    {
+        return view('pages.product');
     }
 
     // STATIC PAGES
