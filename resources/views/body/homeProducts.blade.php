@@ -35,9 +35,11 @@
                         <hr class="product-hr">
                         <div class="product-details">
                             <div class="product-title">
-                                <a href="{{ $d->URL }}">
-                                    <p class="">{{ $d->Name }}</p>
-                                </a>
+                                <p class="">
+                                    <a href="{{ $d->URL }}">
+                                        {{ $d->Name }}
+                                    </a>
+                                </p>
                             </div>
                             <div class="product-price">
                                 <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
