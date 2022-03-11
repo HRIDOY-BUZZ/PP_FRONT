@@ -21,7 +21,7 @@ Route::get('/optimize-clear', function () {
 
 Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('home');
 Route::get('/search', [App\Http\Controllers\BaseController::class, 'search'])->name('search');
-Route::get('/store/{store}', [App\Http\Controllers\BaseController::class, 'store'])->name('store');
+Route::get('/store/{store}/{store_name}', [App\Http\Controllers\BaseController::class, 'store'])->name('store');
 Route::get('/product/{pid}/{pname}', [App\Http\Controllers\BaseController::class, 'product'])->name('product');
 
 // STATIC PAGES

@@ -58,7 +58,7 @@
                                     <span class="currency"> AUD </span></p>
                             </div>
                             <div class="shop-name">
-                                <p><a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ substr($d->shop_name,0,30) }}</a></p>
+                                <p><a href="{{ url('store/'.$d->shop_id.'/'.urlencode($d->shop_name))) }}">{{ substr($d->shop_name,0,30) }}</a></p>
                             </div>
                         </div>
                     </div>

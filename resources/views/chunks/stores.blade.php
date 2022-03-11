@@ -10,7 +10,7 @@
         <section class="slider stores">
             @foreach ($stores as $d)
                 <div class="store-div">
-                    <a href="{{ route('store', [urlencode($d->shop_name)]) }}">
+                    <a href="{{ url('store/'.$d->shop_id.'/'.urlencode($d->shop_name)) }}">
                         <div class="card">
                             <div class="card-img-top">
                                 <span>

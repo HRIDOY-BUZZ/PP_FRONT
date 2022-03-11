@@ -30,7 +30,7 @@
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p><a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ substr($d->shop_name,0,24) }}</a></p>
+                            <p><a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ substr($d->shop_name,0,24) }}</a></p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
@@ -76,7 +76,7 @@
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p><a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ substr($d->shop_name,0,22) }}</a></p>
+                            <p><a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ substr($d->shop_name,0,22) }}</a></p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
@@ -122,7 +122,7 @@
                             </div>
                         </a>
                         <div class="shop-name">
-                            <p><a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ substr($d->shop_name,0,22) }}</a></p>
+                            <p><a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ substr($d->shop_name,0,22) }}</a></p>
                         </div>
                         <hr class="product-hr">
                         <div class="product-details">
@@ -153,7 +153,7 @@
                                     <div class="col-lg-12 col-md-6 col-6">
                                         <div class="shop-name">
                                             <p>
-                                                <a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ $d->shop_name }}</a>
+                                                <a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ $d->shop_name }}</a>
                                             </p>
                                         </div>
                                         <a href="">
@@ -219,9 +219,9 @@
                                                     <div class="shop-name">
                                                         <p>
                                                             @if(strlen($d->shop_name)>20)
-                                                                <a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ substr($d->shop_name,0,20)."..." }}</a>
+                                                                <a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ substr($d->shop_name,0,20)."..." }}</a>
                                                             @else
-                                                                <a href="{{ route('store', [urlencode($d->shop_name)]) }}">{{ $d->shop_name }}</a>
+                                                                <a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ $d->shop_name }}</a>
                                                             @endif
                                                         </p>
                                                     </div>
