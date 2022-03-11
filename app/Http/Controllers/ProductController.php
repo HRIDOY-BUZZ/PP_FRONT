@@ -101,7 +101,7 @@ class ProductController extends Controller
     {
         $context = ProductController::api_header();
         $url = "https://www.pricepond.com.au/api/product.php?pid=".$pid."&token=".md5(date("Ymd"));
-        // echo $url."<br>";
+        echo $url."<br>";
         $json = file_get_contents($url, false, $context);
         // echo $json;
         $data = json_decode($json);

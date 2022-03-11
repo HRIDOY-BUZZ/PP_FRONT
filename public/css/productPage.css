@@ -1,0 +1,31 @@
+.product-details p {
+    margin-bottom: 0.5rem;
+}
+
+.product-banner {
+    background-color: #F7F7F7;
+    border-radius: 0.5rem;
+}
+
+.product-img img {
+    display: block;
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.shop-image {
+    height: 50px;
+    width: auto;
+    margin-left: 1.5rem;
+}
+
+.price {
+    margin: 1rem 0 !important;
+}
+
+.price span {
+    font-size: 21px;
+    font-weight: 500;
+    color: #ED3A43;
+}
