@@ -42,7 +42,7 @@
                                 </p>
                             </div>
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                <p class="price-amount">{{ $d->Price }}<span class="currency"> AUD</span></p>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                                 </a>
                             </div>
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                <p class="price-amount">{{ $d->Price }}<span class="currency"> AUD</span></p>
                             </div>
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                                 </a>
                             </div>
                             <div class="product-price">
-                                <p class="price-amount"><span class="currency">$</span>{{ $d->Price }}</p>
+                                <p class="price-amount">{{ $d->Price }}<span class="currency"> AUD</span></p>
                             </div>
                         </div>
                     </div>
@@ -182,9 +182,9 @@
                                                 </a>
                                             </div>
                                             <div class="product-price d-flex flex-wrap">
-                                                <p class="price-amount mb-0 pb-0"><span class="currency">$</span>{{ $d->latest_price }}</p>
+                                                <p class="price-amount mb-0 pb-0">{{ $d->latest_price }}<span class="currency"> AUD</span></p>
                                                 @if ($d->Price != $d->latest_price)
-                                                    <p class="price-old mb-0 pb-0"><del><span class="currency">$</span>{{ $d->Price }}</del></p>
+                                                    <p class="price-old mb-0 pb-0"><del>{{ $d->Price }}<span class="currency"> AUD</span></del></p>
                                                 @endif
                                             </div>
                                         </div>
@@ -237,9 +237,9 @@
                                                         </p>
                                                     </div>
                                                     <div class="product-price d-flex flex-wrap">
-                                                        <p class="price-amount"><span class="currency">$</span>{{ $d->latest_price }}</p>
+                                                        <p class="price-amount">{{ $d->latest_price }}<span class="currency"> AUD</span></p>
                                                         @if ($d->Price != $d->latest_price)
-                                                            <p class="price-old"><del><span class="currency">$</span>{{ $d->Price }}</del></p>
+                                                            <p class="price-old"><del>{{ $d->Price }}<span class="currency"> AUD</span></del></p>
                                                         @endif
                                                     </div>
                                                 </div>
