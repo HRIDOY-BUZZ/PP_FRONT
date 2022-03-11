@@ -46,8 +46,8 @@
                                     @else
                                         {{ $d->Description."..." }}
                                     @endif
+                                    <a href="{{ url('product/'.$d->id.'/'.urlencode($d->Name)) }}">More Info</a>
                                 </p>
-                                <a href="{{ url('product/'.$d->id.'/'.urlencode($d->Name)) }}">More Info</a>
                             </div>
                         </div>
                         <hr class="product-hr">
