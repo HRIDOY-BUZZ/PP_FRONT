@@ -80,10 +80,10 @@ class BaseController extends Controller
             'pages.search', 
             compact('data'), 
             [
-                'query' => $query, 
-                'min' => $min, 
-                'max' => $max, 
-                'rel' => $rel
+                'query' =>  $query, 
+                'min'   =>  $min, 
+                'max'   =>  $max, 
+                'rel'   =>  $rel
             ]
         );
     }
