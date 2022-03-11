@@ -37,17 +37,16 @@
                                 </a>
                             </div>
                             <div class="container product-desc pb-2">
-                                <a href="{{ $d->URL }}">
-                                    <p style="text-align:justify">
-                                        @if(strlen($d->Description)>100)
-                                            {{ substr($d->Description,0,100)."..." }}
-                                        @elseif (strlen($d->Description)<1)
-                                            {{ substr($d->Name,0,100)."..." }}
-                                        @else
-                                            {{ $d->Description."..." }}
-                                        @endif
-                                    </p>
-                                </a>
+                                <p style="text-align:justify">
+                                    @if(strlen($d->Description)>100)
+                                        {{ substr($d->Description,0,100)."..." }}
+                                    @elseif (strlen($d->Description)<1)
+                                        {{ substr($d->Name,0,100)."..." }}
+                                    @else
+                                        {{ $d->Description."..." }}
+                                    @endif
+                                    <a href="{{ url('product/'.$d->id.'/'.urlencode($d->Name)) }}">More Info</a>
+                                </p>
                             </div>
                         </div>
                         <hr class="product-hr">
@@ -55,7 +54,8 @@
                             <div class="product-price">
                                 <p class="price-amount">
                                     {{ $d->Price }}
-                                    <span class="currency"> AUD </span></p>
+                                    <span class="currency"> AUD </span>
+                                </p>
                             </div>
                             <div class="shop-name">
                                 <p><a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ substr($d->shop_name,0,30) }}</a></p>

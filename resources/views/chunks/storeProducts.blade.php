@@ -38,17 +38,16 @@
                                 </a>
                             </div>
                             <div class="container product-desc pb-2">
-                                <a href="{{ $d->URL }}">
-                                    <p style="text-align:justify">
-                                        @if(strlen($d->Description)>100)
-                                            {{ substr($d->Description,0,100)."..." }}
-                                        @elseif (strlen($d->Description)<1)
-                                            {{ substr($d->Name,0,100)."..." }}
-                                        @else
-                                            {{ $d->Description."..." }}
-                                        @endif
-                                    </p>
-                                </a>
+                                <p style="text-align:justify">
+                                    @if(strlen($d->Description)>100)
+                                        {{ substr($d->Description,0,100)."..." }}
+                                    @elseif (strlen($d->Description)<1)
+                                        {{ substr($d->Name,0,100)."..." }}
+                                    @else
+                                        {{ $d->Description."..." }}
+                                    @endif
+                                </p>
+                                <a href="{{ url('product/'.$d->id.'/'.urlencode($d->Name)) }}">More Info</a>
                             </div>
                         </div>
                         <hr class="product-hr">
