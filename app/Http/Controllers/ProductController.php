@@ -37,7 +37,7 @@ class ProductController extends Controller
     public function relatedSearch($key)
     {
         $context = ProductController::api_header();
-        $key = urlencode(trim($key));
+        $key = trim($key);
         $url = $url = "https://www.pricepond.com.au/api/relatedSearch.php?q=".$key."&token=".md5(date("Ymd"));
         // echo $url."<br>";
         $json = file_get_contents($url, false, $context);

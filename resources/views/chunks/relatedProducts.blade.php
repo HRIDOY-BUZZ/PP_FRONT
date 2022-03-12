@@ -8,7 +8,7 @@
 @endphp
 
 <div class="container px-0">
-    <h4>More Products Like This:</h4>
+    <h4>PRODUCTS YOU MAY ALSO LIKE:</h4>
     <p>
         <div class="row">
             @foreach ($rdata as $d)
