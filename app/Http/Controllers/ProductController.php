@@ -34,11 +34,11 @@ class ProductController extends Controller
         return $context;
     }
 
-    public function relatedSearch($key)
+    public function relatedSearch($key,$id=0)
     {
         $context = ProductController::api_header();
         $key = trim($key);
-        $url = $url = "https://www.pricepond.com.au/api/relatedSearch.php?q=".$key."&token=".md5(date("Ymd"));
+        $url = $url = "https://www.pricepond.com.au/api/relatedSearch.php?pid=".$id."&q=".$key."&token=".md5(date("Ymd"));
         // echo $url."<br>";
         $json = file_get_contents($url, false, $context);
         // echo $json;
@@ -119,7 +119,7 @@ class ProductController extends Controller
         // echo $json;
         $data = json_decode($json);
 
-        $reldata = ProductController::relatedSearch($pname);
+        $reldata = ProductController::relatedSearch($pname,$pid);
 
         $rdata = $this->paginate($reldata, 12);
 

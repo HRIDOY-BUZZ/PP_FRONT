@@ -1,14 +1,9 @@
-{{-- @foreach ($rdata as $d)
-    {{ print_r($d) }}
-    {{ "<br><br>" }}
-@endforeach --}}
-
 @php
     $root = "https://www.pricepond.com.au/prod_img/";
 @endphp
 
 <div class="container px-0">
-    <h4>PRODUCTS YOU MAY ALSO LIKE:</h4>
+    <h4>More Related Products:</h4>
     <p>
         <div class="row">
             @foreach ($rdata as $d)
@@ -48,7 +43,7 @@
                                     @else
                                         {{ $d->Description."..." }}
                                     @endif
-                                    <a href="{{ url('product/'.$d->id.'/'.urlencode($d->Name)) }}">More Info</a>
+                                    <a href="{{ url('product/'.$d->id.'/'.encodeUrl($d->Name)) }}">More Info</a>
                                 </p>
                             </div>
                         </div>
@@ -61,7 +56,7 @@
                                 </p>
                             </div>
                             <div class="shop-name">
-                                <p><a href="{{ url('store/'.$d->Shop.'/'.urlencode($d->shop_name)) }}">{{ substr($d->shop_name,0,30) }}</a></p>
+                                <p><a href="{{ url('store/'.$d->Shop.'/'.encodeUrl($d->shop_name)) }}">{{ substr($d->shop_name,0,30) }}</a></p>
                             </div>
                         </div>
                     </div>

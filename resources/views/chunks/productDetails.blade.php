@@ -17,7 +17,7 @@
                 <div class="product-dets">
                     <div class="shop-details">
                         <p><b>SHOP NAME: </b>
-                            <a href="{{ url('store/'.$data->Shop.'/'.urlencode($data->shop_name)) }}">
+                            <a href="{{ url('store/'.$data->Shop.'/'.encodeUrl($data->shop_name)) }}">
                                 <b>
                                     {{ $data->shop_name }} 
                                     <i class="fal fa-share-square"></i>
