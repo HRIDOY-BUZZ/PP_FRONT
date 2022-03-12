@@ -37,7 +37,7 @@
                     <p class="price"><b>PRICE: </b>
                         <span class="amount">{{ $data->Price }}</span>
                         <span class="currency"> AUD </span>
-                        <a href="" class="btn btn-primary btn-pp">BUY NOW</a>
+                        <a href="{{ $data->URL }}" class="btn btn-primary btn-pp">BUY NOW</a>
                     </p>
                     <p style="text-align: justify">
                         @if(strlen($data->Description)>0)
