@@ -12,7 +12,7 @@ use Illuminate\Pagination\Factory;
 
 class ProductController extends Controller
 {
-    public function paginate($items, $perPage = 20, $page = null, $options = [])
+    public function paginate($items, $perPage = 24, $page = null, $options = [])
     {
         $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
         $items = $items instanceof Collection ? $items : Collection::make($items);
@@ -32,6 +32,19 @@ class ProductController extends Controller
             )
         );
         return $context;
+    }
+
+    public function relatedSearch($key)
+    {
+        $context = ProductController::api_header();
+        $key = urlencode(trim($key));
+        $url = $url = "https://www.pricepond.com.au/api/relatedSearch.php?q=".$key."&token=".md5(date("Ymd"));
+        // echo $url."<br>";
+        $json = file_get_contents($url, false, $context);
+        // echo $json;
+        $data = json_decode($json);
+
+        return $data;
     }
 
     public function search(Request $req)
@@ -101,11 +114,15 @@ class ProductController extends Controller
     {
         $context = ProductController::api_header();
         $url = "https://www.pricepond.com.au/api/product.php?pid=".$pid."&token=".md5(date("Ymd"));
-        echo $url."<br>";
+        // echo $url."<br>";
         $json = file_get_contents($url, false, $context);
         // echo $json;
         $data = json_decode($json);
 
-        return view('pages.product', compact('data'));
+        $reldata = ProductController::relatedSearch($pname);
+
+        $rdata = $this->paginate($reldata, 12);
+
+        return view('pages.product', compact('data','rdata'));
     }
 }

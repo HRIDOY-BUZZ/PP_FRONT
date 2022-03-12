@@ -21,6 +21,19 @@
     .p-8r {
         padding: 0.8rem !important;
     }
+    
+    .btn-pp {
+        padding: 0.25rem 1rem;
+        background-color: #ED3A43;
+        border-color: #ED3A43;
+        border-radius: 1.5rem;
+    }
+    
+    .btn-pp:hover {
+        background-color: #ED3A43;
+        border-color: #ED3A43;
+        box-shadow: 0 0 3px 0 black;
+    }
     /* ========================= Banner Slider Start ============================ */
     
     .carousel-inner {
