@@ -135,7 +135,11 @@ class ProductController extends Controller
         $json1 = file_get_contents($url1, false, $context);
         // echo $json;
         $event = json_decode($json1);
-        $array = array();
+
+        $url2 = "https://www.pricepond.com.au/api/singleEvent.php?eid=".$eid."&type=products&token=".md5(date("Ymd"));
+
+        $json2 = file_get_contents($url2, false, $context);
+        $array = json_decode($json2);
         $data = $this->paginate($array);
         return view(
             'pages.event', 

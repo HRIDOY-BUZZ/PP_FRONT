@@ -11,7 +11,11 @@
             <div >
                 <div class="search-sidebar">
                     <form action="" class="form-control my-3 d-lg-block d-none">
-                        <label for="" class="fw-bold">Categories</label>
+                        <center>
+                            <label for="" class="fw-bold">
+                                SHOPS
+                            </label>
+                        </center>
                         <div class="sidebar-cats ms-2">
                             <a href="">Notebooks</a>
                             <a href="">Macbooks</a>
