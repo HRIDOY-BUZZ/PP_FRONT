@@ -17,10 +17,11 @@
                             </label>
                         </center>
                         <div class="sidebar-cats ms-2">
-                            <a href="">Notebooks</a>
-                            <a href="">Macbooks</a>
-                            <a href="">Gaming Laptops</a>
-                            <a href="">Laptop Accessories</a>
+                            @foreach ($shops as $shop)
+                                <a href="{{ url('store/'.$shop['Shop'].'/'.encodeUrl($shop['shop_name'])) }}">
+                                    {{ substr($shop['shop_name'],0,30) }}
+                                </a>
+                            @endforeach
                         </div>
                     </form>
                 </div>

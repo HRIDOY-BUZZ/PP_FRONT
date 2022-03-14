@@ -9,7 +9,7 @@
                                 <div class="product-image card-img-top">
                                     @if (isset($d->Image) && $d->Image != null && $d->Image!="")
                                         @if($d->Image == "NO")
-                                            <img src="{{ $root."no-image.jpg" }}">
+                                            <img src="{{ $pim_root."no-image.jpg" }}">
                                         @else
                                             <img src="{{ $pim_root.$d->Shop."/".$d->Image }}">
                                         @endif

@@ -3,3 +3,11 @@
     height: auto;
     border-radius: 0.7rem;
 }
+
+.sidebar-cats a {
+    display: block;
+    color: #757575;
+    text-decoration: none;
+    line-height: 2;
+    font-size: 13px;
+}

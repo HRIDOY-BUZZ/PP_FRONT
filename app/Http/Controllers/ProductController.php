@@ -140,10 +140,20 @@ class ProductController extends Controller
 
         $json2 = file_get_contents($url2, false, $context);
         $array = json_decode($json2);
+        $shops = array();
+        foreach($array as $arr)
+        {
+            $s = array();
+            $s['Shop'] = $arr->Shop;
+            $s['shop_name'] = $arr->shop_name;
+
+            $shops[] = $s;
+        }
+        $shops = array_unique($shops, SORT_REGULAR);
         $data = $this->paginate($array);
         return view(
             'pages.event', 
-            compact('event','data')
+            compact('event','data','shops')
         );
     }
 }
