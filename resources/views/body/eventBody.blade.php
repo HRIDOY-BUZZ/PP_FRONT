@@ -1,5 +1,5 @@
 @php
-    $sim_root = "https://www.pricepond.com.au/merchant_image/";
+    $eim_root = "https://www.pricepond.com.au/event_banners/";
     $pim_root = "https://www.pricepond.com.au/prod_img/";
 @endphp
 <div class="container">

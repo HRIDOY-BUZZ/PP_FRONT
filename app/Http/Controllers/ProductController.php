@@ -130,15 +130,16 @@ class ProductController extends Controller
     {
         $context = ProductController::api_header();
         
-        $url = "https://www.pricepond.com.au/api/singleEvent.php?eid=".$eid."&token=".md5(date("Ymd"));
+        $url1 = "https://www.pricepond.com.au/api/singleEvent.php?eid=".$eid."&type=info&token=".md5(date("Ymd"));
         // echo $url."<br>";
-        $json = file_get_contents($url, false, $context);
+        $json1 = file_get_contents($url1, false, $context);
         // echo $json;
-        $array = json_decode($json);
+        $event = json_decode($json1);
+        $array = array();
         $data = $this->paginate($array);
         return view(
             'pages.event', 
-            compact('data')
+            compact('event','data')
         );
     }
 }
