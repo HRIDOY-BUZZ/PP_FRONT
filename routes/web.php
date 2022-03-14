@@ -24,6 +24,7 @@ Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('hom
 Route::get('/search', [App\Http\Controllers\ProductController::class, 'search'])->name('search');
 Route::get('/store/{store}/{store_name}', [App\Http\Controllers\ProductController::class, 'store'])->name('store');
 Route::get('/product/{pid}/{pname}', [App\Http\Controllers\ProductController::class, 'product'])->name('product');
+Route::get('/event/{eid}/{ename}', [App\Http\Controllers\ProductController::class, 'event'])->name('event');
 
 // STATIC PAGES
 Route::get('/about', [App\Http\Controllers\StaticController::class, 'about'])->name('about');
