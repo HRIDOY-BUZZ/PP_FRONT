@@ -1,6 +1,6 @@
 @extends('layouts.basic')
 @section('title')
-PricePond | View Event
+PricePond | {{ $event->event_name }}
 @endsection
 
 @section('extra-head')

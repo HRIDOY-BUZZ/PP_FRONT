@@ -49,4 +49,18 @@ class BaseController extends Controller
 
         return view('pages.home', compact('data1', 'data2', 'data3', 'data4', 'stores'));
     }
+
+    public function events()
+    {
+        $context = BaseController::api_header();
+
+        return view('pages.allEvents');
+    }
+
+    public function deals()
+    {
+        $context = BaseController::api_header();
+
+        return view('pages.allDeals');
+    }
 }

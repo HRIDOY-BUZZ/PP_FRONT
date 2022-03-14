@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// OPTIMIZATION
 Route::get('/optimize', function () {
     Artisan::call('optimize');
 });
@@ -19,7 +21,12 @@ Route::get('/optimize-clear', function () {
     Artisan::call('optimize:clear');
 });
 
+// HOME PAGE
 Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('home');
+
+// DINAMIC PAGES
+Route::get('/events', [App\Http\Controllers\BaseController::class, 'events'])->name('events');
+Route::get('/deals', [App\Http\Controllers\BaseController::class, 'deals'])->name('deals');
 
 Route::get('/search', [App\Http\Controllers\ProductController::class, 'search'])->name('search');
 Route::get('/store/{store}/{store_name}', [App\Http\Controllers\ProductController::class, 'store'])->name('store');

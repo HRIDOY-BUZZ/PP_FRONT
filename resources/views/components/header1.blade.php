@@ -20,12 +20,12 @@
                         <font style="vertical-align: inherit;">PricePond Partners</font>
                     </font>
                 </a>
-                <a href="" target="_blank">
+                <a href="{{ route('events') }}">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Current Events</font>
                     </font>
                 </a>
-                <a href="" class="" target="_blank">
+                <a href="{{ route('deals') }}">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Best Deals</font>
                     </font>
