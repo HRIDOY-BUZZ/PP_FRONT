@@ -1,0 +1,42 @@
+.card {
+    box-shadow: 0 0 6px rgb(0 0 0 / 8%), 0 10px 16px -4px rgb(0 0 0 / 10%);
+    border-radius: 1em;
+    border: none;
+    height: 220px;
+}
+
+.card-img-top {
+    height: 144px;
+}
+
+.card-img-top span {
+    height: 100%;
+    display: block;
+}
+
+.card-img-top img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+    border-radius: 1em 1em 0 0;
+}
+
+.card-title {
+    margin-bottom: .5rem;
+    display: block ruby;
+}
+
+.card-title h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.coupon {
+    border: 1px solid darkgrey;
+    border-radius: .5em;
+    height: 25px;
+    padding: .15em .5em;
+    white-space: nowrap;
+    float: right;
+    font-size: 13px;
+}

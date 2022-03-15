@@ -66,6 +66,7 @@ class BaseController extends Controller
         $context = BaseController::api_header();
 
         $url = "https://www.pricepond.com.au/api/deals.php?token=".md5(date('Ymd'));
+        echo $url;
         $json = file_get_contents($url, false, $context);
         $data = json_decode($json);
 
