@@ -65,6 +65,10 @@ class BaseController extends Controller
     {
         $context = BaseController::api_header();
 
-        return view('pages.allDeals');
+        $url = "https://www.pricepond.com.au/api/deals.php?token=".md5(date('Ymd'));
+        $json = file_get_contents($url, false, $context);
+        $data = json_decode($json);
+
+        return view('pages.allDeals', compact('data'));
     }
 }

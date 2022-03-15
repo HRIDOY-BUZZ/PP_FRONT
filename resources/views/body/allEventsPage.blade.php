@@ -6,7 +6,7 @@
     <div class="row">
         @foreach ($data as $d)
             @if($d->status == 1)
-                <div class="col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     {{ print_r($d) }}
                     <br>
                 </div>
@@ -17,7 +17,7 @@
     <div class="row">
         @foreach ($data as $d)
             @if($d->status != 1)
-                <div class="col-md-6 col-sm-6 col-12">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     {{ print_r($d) }}
                     <br>
                 </div>
