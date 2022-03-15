@@ -24,8 +24,15 @@
                                         {{ $d->shop_name }}
                                     @endif
                                 </h3>
-                                <span class="coupon">30% OFF</span>
+                                @if($d->discount_type == 'percent')
+                                    <span class="coupon percent">{{ $d->discount }}% OFF</span>
+                                @elseif($d->discount_type == 'cash')
+                                    <span class="coupon shipping">FREE SHIPPING</span>
+                                @endif
                             </div>
+                            <p class="card_text">
+                                {{ $d->title }}
+                            </p>
                         </div>
                     </div>
                 </div>

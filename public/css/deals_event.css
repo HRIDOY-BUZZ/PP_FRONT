@@ -2,11 +2,11 @@
     box-shadow: 0 0 6px rgb(0 0 0 / 8%), 0 10px 16px -4px rgb(0 0 0 / 10%);
     border-radius: 1em;
     border: none;
-    height: 220px;
+    height: 450px;
 }
 
 .card-img-top {
-    height: 144px;
+    height: 300px;
 }
 
 .card-img-top span {
@@ -32,11 +32,22 @@
 }
 
 .coupon {
-    border: 1px solid darkgrey;
+    border: 1px solid #ED3A43;
     border-radius: .5em;
     height: 25px;
-    padding: .15em .5em;
     white-space: nowrap;
     float: right;
     font-size: 13px;
+    color: #ED3A43;
+}
+
+.percent {
+    font-size: 13px;
+    padding: .15em .5em;
+    font-weight: 500;
+}
+
+.shipping {
+    font-size: 11px;
+    padding: .3em .3em;
 }
