@@ -3,7 +3,7 @@
 @endphp
 <div class="container mt-5">
     <center>
-        <h1><b>DISCOVER THE BEST DEALS ON PRICEPOND...</b></h1>
+        <h1 class="pt-5"><b>DISCOVER THE BEST DEALS ON PRICEPOND...</b></h1>
     </center>
     <div class="row mt-5">
         @foreach ($data as $d)
@@ -39,5 +39,8 @@
                 <br>
             </div>
         @endforeach
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        {!! $data->appends(Request::except('page'))->links() !!}
     </div>
 </div>

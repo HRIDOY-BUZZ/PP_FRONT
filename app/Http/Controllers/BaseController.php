@@ -24,6 +24,16 @@ class BaseController extends Controller
         return $context;
     }
 
+    public function paginate($items, $perPage = 24, $page = null, $options = [])
+    {
+        $page = $page ?: (Paginator::resolveCurrentPage() ?: 1);
+        $items = $items instanceof Collection ? $items : Collection::make($items);
+        $options = [
+            'path' => Paginator::resolveCurrentPath()
+        ];
+        return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $page, $options);
+    }
+
     public function home()
     {
         $context = BaseController::api_header();
@@ -64,11 +74,13 @@ class BaseController extends Controller
     public function deals()
     {
         $context = BaseController::api_header();
-
+        
         $url = "https://www.pricepond.com.au/api/deals.php?token=".md5(date('Ymd'));
-        echo $url;
+        // echo $url;
         $json = file_get_contents($url, false, $context);
-        $data = json_decode($json);
+        $array = json_decode($json);
+
+        $data = $this->paginate($array, 36);
 
         return view('pages.allDeals', compact('data'));
     }
