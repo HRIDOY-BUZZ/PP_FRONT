@@ -2,9 +2,11 @@
     $root = "https://www.pricepond.com.au/event_images/";
     $placeholder = "event_ph.jpg";
 @endphp
-<div class="container mt-5">
+<div class="container">
     <center>
-        <h1><b>PRICEPOND EVENTS</b></h1>
+        <h1 class="py-5">
+            PRICEPOND EVENTS
+        </h1>
     </center>
     <h2>CURRENT EVENTS:</h2>
     <div class="row">

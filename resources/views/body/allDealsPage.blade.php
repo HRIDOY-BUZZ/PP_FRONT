@@ -3,7 +3,9 @@
 @endphp
 <div class="container mt-5">
     <center>
-        <h1 class="pt-5"><b>DISCOVER THE BEST DEALS ON PRICEPOND...</b></h1>
+        <h1 class="py-5">
+            DISCOVER THE BEST DEALS ON PRICEPOND...
+        </h1>
     </center>
     <div class="row mt-5">
         @foreach ($data as $d)

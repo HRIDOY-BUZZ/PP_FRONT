@@ -18,6 +18,10 @@
         margin-top: 9rem;
     } */
     
+    h1 {
+        font-family: "work sans";
+    }
+    
     .p-8r {
         padding: 0.8rem !important;
     }
