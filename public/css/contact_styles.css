@@ -1,0 +1,34 @@
+label {
+    font-family: "open sans";
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .6);
+    line-height: 1.5;
+    margin: 0.25rem 0;
+    text-align: right;
+    display: block;
+}
+
+.w90 {
+    width: 90% !important;
+}
+
+.w96 {
+    width: 96% !important;
+}
+
+@media all and (max-width: 991px) {
+    label {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 768px) {
+    label {
+        text-align: center;
+    }
+    .w90 {
+        width: 96% !important;
+    }
+}
