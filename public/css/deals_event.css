@@ -82,6 +82,10 @@ a:hover h3 {
     font-size: 1.7em;
 }
 
+.event .card-img-top img {
+    object-fit: cover;
+}
+
 
 /* ====================== EVENT ENDS ====================== */
 

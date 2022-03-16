@@ -46,7 +46,7 @@
             @endif
         @endforeach
     </div>
-    <h2>UPCOMING EVENTS:</h2>
+    <h2 class="mt-5">UPCOMING EVENTS:</h2>
     <div class="row">
         @foreach ($data as $d)
             @if($d->status != 1)
