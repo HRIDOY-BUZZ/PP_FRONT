@@ -32,7 +32,7 @@ a:hover h3 {
     height: 100%;
     object-fit: contain;
     width: 100%;
-    border-radius: 1em 1em 0 0;
+    border-radius: 1em;
 }
 
 .card-title {
@@ -65,6 +65,25 @@ a:hover h3 {
     font-size: 11px;
     padding: .3em .3em;
 }
+
+
+/* ===================== EVENT STARTS ===================== */
+
+.event {
+    height: 350px;
+}
+
+.event .card-img-top {
+    height: 250px;
+    padding: .5rem !important;
+}
+
+.event .card-title h3 {
+    font-size: 1.7em;
+}
+
+
+/* ====================== EVENT ENDS ====================== */
 
 
 /* ===================== PAGINATION STARTS ===================== */
