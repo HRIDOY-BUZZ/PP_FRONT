@@ -27,6 +27,8 @@ Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('hom
 // DINAMIC PAGES
 Route::get('/events', [App\Http\Controllers\BaseController::class, 'events'])->name('events');
 Route::get('/deals', [App\Http\Controllers\BaseController::class, 'deals'])->name('deals');
+Route::get('/contact-us', [App\Http\Controllers\BaseController::class, 'contact'])->name('contact');
+
 
 Route::get('/search', [App\Http\Controllers\ProductController::class, 'search'])->name('search');
 Route::get('/store/{store}/{store_name}', [App\Http\Controllers\ProductController::class, 'store'])->name('store');

@@ -84,4 +84,9 @@ class BaseController extends Controller
 
         return view('pages.allDeals', compact('data'));
     }
+
+    public function contact()
+    {
+        return view('pages.contact');
+    }
 }

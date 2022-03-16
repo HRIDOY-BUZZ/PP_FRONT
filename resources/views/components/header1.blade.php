@@ -15,7 +15,7 @@
                         <font style="vertical-align: inherit;">About PricePond</font>
                     </font>
                 </a>
-                <a href="" target="_blank">
+                <a href="">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">PricePond Partners</font>
                     </font>
@@ -30,7 +30,7 @@
                         <font style="vertical-align: inherit;">Best Deals</font>
                     </font>
                 </a>
-                <a href="" target="_blank">
+                <a href="{{ route('contact') }}">
                     <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Contact Us</font>
                     </font>

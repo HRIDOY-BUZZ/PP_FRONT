@@ -69,7 +69,7 @@
                         <a href="{{ route('faq') }}" class="text-dark">FAQs</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-dark">Contact Us</a>
+                        <a href="{{ route('contact') }}" class="text-dark">Contact Us</a>
                     </p>
                 </div>
                 <!-- Grid column -->
