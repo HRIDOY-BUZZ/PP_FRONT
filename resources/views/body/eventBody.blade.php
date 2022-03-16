@@ -1,6 +1,7 @@
 @php
     $eim_root = "https://www.pricepond.com.au/event_banners/";
     $pim_root = "https://www.pricepond.com.au/prod_img/";
+    $placeholder = "event_banner_ph.jpg";
 @endphp
 <div class="container">
     <div class="row">
