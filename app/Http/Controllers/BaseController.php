@@ -103,6 +103,11 @@ class BaseController extends Controller
         $data['subject'] = $subject;
         $data['message'] = $req->message;
 
+        if(isset($req->phone) && $req->phone != "")
+            $data['phone'] = $req->phone;
+        else
+            $data['phone'] = "Not Given";
+
         Mail::to($to)->send(new contactMail($data));
         return back()->with('message_sent', 'We have received your message and we would like to thank you for writing to us.');
     }
