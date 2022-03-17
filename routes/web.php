@@ -28,6 +28,7 @@ Route::get('/', [App\Http\Controllers\BaseController::class, 'home'])->name('hom
 Route::get('/events', [App\Http\Controllers\BaseController::class, 'events'])->name('events');
 Route::get('/deals', [App\Http\Controllers\BaseController::class, 'deals'])->name('deals');
 Route::get('/contact-us', [App\Http\Controllers\BaseController::class, 'contact'])->name('contact');
+Route::post('/contact-us', [App\Http\Controllers\BaseController::class, 'contactPost'])->name('contactPost');
 
 
 Route::get('/search', [App\Http\Controllers\ProductController::class, 'search'])->name('search');

@@ -12,6 +12,13 @@
             <b>Note:</b> PricePond does not sell any products displayed on the site, certified online stores who advertise their products on PricePond. If you require more information on a certain product please click on the item you are interested in and contact the online store that sells that item.
         </p>
     </div>
+
+    @if(Session::get('message_sent'))
+        <div class="alert alert-success" role="alert">
+            {{ Session::get('message_sent') }}
+        </div>
+    @endif
+
     @include('chunks.contactForm')
     <div class="contact-data">
         <p>

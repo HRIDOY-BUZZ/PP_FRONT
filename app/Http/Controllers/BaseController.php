@@ -9,6 +9,8 @@ use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\Factory;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\contactMail;
 
 class BaseController extends Controller
 {
@@ -88,5 +90,20 @@ class BaseController extends Controller
     public function contact()
     {
         return view('pages.contact');
+    }
+
+    public function contactPost(Request $req)
+    {
+        $to = $req->department;
+        // $to = "xitalamin@gmail.com";
+        $subject = "[CONTACT FORM]: ".$req->subject;
+        $data = array();
+        $data['name'] = $req->name;
+        $data['email'] = $req->email;
+        $data['subject'] = $subject;
+        $data['message'] = $req->message;
+
+        Mail::to($to)->send(new contactMail($data));
+        return back()->with('message_sent', 'We have received your message and we would like to thank you for writing to us.');
     }
 }

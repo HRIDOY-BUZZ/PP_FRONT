@@ -1,5 +1,6 @@
 <div class="contact-form my-5">
     <form action="" method="post" class="form-control">
+        @csrf
         <center>
             <h2 class="my-4">CONTACT FORM</h2>
         </center>
@@ -12,10 +13,11 @@
                         </div>
                         <div class="col-md-8 col-sm-12">
                             <select name="department" id="department" class="form-select w90" required>
-                                <option value="contact@pricepond.com.au">CONTACT</option>
-                                <option value="enquiry@pricepond.com.au">ENQUIRY</option>
-                                <option value="support@pricepond.com.au">SUPPORT</option>
-                                <option value="info@pricepond.com.au">INFO</option>
+                                <option selected>Select Department</option>
+                                <option value="contact@pricepond.com.au">CONTACT (contact@pricepond.com.au)</option>
+                                <option value="enquiry@pricepond.com.au">ENQUIRY (enquiry@pricepond.com.au)</option>
+                                <option value="support@pricepond.com.au">SUPPORT (support@pricepond.com.au)</option>
+                                <option value="info@pricepond.com.au">INFO (info@pricepond.com.au)</option>
                             </select>
                         </div>
                     </div>
