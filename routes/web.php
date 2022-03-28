@@ -36,6 +36,8 @@ Route::get('/store/{store}/{store_name}', [App\Http\Controllers\ProductControlle
 Route::get('/product/{pid}/{pname}', [App\Http\Controllers\ProductController::class, 'product'])->name('product');
 Route::get('/event/{eid}/{ename}', [App\Http\Controllers\ProductController::class, 'event'])->name('event');
 
+Route::get('/categories', [App\Http\Controllers\CategoryController::class, 'categories'])->name('categories');
+
 // STATIC PAGES
 Route::get('/about', [App\Http\Controllers\StaticController::class, 'about'])->name('about');
 Route::get('/privacy-policy', [App\Http\Controllers\StaticController::class, 'policy'])->name('policy');

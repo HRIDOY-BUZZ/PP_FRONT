@@ -3,7 +3,7 @@
         {{-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" >
         Dropdown link
         </a> --}}
-    <button class="no-click" disabled> <a id="navbarDropdownMenuLink" class="nav-link categories dropdown-toggle d-flex" href="#" data-bs-toggle="dropdown">
+    <button class="no-click" disabled> <a id="navbarDropdownMenuLink" class="nav-link categories dropdown-toggle d-flex" href="{{ route('categories') }}" data-bs-toggle="dropdown">
         <p class="cat-title my-2">Categories <i class="fas fa-chevron-down"></i></p>
     </a> </button>
 
