@@ -16,10 +16,10 @@
                         <div class="container my-5 single-category">
                             <div class="category-image">
                                 <img src="
-                                    @if(imgCheck($img_root.encodeUrl($d->name).".jpg"))
-                                        {{ $img_root.$d->name.".jpg" }}
-                                    @else
+                                    @if($d->category_image == NULL || $d->category_image == '')
                                         {{ $img_root.$placeholder }}
+                                    @else
+                                        {{ $img_root.$d->category_image }}
                                     @endif
                                 " alt="{{ $d->name }}">
                             </div>
