@@ -10,3 +10,18 @@ if(!function_exists('encode_Url'))
         return $result;
     }
 }
+
+if(!function_exists('imgCheck'))
+{
+    function imgCheck($url)
+    {
+        if (@getimagesize($url))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}

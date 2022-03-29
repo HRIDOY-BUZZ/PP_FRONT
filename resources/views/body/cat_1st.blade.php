@@ -16,7 +16,7 @@
                         <div class="container my-5 single-category">
                             <div class="category-image">
                                 <img src="
-                                    @if(file_exists($img_root.$d->name.".jpg"))
+                                    @if(imgCheck($img_root.encodeUrl($d->name).".jpg"))
                                         {{ $img_root.$d->name.".jpg" }}
                                     @else
                                         {{ $img_root.$placeholder }}
