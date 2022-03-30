@@ -1,5 +1,5 @@
 @php
-    $img_root = "https://pricepond.com.au/cat_images/";
+    $img_root = "https://pricepond.com.au/cats/images/";
     $placeholder = "placeholder.jpg";
 @endphp
 <div class="container">
