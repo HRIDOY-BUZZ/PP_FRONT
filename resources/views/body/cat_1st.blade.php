@@ -14,7 +14,7 @@
                 @foreach ($data as $d)
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                         <div class="container my-5 single-category">
-                            <a href="">
+                            <a href="{{ url('categories/'.$d->id.'/'.encodeUrl($d->name)) }}">
                                 <div class="category-image">
                                     <img src="
                                         @if($d->category_image == NULL || $d->category_image == '')

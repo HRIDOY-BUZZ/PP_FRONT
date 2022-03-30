@@ -34,20 +34,19 @@ class CategoryController extends Controller
         return $context;
     }
 
-    public function categories($layer1="", $layer2="")
+    public function categories($layer1="", $layer1Name="")
     {
         if(isset($layer1) && $layer1!="")
         {
-            if(isset($layer2) && $layer2!="")
-            {
-                echo $layer1." ".$layer2;
-                return view('pages.allCategories');
-            }
-            else
-            {
-                echo $layer1;
-                return view('pages.allCategories');
-            }
+            $context = CategoryController::api_header();
+            $parent = $layer1;
+            $url = $url = "https://www.pricepond.com.au/api/cats/categories.php?layer=2&parent=".$parent."&token=".md5(date("Ymd"));
+            // echo $url."<br>";
+            $json = file_get_contents($url, false, $context);
+            // echo $json;
+            $data = json_decode($json);
+            // echo $layer1;
+            return view('pages.allCategories', compact('data'));
         }
         else
         {
