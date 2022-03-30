@@ -46,7 +46,7 @@ class CategoryController extends Controller
             // echo $json;
             $data = json_decode($json);
             // echo $layer1;
-            return view('pages.allCategories', compact('data'));
+            return view('pages.allCategories', compact('data'), ['parent' => $layer1Name]);
         }
         else
         {
