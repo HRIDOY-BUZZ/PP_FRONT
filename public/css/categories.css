@@ -1,3 +1,12 @@
+.single-category a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.single-category a:hover {
+    text-decoration: underline;
+}
+
 .category-image {
     height: 200px;
     width: 200px;
@@ -7,10 +16,19 @@
     box-shadow: 0 0 10px 0 #757575;
 }
 
+.category-image:hover {
+    box-shadow: 0 0 20px 0 #757575;
+}
+
 .category-image img {
     height: 100%;
     width: auto;
     object-fit: cover;
     overflow: hidden;
     border-radius: 50%;
+}
+
+.category-image img:hover {
+    height: 101%;
+    width: auto;
 }

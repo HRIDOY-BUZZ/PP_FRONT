@@ -14,20 +14,22 @@
                 @foreach ($data as $d)
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                         <div class="container my-5 single-category">
-                            <div class="category-image">
-                                <img src="
-                                    @if($d->category_image == NULL || $d->category_image == '')
-                                        {{ $img_root.$placeholder }}
-                                    @else
-                                        {{ $img_root.$d->category_image }}
-                                    @endif
-                                " alt="{{ $d->name }}">
-                            </div>
-                            <div class="category-title py-3">
-                                <center>
-                                    <h4>{{ $d->name }}</h4>
-                                </center>
-                            </div>
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="
+                                        @if($d->category_image == NULL || $d->category_image == '')
+                                            {{ $img_root.$placeholder }}
+                                        @else
+                                            {{ $img_root.$d->category_image }}
+                                        @endif
+                                    " alt="{{ $d->name }}">
+                                </div>
+                                <div class="category-title py-3">
+                                    <center>
+                                        <h4>{{ $d->name }}</h4>
+                                    </center>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 @endforeach
