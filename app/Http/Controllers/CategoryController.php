@@ -61,8 +61,20 @@ class CategoryController extends Controller
             return view('pages.allCategories', compact('data'));
         }
     }
-    public function catProducts($layer, $layer1Name, $layer2Name="")
+    public function catProducts($layer, $layer1Name, $layer2Name="", Request $req)
     {
-        return view('pages.catProducts');
+        $context = CategoryController::api_header();
+        $min = trim($req['min']);
+        $max = trim($req['max']);
+        $rel = $req['relevance'];
+
+        return view(
+            'pages.catProducts',
+            [ 
+                'min'   =>  $min, 
+                'max'   =>  $max, 
+                'rel'   =>  $rel
+            ]
+        );
     }
 }
