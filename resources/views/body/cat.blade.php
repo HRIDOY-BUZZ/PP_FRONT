@@ -4,8 +4,12 @@
 @endphp
 <div class="container">
     <center>
-        <h1 class="pt-5">
-            ALL CATEGORIES
+        <h1 class="pt-5 text-uppercase">
+            @if (isset($parent))
+                {{ $parent->name }}
+            @else
+                ALL CATEGORIES
+            @endif
         </h1>
     </center>
     <div class="container mt-5">
@@ -14,7 +18,13 @@
                 @foreach ($data as $d)
                     <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                         <div class="container my-5 single-category">
-                            <a href="{{ url('categories/'.$d->id.'/'.encodeUrl($d->name)) }}">
+                            <a href="
+                            @if(isset($parent))
+                                {{ url('categories/'.$d->id.'/'.encodeUrl($parent->name).'/'.encodeUrl($d->name)) }}
+                            @else
+                                {{ url('categories/'.$d->id.'/'.encodeUrl($d->name)) }}
+                            @endif
+                            ">
                                 <div class="category-image">
                                     <img src="
                                         @if($d->category_image == NULL || $d->category_image == '')

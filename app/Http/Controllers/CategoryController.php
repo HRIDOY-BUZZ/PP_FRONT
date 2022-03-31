@@ -44,9 +44,11 @@ class CategoryController extends Controller
             // echo $url."<br>";
             $json = file_get_contents($url, false, $context);
             // echo $json;
-            $data = json_decode($json);
+            $all = json_decode($json);
+            $parent = $all->parent;
+            $data = $all->children;
             // echo $layer1;
-            return view('pages.allCategories', compact('data'), ['parent' => $layer1Name]);
+            return view('pages.allCategories', compact('data','parent'));
         }
         else
         {
@@ -58,5 +60,9 @@ class CategoryController extends Controller
             $data = json_decode($json);
             return view('pages.allCategories', compact('data'));
         }
+    }
+    public function catProducts($layer, $layer1Name, $layer2Name="")
+    {
+        return view('pages.catProducts');
     }
 }

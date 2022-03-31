@@ -37,6 +37,7 @@ Route::get('/product/{pid}/{pname}', [App\Http\Controllers\ProductController::cl
 Route::get('/event/{eid}/{ename}', [App\Http\Controllers\ProductController::class, 'event'])->name('event');
 
 Route::get('/categories/{layer1?}/{layer1Name?}', [App\Http\Controllers\CategoryController::class, 'categories'])->name('categories');
+Route::get('/categories/{layer}/{layer1Name}/{layer2Name?}', [App\Http\Controllers\CategoryController::class, 'catProducts'])->name('catProducts');
 
 // STATIC PAGES
 Route::get('/about', [App\Http\Controllers\StaticController::class, 'about'])->name('about');

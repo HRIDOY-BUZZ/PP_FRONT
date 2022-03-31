@@ -10,7 +10,6 @@ PricePond | Categories
 @section('content')
 
 <section id="search-result" class="mt-5">
-    @include('body.cat_1st')
+    @include('body.cat')
 </section>
 @endsection
-
