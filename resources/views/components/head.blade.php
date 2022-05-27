@@ -11,6 +11,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+{{-- Mega Menu --}}
+<link rel="stylesheet" href="{{ asset('webslidemenu/dropdown-effects/fade-down.css') }}">
+<link rel="stylesheet" href="{{ asset('webslidemenu/webslidemenu.css') }}">
+<script src="{{ asset('webslidemenu/webslidemenu.js') }}"></script>
+
 {{-- Custom CSS Files --}}
 <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}">

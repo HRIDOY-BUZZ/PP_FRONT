@@ -38,6 +38,7 @@
             </div>
         </div>
     </div>
+    @include('chunks.megamenup')
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light">
         <div class="container align-items-stretch pt-2">
             <a class="navbar-brand" href="{{ route('home') }}" style="">
@@ -85,7 +86,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </nav>
 </header>
