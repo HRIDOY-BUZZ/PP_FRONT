@@ -9,7 +9,7 @@ crossorigin="anonymous"></script>
 {{-- <script src="https://www.xitsolution.com/fontawesome/source/all.min.js"></script> --}}
 
 {{-- Mega Menu --}}
-{{-- <script src="{{ asset('webslidemenu/webslidemenu.js') }}"></script> --}}
+<script src="{{ asset('webslidemenu/webslidemenu.js') }}"></script>
 
 {{-- Custom JS Files --}}
 <script src="{{ asset('js/navbar.js') }}"></script>

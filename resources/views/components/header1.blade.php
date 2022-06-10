@@ -38,13 +38,30 @@
             </div>
         </div>
     </div>
-    @include('chunks.megamenup')
+
+    <!-- Mobile Header -->
+    <div class="wsmobileheader clearfix">
+        <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+        <span class="smllogo"><img src="{{ asset('images/logo.png') }}" width="80" alt="" /></span>
+        <div class="wssearch clearfix">
+            <i class="wsopensearch fas fa-search"></i>
+            <i class="wsclosesearch fas fa-times"></i>
+            <div class="wssearchform clearfix">
+                <form>
+                    <input type="text" placeholder="Search Here">
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- Mobile Header -->
+    
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light">
         <div class="container align-items-stretch pt-2">
             <a class="navbar-brand" href="{{ route('home') }}" style="">
                 <img alt="pp-logo" class="pp-logo" src="{{ asset('images/logo.png') }}">
             </a>
-            @include('chunks.megamenu')
+            @include('chunks.megamenup')
+            {{-- @include('chunks.megamenu')
             <div class="search-div-1">            
                 <div class="search-div">
                     <div id="custom-search-input">
@@ -85,7 +102,7 @@
                         <a href="#">Monitors</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </nav>
 </header>
