@@ -115,7 +115,7 @@ video {
 .wsmenu>.wsmenu-list>li>.navtext {
     line-height: 16px;
     text-align: right;
-    padding: 14px 20px;
+    padding: 18px 20px;
     margin: 0px;
 }
 
@@ -152,10 +152,11 @@ video {
     line-height: 16px;
     font-weight: bold;
     color: #858585;
+    line-height: 1.5;
 }
 
 .wsmenu>.wsmenu-list>li>.navtext>span:hover {
-    color: #000;
+    color: #ed3a43;
 }
 
 .wsmenu>.wsmenu-list>li a:hover .arrow:after {
