@@ -83,7 +83,7 @@ video {
 }
 
 .wsmenu {
-    width: 85%;
+    max-width: 10%;
     float: left;
     font-family: Helvetica, sans-serif;
     color: #fff;
@@ -93,6 +93,7 @@ video {
     display: block;
     margin: 0;
     border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .wsmenu>.wsmenu-list {
@@ -390,10 +391,10 @@ video {
     text-align: left;
     margin: 0px;
     padding: 0px;
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 100px;
     background-color: #f8f8f8;
-    left: -31%;
+    left: 0;
     border-bottom: solid 2px #376cb7;
     border-top: solid 0px;
     z-index: 101;

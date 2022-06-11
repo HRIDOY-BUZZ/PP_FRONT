@@ -14,7 +14,7 @@
 </div> --}}
 <!-- Mobile Header -->
 
-        <nav class="wsmenu clearfix">
+        <div class="wsmenu clearfix">
             <ul class="wsmenu-list">
                 <li aria-haspopup="true"><a href="#" class="navtext"><span>Categories</span></a>
                     <div class="wsshoptabing wtsdepartmentmenu clearfix">
@@ -1024,4 +1024,4 @@
                     </div>
                 </li>
             </ul>
-        </nav>
+        </div>

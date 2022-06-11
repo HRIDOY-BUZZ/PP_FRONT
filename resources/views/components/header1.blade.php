@@ -61,7 +61,6 @@
                 <img alt="pp-logo" class="pp-logo" src="{{ asset('images/logo.png') }}">
             </a>
             @include('chunks.megamenup')
-            {{-- @include('chunks.megamenu')
             <div class="search-div-1">            
                 <div class="search-div">
                     <div id="custom-search-input">
@@ -102,7 +101,7 @@
                         <a href="#">Monitors</a>
                     </div>
                 </div>
-            </div> --}}
+            </div>
         </div>
     </nav>
 </header>
