@@ -16,7 +16,7 @@
 
         <div class="wsmenu clearfix">
             <ul class="wsmenu-list">
-                <li aria-haspopup="true"><a href="#" class="navtext"><span>Categories</span></a>
+                <li aria-haspopup="true"><a href="{{ route('categories') }}" class="navtext"><span>Categories</span></a>
                     <div class="wsshoptabing wtsdepartmentmenu clearfix">
                         <div class="wsshopwp clearfix">
                             <ul class="wstabitem clearfix">
