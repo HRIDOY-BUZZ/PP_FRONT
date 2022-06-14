@@ -811,13 +811,13 @@ video {
 }
 
 .wsmenu>.wsmenu-list>li .kitchenmenuimg {
-    background-image: url(../images/kitchen-menu-img.png);
+    background-image: url(../../images/dummy/kitchen-menu-img.png);
     background-position: bottom right;
     background-repeat: no-repeat;
 }
 
 .wsmenu>.wsmenu-list>li .computermenubg {
-    background-image: url(../images/computer-menu-img.png);
+    background-image: url(../../images/dummy/computer-menu-img.png);
     background-position: bottom right;
     background-repeat: no-repeat;
 }

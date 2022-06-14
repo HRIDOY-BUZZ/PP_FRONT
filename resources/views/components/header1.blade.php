@@ -77,20 +77,8 @@
                             </div>
                         </form>
                     </div>
-                    <div class="nav navbar-nav right-menu">
-                        <div class="nav-buttons">
-                                <div class="row ps-2">
-                                    <div class="col-6 pe-1">
-                                        <button class="btn btn-nav nav-login w-100">Login</button>
-                                    </div>
-                                    <div class="col-6 ps-1 pe-0">
-                                        <button class="btn btn-nav nav-reg w-100">Register</button>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
                 </div>
-        
+                
                 <div class="nav-bottom">
                     <div class="top-cats">
                         <a href="#">Laptops</a>
@@ -99,6 +87,15 @@
                         <a href="#">Refrigerators</a>
                         <a href="#">Printers</a>
                         <a href="#">Monitors</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav navbar-nav right-menu">
+                <div class="nav-buttons">
+                    <div class="row">
+                        <div class="col-12 px-1">
+                            <button class="btn btn-nav nav-login w-100">Merchant Login</button>
+                        </div>
                     </div>
                 </div>
             </div>

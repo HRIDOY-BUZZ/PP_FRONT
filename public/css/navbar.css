@@ -123,6 +123,12 @@ nav {
     color: #ed3a43;
 }
 
+.nav-login:hover,
+.nav-login:active {
+    background-color: #ed3a43;
+    color: white;
+}
+
 .nav-reg {
     background-color: #ed3a43;
     color: white;
@@ -165,7 +171,7 @@ nav {
     margin: 0;
     margin-top: 0px;
     padding: 0;
-    width: 80%;
+    width: 100%;
     margin-left: 20px;
 }
 
@@ -216,7 +222,7 @@ nav {
     display: flex !important;
     flex-direction: column;
     flex-basis: auto;
-    width: 75%;
+    width: 65%;
 }
 
 .search-div {
@@ -345,7 +351,7 @@ nav {
 .top-cats {
     margin: 0px;
     justify-content: space-around;
-    width: 70%;
+    width: 90%;
     padding-top: 5px;
     margin-left: 1rem;
 }
