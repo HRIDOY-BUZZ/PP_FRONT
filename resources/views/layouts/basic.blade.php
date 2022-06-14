@@ -11,7 +11,7 @@
     <div class="page-wrapper">
         @include('components.header1')
 
-        <main class="main">
+        <main class="main pt-5">
             @yield('content')
         </main>
     </div>

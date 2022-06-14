@@ -1,4 +1,4 @@
-<header class="fixed-top-off">
+<header class="fixed-top">
     <div class="topnav">
         <div class="container pe-0">
             <div class="topnav-left float-start">

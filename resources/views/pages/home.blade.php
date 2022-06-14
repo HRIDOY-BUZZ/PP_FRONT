@@ -13,7 +13,7 @@ PricePond | Home
 @endsection
 
 @section('content')
-<section id="banner-sec" class="container mt-5">
+<section id="banner-sec" class="container mt-5 pt-5">
     @include('chunks.banner')
 </section>
 <section id="brands-sec" class="container my-5">
